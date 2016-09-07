@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.hp.above.FileSystemActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="File System"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\nA file can be 'free formed', indexed or structured collection of related bytes having meaning only to the one who created it. Or in other words an entry in a directory is the file. The file may have attributes like name, creator, date, type, permissions etc.
+"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="File Structure"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\nA file has various kinds of structure. Some of them can be :
+\n
+\n1. Simple Record Structure with lines of fixed or variable lengths.
+\n2. Complex Structures like formatted document or reloadable load files.
+\n3. No Definite Structure like sequence of words and bytes etc."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attributes of a File"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\nFollowing are some of the attributes of a file :
+\n
+\n1. Name . It is the only information which is in human-readable form.
+\n2. Identifier. The file is identified by a unique tag(number) within file system.
+\n3. Type. It is needed for systems that support different types of files.
+\n4. Location. Pointer to file location on device.
+\n5. Size. The current size of the file.
+\n6. Protection. This controls and assigns the power of reading, writing, executing.
+\n7. Time, date, and user identification. This is the data for protection, security, and usage monitoring.
+"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="File Access Methods"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\nThe way that files are accessed and read into memory is determined by Access methods. Usually a single access method is supported by systems while there are OS's that support multiple access methods.
+\n
+\nSequential Access
+\n
+\n1. Data is accessed one record right after another is an order.
+\n2. Read command cause a pointer to be moved ahead by one.
+\n3. Write command allocate space for the record and move the pointer to the new End Of File.
+\n4. Such a method is reasonable for tape.
+\n\nDirect Access
+\n
+\n1. This method is useful for disks.
+\n2. The file is viewed as a numbered sequence of blocks or records.
+\n3. There are no restrictions on which blocks are read/written, it can be dobe in any order.
+\n4. User now says 'read n' rather than 'read next'.
+\n5. 'n' is a number relative to the beginning of file, not relative to an absolute physical disk location.
+\n\nIndexed Sequential Access
+\n
+\n1. It is built on top of Sequential access.
+\n2. It uses an Index to control the pointer while accessing files.
+"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is a Directory?"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\nInformation about files is maintained by Directories. A directory can contain multiple files. It can even have directories inside of them. In Windows we also call these directories as folders.
+\n
+\nFollowing is the information maintained in a directory :
+\n
+\n1. Name : The name visible to user.
+\n2. Type : Type of the directory.
+\n3. Location : Device and location on the device where the file header is located.
+\n4. Size : Number of bytes/words/blocks in the file.
+\n5. Position : Current next-read/next-write pointers.
+\n6. Protection : Access control on read/write/execute/delete.
+\n7. Usage : Time of creation, access, modification etc.
+\n8. Mounting : When the root of one file system is 'grafted' into the existing tree of another file system its called Mounting.
+"/>
+
+
+</LinearLayout>
+</ScrollView>

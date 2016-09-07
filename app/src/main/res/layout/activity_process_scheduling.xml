@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/english"
+        tools:context="com.example.hp.above.ProcessSchedulingActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_height="wrap_content"
+            android:text="What is a Process?"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF00"
+            android:text="\nA program in the execution is called a Process. Process is not the same as program. A process is more than a program code. A process is an 'active' entity as opposed to program which is considered to be a 'passive' entity. Attributes held by process include hardware state, memory, CPU etc.
+\n
+\nProcess memory is divided into four sections for efficient working :
+\n
+\n1. The text section is made up of the compiled program code, read in from non-volatile storage when the program is launched.
+\n2. The data section is made up the global and static variables, allocated and initialized prior to executing the main.
+\n3. The heap is used for the dynamic memory allocation, and is managed via calls to new, delete, malloc, free, etc.
+\n4. The stack is used for local variables. Space on the stack is reserved for local variables when they are declared."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="PROCESS STATE"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF00"
+            android:text="\nProcesses can be any of the following states :
+\n
+\n1. New - The process is in the stage of being created.
+\n2. Ready - The process has all the resources available that it needs to run, but the CPU is not currently working on this process's instructions.
+\n3. Running - The CPU is working on this process's instructions.
+\n4. Waiting - The process cannot run at the moment, because it is waiting for some resource to become available or for some event to occur.
+\n5. Terminated - The process has completed."/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/processschedule1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="PROCESS CONTROL BLOCK"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF00"
+            android:text="\nThere is a Process Control Block for each process, enclosing all the information about the process. It is a data structure, which contains the following :
+\n
+\n1. Process State - It can be running, waiting etc.
+\n2. Process ID and parent process ID.
+\n3. CPU registers and Program Counter. Program Counter holds the address of the next instruction to be executed for that process.
+\n4. CPU Scheduling information - Such as priority information and pointers to scheduling queues.
+\n5. Memory Management information - Eg. page tables or segment tables.
+\n6. Accounting information - user and kernel CPU time consumed, account numbers, limits, etc.
+\n7. I/O Status information - Devices allocated, open file tables, etc."/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/processschedule2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Process Scheduling"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF00"
+            android:text="\nThe act of determining which process in the ready state should be moved to the running state is known as Process Scheduling.
+\n
+\nThe prime aim of the process scheduling system is to keep the CPU busy all the time and to deliver minimum response time for all programs. For achieving this, the scheduler must apply appropriate rules for swapping processes IN and OUT of CPU.
+\n
+\nSchedulers fell into one of the two general categories :
+\n
+\n1. Non pre-emptive scheduling. When the currently executing process gives up the CPU voluntarily.
+\n2. Pre-emptive scheduling. When the operating system decides to favour another process, pre-empting the currently executing process."/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Scheduling Queues"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF00"
+            android:text="\n1. All processes when enters into the system are stored in the job queue.
+\n2. Processes in the Ready state are placed in the ready queue.
+\n3. Processes waiting for a device to become available are placed in device queues. There are unique device queues for each I/O device available.
+"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Types of Schedulers"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF00"
+            android:text="\nThere are three types of schedulers available :
+\n\n
+\nLong Term Scheduler :
+\n\nLong term scheduler runs less frequently. Long Term Schedulers decide which program must get into the job queue. From the job queue, the Job Processor, selects processes and loads them into the memory for execution. Primary aim of the Job Scheduler is to maintain a good degree of Multiprogramming. An optimal degree of Multiprogramming means the average rate of process creation is equal to the average departure rate of processes from the execution memory.
+\n\n
+\nShort Term Scheduler :
+\n\nThis is also known as CPU Scheduler and runs very frequently. The primary aim of this scheduler is to enhance CPU performance and increase process execution rate.
+\n\n
+\nMedium Term Scheduler :
+\n\nDuring extra load, this scheduler picks out big processes from the ready queue for some time, to allow smaller processes to execute, thereby reducing the number of processes in the ready queue.
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Operations on Process"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Process Creation"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF00"
+            android:text="\nThrough appropriate system calls, such as fork or spawn, processes may create other processes. The process which creates other process, is termed the parent of the other process, while the created sub-process is termed its child.
+\n
+\nEach process is given an integer identifier, termed as process identifier, or PID. The parent PID (PPID) is also stored for each process.
+\n
+\nOn a typical UNIX systems the process scheduler is termed as sched, and is given PID 0. The first thing done by it at system start-up time is to launch init, which gives that process PID 1. Further Init launches all the system daemons and user logins, and becomes the ultimate parent of all other processes.
+"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/processschedule3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF00"
+            android:text="\nA child process may receive some amount of shared resources with its parent depending on system implementation. To prevent runaway children from consuming all of a certain system resource, child processes may or may not be limited to a subset of the resources originally allocated to the parent.
+\n
+\nThere are two options for the parent process after creating the child :
+\n
+\n1. Wait for the child process to terminate before proceeding. Parent process makes a wait() system call, for either a specific child process or for any particular child process, which causes the parent process to block until the wait() returns. UNIX shells normally wait for their children to complete before issuing a new prompt.
+\n2. Run concurrently with the child, continuing to process without waiting. When a UNIX shell runs a process as a background task, this is the operation seen. It is also possible for the parent to run for a while, and then wait for the child later, which might occur in a sort of a parallel processing operation.
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Process Termination"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF00"
+            android:text="\nBy making the exit(system call), typically returning an int, processes may request their own termination. This int is passed along to the parent if it is doing a wait(), and is typically zero on successful completion and some non-zero code in the event of any problem.
+\n
+\nProcesses may also be terminated by the system for a variety of reasons, including :
+\n
+\n1. The inability of the system to deliver the necessary system resources.
+\n2. In response to a KILL command or other unhandled process interrupts.
+\n3. A parent may kill its children if the task assigned to them is no longer needed i.e. if the need of having a child terminates.
+\n4. If the parent exits, the system may or may not allow the child to continue without a parent (In UNIX systems, orphaned processes are generally inherited by init, which then proceeds to kill them.)
+\n5. When a process ends, all of its system resources are freed up, open files flushed and closed, etc. The process termination status and execution times are returned to the parent if the parent is waiting for the child to terminate, or eventually returned to init if the process already became an orphan.
+\n
+\nThe processes which are trying to terminate but cannot do so because their parent is not waiting for them are termed zombies. These are eventually inherited by init as orphans and killed off.
+"/>
+
+
+
+    </LinearLayout>
+</ScrollView>

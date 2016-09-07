@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/algo"
+        tools:context="com.example.hp.above.IntroModelActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_height="wrap_content"
+            android:text="Reference Models in Communication Networks"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nThe most important reference models are :
+\n
+\n1. OSI reference model.
+\n2. TCP/IP reference model.
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Introduction to ISO-OSI Model:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nThere are many users who use computer network and are located all over the world. To ensure national and worldwide data communication ISO (ISO stands for International Organization of Standardization.) developed this model. This is called a model for open system interconnection (OSI) and is normally called as OSI model.OSI model architecture consists of seven layers. It defines seven layers or levels in a complete communication system. OSI Reference model is explained in other chapter.
+
+"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/model1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:text="Introduction to TCP/IP REFERENCE Model"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nTCP/IP is transmission control protocol and internet protocol. Protocols are set of rules which govern every possible communication over the internet. These protocols describe the movement of data between the host computers or internet and offers simple naming and addressing schemes.
+\n
+\nTCP/IP Reference model is explained in details other chapter."/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/model2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="ISO/OSI Model in Communication Networks"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nThere are n numbers of users who use computer network and are located over the world. So to ensure, national and worldwide data communication, systems must be developed which are compatible to communicate with each other. ISO has developed this. ISO stands for International organization of Standardization. This is called a model for Open System Interconnection (OSI) and is commonly known as OSI model.
+\n
+\nThe ISO-OSI model is a seven layer architecture. It defines seven layers or levels in a complete communication system."/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/model3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Feature of OSI Model :"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n1. Big picture of communication over network is understandable through this OSI model.
+\n2. We see how hardware and software work together.
+\n3. We can understand new technologies as they are developed.
+\n4. Troubleshooting is easier by separate networks.
+\n5. Can be used to compare basic functional relationships on different networks."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Functions of Different Layers :"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Layer 1: The Physical Layer :"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n1. It is the lowest layer of the OSI Model.
+\n2. It activates, maintains and deactivates the physical connection.
+\n3. It is responsible for transmission and reception of the unstructured raw data over network.
+\n4. Voltages and data rates needed for transmission is defined in the physical layer.
+\n5. It converts the digital/analog bits into electrical signal or optical signals.
+\n6. Data encoding is also done in this layer."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Layer 2: Data Link Layer :"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n1. Data link layer synchronizes the information which is to be transmitted over the physical layer.
+\n2. The main function of this layer is to make sure data transfer is error free from one node to another, over the physical layer.
+\n3. Transmitting and receiving data frames sequentially is managed by this layer.
+\n4. This layer sends and expects acknowledgements for frames received and sent respectively. Resending of non-acknowledgement received frames is also handled by this layer.
+\n5. This layer establishes a logical layer between two nodes and also manages the Frame traffic control over the network. It signals the transmitting node to stop, when the frame buffers are full.
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Layer 3: The Network Layer :"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n1. It routes the signal through different channels from one node to other.
+\n2. It acts as a network controller. It manages the Subnet traffic.
+\n3. It decides by which route data should take.
+\n4. It divides the outgoing messages into packets and assembles the incoming packets into messages for higher levels."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Layer 4: Transport Layer :"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n1. It decides if data transmission should be on parallel path or single path.
+\n2. Functions such as Multiplexing, Segmenting or Splitting on the data are done by this layer
+\n3. It receives messages from the Session layer above it, convert the message into smaller units and passes it on to the Network layer.
+\n4. Transport layer can be very complex, depending upon the network requirements.
+\n\nTransport layer breaks the message (data) into small units so that they are handled more efficiently by the network layer."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Layer 5: The Session Layer :"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n1. Session layer manages and synchronize the conversation between two different applications.
+\n2. Transfer of data from source to destination session layer streams of data are marked and are resynchronized properly, so that the ends of the messages are not cut prematurely and data loss is avoided.
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Layer 6: The Presentation Layer :"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n1. Presentation layer takes care that the data is sent in such a way that the receiver will understand the information (data) and will be able to use the data.
+\n2. While receiving the data, presentation layer transforms the data to be ready for the application layer.
+\n3. Languages(syntax) can be different of the two communicating systems. Under this condition presentation layer plays a role of translator.
+\n4. It perfroms Data compression, Data encryption, Data conversion etc."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Layer 7: Application Layer :"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n1. It is the topmost layer.
+\n2. Transferring of files disturbing the results to the user is also done in this layer. Mail services, directory services, network resource etc are services provided by application layer.
+\n3. This layer mainly holds application programs to act upon the received and to be sent data."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Merits of OSI reference model:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n1. OSI model distinguishes well between the services, interfaces and protocols.
+\n2. Protocols of OSI model are very well hidden.
+\n3. Protocols can be replaced by new protocols as technology changes.
+\n4. Supports connection oriented services as well as connectionless service."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Demerits of OSI reference model:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n1. Model was devised before the invention of protocols.
+\n2. Fitting of protocols is tedious task.
+\n3. It is just used as a reference model.
+"/>
+
+
+
+    </LinearLayout>
+</ScrollView>

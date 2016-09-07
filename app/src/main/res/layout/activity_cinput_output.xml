@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#455a64"
+    tools:context="com.example.hp.above.CInputOutputActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="C Input output function"
+        android:textColor="#ffffff"
+        android:background="#607d8b"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nC programming language provides many of the built-in functions to read given input and write data on screen, printer or in any file.
+        "/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:background="#607d8b"
+        android:text="scanf() and printf() functions"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cio1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="When you will compile the above code, it will ask you to enter a value. When you will enter the value, it will display the value you have entered.
+\n\nNOTE : printf() function returns the number of characters printed by it, and scanf() returns the number of characters read by it."/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cio2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="In this program i will get 12 as value, because studytonight has 12 characters."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:text="getchar() and putchar() functions"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nThe getchar() function reads a character from the terminal and returns it as an integer. This function reads only single character at a time. You can use this method in the loop in case you want to read more than one characters. The putchar() function prints the character passed to it on the screen and returns the same character. This function puts only single character at a time. In case you want to display more than one characters, use putchar() method in the loop.
+        "/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cio3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="The gets() function reads a line from stdin into the buffer pointed to by s until either a terminating newline or EOF (end of file). The puts() function writes the string s and a trailing newline to stdout.
+        "/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cio4"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nWhen you will compile the above code,it will ask you to enter a string. When you will enter the string, it will display the value you have entered."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:text="Difference between scanf() and gets()"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nThe main difference between these two functions is that scanf() stops reading characters when it encounters a space, but gets() reads space as character too.
+\n
+\nIf you enter name as Study Tonight using scanf() it will only read and store Study and will leave the part after space. But gets() function will read it complete.
+\n
+"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:text="C Language Syntax Rules"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nC language syntax specify rules for sequence of characters to be written in C language. The rule specify how character sequence will be grouped together to form tokens. A smallest individual unit in c program is known as C Tokens. Tokens are either keyword, identifier, constant, variable or any symbol which has some meaning in C language. A C program can also be called as collection of various tokens.
+\n
+\nExample of C tokens,
+\n1. int
+\n2. curly braces { }
+\n3. comments
+\n4. semicolon ;
+"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comments"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="#607d8b"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nComments are simple text in your C program that increases readability of programs. Compiler ignore anything written as comment in your program.
+\n
+\nExample of comments :
+\n
+\nSingle line Comment
+\n//This is a comment
+\n
+\nSingle line Comment
+\n/*This is a comment*/
+\n
+\nMulti line Comment
+\n/*This is a long and valid comment*/
+\n
+\nWrong Syntax
+\n//this is not a valid comment
+"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Some basic syntax rule for C program"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="#607d8b"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n1. C is a case sensitive language so all C instructions must be written in lower case letter.
+\n\n2. All C statement must be end with a semicolon.
+\n\n3. Whitespace is used in C to describe blanks and tabs.
+\n\n4. Whitespace is required between keywords and identifiers
+"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cio_image"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keywords"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nKeywords are preserved words that have special meaning in C language. The meaning has already been described. These meaning cannot be changed. There are total 32 keywords in C language.
+
+"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cio5"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Identifiers"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="#607d8b"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nIn C language identifiers are the names given to variables, constants, functions and user-define data. These identifier are defined against a set of rules.
+
+"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rules for an Identifier"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="#607d8b"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n1. An Indetifier can only have alphanumeric characters( a-z , A-Z , 0-9 ) and underscore( _ ).
+\n\n2. The first character of an identifier can only contain alphabet( a-z , A-Z ) or underscore ( _ ).
+\n\n3. Identifiers are also case sensitive in C. For example name and Name are two different identifier in C.
+\n\n4. Keywords are not allowed to be used as Identifiers.
+\n\n5. No special characters, such as semicolon, period, whitespaces, slash or comma are permitted to be used in or as Identifier.
+
+"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cio6"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Operators in C Language"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:background="#6078db"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nC language supports a rich set of built-in operators. An operator is a symbol that tells the compiler to perform certain mathematical or logical manipulations. Operators are used in program to manipulate data and variables.
+\n
+\nC operators can be classified into following types,
+\n
+\n1. Arithmetic operators
+\n2. Relation operators
+\n3. Logical operators
+\n4. Bitwise operators
+\n5. Assignment operators
+\n6. Conditional operators
+\n7. Special operators
+
+"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Arithmetic operators"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:background="#607d8b"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nC supports all the basic arithmetic operators. The following table shows all the basic arithmetic operators.
+
+"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/operator1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Relation operators"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="#607d8b"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nThe following table shows all relation operators supported by C.
+"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/operator2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logical operators"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nC language supports following 3 logical operators. Suppose a=1 and b=0,
+        "/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/operator3"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:background="#607d8b"
+        android:text="Bitwise operators"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+       android:layout_marginTop="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nBitwise operators perform manipulations of data at bit level. These operators also perform shifting of bits from right to left. Bitwise operators are not applied to float or double.
+        "/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/operator4"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nNow lets see truth table for bitwise AND, OR and ^"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/operator5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nThe bitwise shift operators shifts the bit value. The left operand specifies the value to be shifted and the right operand specifies the number of positions that the bits in the value are to be shifted. Both operands have the same precedence.
+\n
+\nExample :"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/operator6"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assignment Operators"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:text="\nAssignment operators supported by C language are as follows."/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/operator7"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Conditional operator"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nIt is also known as ternary operator and used to evaluate conditional expression."/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/operator8"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nIf epr1 Condition is true ? Then value expr2 : Otherwise value expr3"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_height="wrap_content"
+        android:text="Special operator"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/operator9"/>
+
+
+</LinearLayout>
+</ScrollView>

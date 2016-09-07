@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#000033"
+    android:orientation="vertical"
+    tools:context="com.example.hp.above.BinaryTreeActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BINARY TREE"
+        android:textStyle="bold"
+        android:background="#5C6BC0"
+        android:textColor="#ffffff"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\n1. Trees: Unlike Arrays, Linked Lists, Stack and queues, which are linear data structures, trees are hierarchical data structures.
+        \n\n2. The topmost node is called root of the tree.
+        \n\n3. The elements that are directly under an element are called its children.
+        The element directly above something is called its parent.
+        \n\n4. Finally, elements with no children are called leaves.\n"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="APPLICATIONS"
+        android:textStyle="bold"
+        android:background="#5C6BC0"
+        android:textColor="#ffffff"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#ffffff"
+        android:text="\n\n1. Manipulate hierarchical data.
+\n2. Make information easy to search (see tree traversal).
+\n3. Manipulate sorted lists of data.
+\n4. As a workflow for compositing digital images for visual effects.
+\n5. Router algorithms
+\n6. Form of a multi-stage decision-making (see business chess).
+\n\nBinary Tree: \nA tree whose elements have at most 2 children is called a binary tree.
+Since each element in a binary tree can have only 2 children, we typically name them the left and right child.
+\n\nBinary Tree Representation in C: \n\nA tree is represented by a pointer to the topmost node in tree. If the tree is empty, then value of root is NULL.
+\nA Tree node contains following parts.
+\n1. Data
+\n2. Pointer to left child
+\n3. Pointer to right child\n"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BASIC OPERATIONS"
+        android:textStyle="bold"
+        android:background="#5C6BC0"
+        android:textColor="#ffffff"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\n1. Insertion
+\n\n2. Deletion
+\n\n3. Search\n"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TYPES OF BINARY TREE"
+        android:textStyle="bold"
+        android:background="#5C6BC0"
+        android:textColor="#ffffff"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#ffffff"
+        android:text="\n\nFull Binary Tree:
+\nA Binary Tree is full if every node has 0 or 2 children. Following are examples of full binary tree.
+\n\nComplete Binary Tree:
+\nA Binary Tree is complete Binary Tree if all levels are completely filled except possibly the last level and the last level has all keys as left as possible.
+\n\nPerfect Binary Tree:
+\nA Binary tree is Perfect Binary Tree in which all internal nodes have two children and all leaves are at same level.
+\n\nBalanced Binary Tree:
+\nA binary tree is balanced if height of the tree is O(Log n) where n is number of nodes.
+\n\nDegenerate (or pathological) tree:
+\nA Tree where every internal node has one child.
+\nSuch trees are performance-wise same as linked list.
+"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TREE TRAVERSALS"
+        android:textStyle="bold"
+        android:background="#5C6BC0"
+        android:textColor="#ffffff"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nUnlike linear data structures (Array, Linked List, Queues, Stacks, etc) which have only one logical way to traverse them, trees can be traversed in different ways. Following are the generally used ways for traversing trees."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nDepth First Traversals:
+\n\n(a) Inorder
+\n\n(b) Preorder
+\n\n(c) Postorder
+\n\n\nBreadth First or Level Order Traversal
+"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="\n\nRead More...\n\n"
+        android:textColor="#00E676"
+        android:id="@+id/binarytree"
+        android:onClick="binarytree"/>
+
+
+
+</LinearLayout>
+</ScrollView>

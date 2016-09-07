@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/image1"
+        tools:context="com.example.hp.above.ProgressionsActivity">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ARITHMETIC PROGRESSION"
+            android:background="#78909C"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nA sequence of numbers is called an arithmetic progression if the difference between any two consecutive terms is always same
+\n\nIf ‘a’ is the first term and ‘d’ is the common difference,
+\nnth term of an AP = a + (n-1) d
+\n\nArithmetic Mean = Sum of all terms in the AP / Number of terms in the AP
+\n\nSum of ‘n’ terms of an AP = 0.5 n (first term + last term) = 0.5 n [ 2a + (n-1) d ]"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="GEOMETRIC PROGRESSION"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nA sequence of numbers is called a geometric progression if the ratio of any two consecutive terms is always same.
+\n\nIf ‘a’ is the first term and ‘r’ is the common ratio,
+\nnth term of a GP = a rn-1
+\n\nGeometric Mean = nth root of product of n terms in the GP
+\n\nSum of ‘n’ terms of a GP (r less than 1) = [a (1 - rn)] / [1 – r]
+\n\nSum of ‘n’ terms of a GP (r greater than 1) = [a (rn – 1)] / [r – 1]
+\n\nSum of infinite terms of a GP (r less than 1) = (a) / (1 - r)"/>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:text="SAMPLE PROBLEMS"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 1 :  If 4 times the 4th term of an A.P. is equal to 9 times the 9th term of the A.P., what is 13 times the 13th term of this A.P.?
+A.  7 times the 13th term
+B.  0
+C.  13 times the 7th term
+D.  4 times the 4th term + 9 times the 9th term"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="SOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_progress1"
+            android:onClick="progress_answers1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 2 : The sum of 2n terms of A.P. {1, 5, 9, 13…..} is greater than sum of n terms of A.P. = {56, 58, 60..…}. What is the smallest value n can take?
+A. 9
+B. 10
+C. 12
+D. 14"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:textColor="#FFFF00"
+            android:text="SOLUTION"
+            android:id="@+id/solution_progress2"
+            android:onClick="progress_answers2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 3 : Second term in an AP is 8 and the 8th term is 2 more than thrice the second term. Find the sum up to 8 terms of this AP.
+A. 124
+B. 108
+C. 96
+D. 110
+
+"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_progress3"
+            android:onClick="progress_answers3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 4 : Sum of infinite terms of a GP is 12. If the first term is 8, what is the 4th term of this GP?
+A. 8/27
+
+B. 4/27
+
+C. 8/20
+
+D. 1/3
+"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_progress4"
+            android:onClick="progress_answers4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 5 :  The salaries earned by two friends Anil and Jeetu in different years are in A.P. If the ratio of the amount earned by them in ‘p’ number of years are (4p+1) : (2p+17). Then find the ratio of amount earned by them in the 7th year.
+A. (2p+1) : (4p+6)
+B. 53 : 43
+C. 4 : 7
+D. 15p : 36p"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_progress5"
+            android:onClick="progress_answers5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 6 :  Second term of a GP is 1000 and the common ratio is where n is a natural number. Pn is the product of n terms of this GP. P6 > P5 and P6 > P7, what is the sum of all possible values of n?
+A. 4
+B. 9
+C. 5
+D. 13"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_progress6"
+            android:onClick="progress_answers6"/>
+
+    </LinearLayout>
+</ScrollView>

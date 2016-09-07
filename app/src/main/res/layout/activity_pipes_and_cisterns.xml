@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/image1"
+        tools:context="com.example.hp.above.PipesAndCisternsActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONCEPT"
+            android:background="#78909C"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nThe problems have two kinds of pipes, Inlet pipe and Outlet pipe / Leak. "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text=" \nInlet pipe fills the tank in n1 hrs and Outlet pipe empties it in n2 hrs
+\nParts filled by Inlet pipe in 1 hour=1 / n1.
+\nSimilarly,Parts emptied by Outlet pipe in 1 hour=1/n2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nHence part of tank filled in 1 hour=(1/n1)-(1/n2)
+\nIf the above equation is positive the tank is filled and if it is negative the tank is emptied "/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="4dp"
+            android:background="#FFFFFF"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:text="SAMPLE PROBLEMS"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 1 : Two pipes A and B can fill a tank separately in 12 and 16 hours respectively. If both of them are opened together when the tank is initially empty, how much time will it take to completely fill the tank?"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_pc1"
+            android:onClick="pc_answers1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 2 : Three pipes A, B and C are connected to a tank. Out of the three, A and B are the inlet pipes and C is the outlet pipe. If opened separately, A fills the tank in 10 hours, B fills the tank in 12 hours and C empties the tank in 30 hours. If all three are opened simultaneously, how much time does it take to fill / empty the tank ?"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_pc2"
+            android:onClick="pc_answers2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 3 : A cistern has two pipes. Both working together can fill the cistern in 12 minutes. First pipe is 10 minutes faster than the second pipe. How much time would it take to fill the cistern if only second pipe is used ?"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_pc3"
+            android:onClick="pc_answers3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 4 : Three pipes A, B and C are connected to a tank. Out of the three, A and B are the inlet pipes and C is the outlet pipe. If opened separately, A fills the tank in 10 hours and B fills the tank in 30 hours. If all three are opened simultaneously, it takes 30 minutes extra than if only A and B are opened. How much time does it take to empty the tank if only C is opened?"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_pc4"
+            android:onClick="pc_answers4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 5 : Time required by two pipes A and B working separately to fill a tank is 36 seconds and 45 seconds respectively. Another pipe C can empty the tank in 30 seconds. Initially, A and B are opened and after 7 seconds, C is also opened. In how much more time the tank would be completely filled ?"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_pc5"
+            android:onClick="pc_answers5"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 6 : Two pipes A and B can fill a tank in 20 hours and 30 hours respectively. If both the pipes are opened simultaneously, find after how much time should pipe B be closed so that the tank is full in 18 hours?"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_pc6"
+            android:onClick="pc_answers6"/>
+
+
+
+    </LinearLayout>
+</ScrollView>

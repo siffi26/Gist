@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#00796b"
+    android:orientation="vertical"
+    tools:context="com.example.hp.above.AnalysisLoopActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ANALYSIS OF LOOPS"
+        android:background="#009688"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text=" \n\nAnalysis of iterative programs with simple examples is discussed below:
+        \n\n1) O(1): Time complexity of a function (or set of statements) is considered as O(1) if it doesn’t contain loop, recursion and call to any other non-constant time function.
+
+   \n\n\n// set of non-recursive and non-loop statements
+\n\nFor example swap() function has O(1) time complexity.
+\n\nA loop or recursion that runs a constant number of times is also considered as O(1). For example the following loop is O(1).
+"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Read More.."
+        android:textColor="#ffffff"
+        android:onClick="examples"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:id="@+id/examples"/>
+
+
+
+</LinearLayout>
+</ScrollView>

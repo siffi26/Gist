@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#303F9F"
+    tools:context="com.example.hp.above.DataInterpretationActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:textColor="#ffffff"
+        android:layout_marginTop="32dp"
+        android:text="DATA INTERPRETATION"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#ffff00"
+        android:text="\n\nDirections: ( 1–5):Read the graph and answer questions .
+\n\nIncome and Expenditure of a company over the year (in lakhs of rupees).
+"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/data_inter1"
+        android:layout_margin="8dp"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\n\n1.    The ratio of the average income of all the years to the average profit is :
+\n\n(a) 24 : 13                          (b) 48 : 17
+\n\n(c) 12 : 7                            (d) 6 : 5
+
+\n\n\n2.    Percentage increase in profit in 1986 over 1982 is:
+\n\n(a) 150 %                          (b) 120 %
+\n\n(c) 100%                           (d) 80%
+
+\n\n\n3.    The total income exceeds the total expenditure over the year 1982 to 1986 by:
+\n\n(a) 85 lakhs                       (b) 105 lakhs
+\n\n(c) 115 lakhs                     (d) 120 lakhs
+
+\n\n\n4.    What is the difference in profit between 1983 and 1984 (in lakhs of rupees) :
+\n\n(a) No profit                       (b) 5
+\n\n(c) 10                                (d) 15
+
+\n\n\n5.      The number of years in which the income is more than the average income of the given year is:
+\n\n(a) One                              (b) Two
+\n\n(c) Three                            (d) Four
+
+
+"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="8dp"
+        android:background="#000000" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:textColor="#ffff00"
+        android:text="\n\n\nDirections (6-9): The pie-chart given below shows the percentage of 3600 students enrolled in different hobby classes in a school.
+         \n\nStudy it carefully and answer the questions that follow:"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/data_inter2"
+        android:layout_margin="8dp"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#ffffff"
+        android:text="\n\n\n6      What is the total number of students enrolled in stitching and Drama classes together?
+\n\n(A) 684                           (B) 846
+\n\n(C) 648                           (D) 864
+
+\n\n\n7.      How many students are enrolled in painting classes?
+\n\n(A) 550                           (B) 540
+\n\n(C) 450                           (D) 520
+
+\n\n\n8.      Number of students enrolled in painting classes are approximately what percent of those enrolled in singing classes?
+\n\n(A) 83%                          (B) 92%
+\n\n(C) 78%                          (D) 66%
+
+\n\n\n9.      What is the ratio of number of students enrolled in singing and Dancing classes together to those enrolled in Drama classes respectively?
+\n\n(A) 3 : 5                          (B) 4 : 7
+\n\n(C) 3 : 1                          (D) None of these
+"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="8dp"
+        android:background="#ffffff" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:textColor="#ffffff"
+        android:layout_marginTop="32dp"
+        android:textAlignment="center"
+        android:text="ANSWERS"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:textColor="#ffff00"
+        android:text="
+        \n\n\n1.    (b) :
+ \nAverage income = (30 + 50 + 40 + 60 + 60)/ 5= 48 lakhs
+\nTotal average Profit = [(30 -20) + (50 – 30) + (40 – 30) + ( 60 – 40) + (60 – 35)]/ 5
+ \n17 lakhs
+\nRatio = 48 : 17
+
+\n\n2.    (a) :
+\nThe profit in year 1982 = 30 – 20 = 10 lakhs
+\nThe profit in year 1986 = 60 – 35 = 25 lakhs
+\nIncrease in profit = 25 – 10 = 15 lakhs
+\nPercentage increase in profit = (15 x 100) / 10 = 150%
+
+\n\n3.    (a) :
+ \nTotal income = 30 + 50 + 40 + 60 + 60 = 240 lakhs
+\nTotal expenditure = 20 + 30 + 30 + 40 + 35 = 155 lakhs
+\nTotal income total expenditure = 240 – 155 = 85 lakhs
+
+\n\n4.    (c) :
+ \nThe profit in year 1983 = 50 – 30 = 20 lakhs
+\nProfit in the year 1984 = 40 – 30 = 10 lakhs
+\nDifference = 20 – 10 = 10 lakhs
+
+\n\n5.    (c) :
+\nThe average income of the given years
+ \n(30 + 50 + 40 + 60 + 60)/ 5 = 240 /5 = 48 lakhs
+\nThere are 3 years ( 1983, 1985, 1986) in which the income is more than the average of the given years.
+
+\n\n6.        (D)
+\nRequired number of students
+\n= (13 + 11) × 3600/100   = 864
+
+\n\n7.        (B)
+\nRequired number of students
+\n= 15 × 3600/100 = 540
+
+\n\n8.      (A)
+        \n15/18 × 100 = = 83.33 = 83% (Approx.)
+
+\n\n9.      (C)
+        \nRatio =(18 + 21)/ 13 =39/13= 3 : 1
+"/>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/image1"
+        tools:context="com.example.hp.above.AgeActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="#78909C"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="15dp"
+            android:text="SAMPLE PROBLEMS"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 1 :  A’s age after 15 years would be equal to 5 times his age 5 years ago. Find his age 3 years hence."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:textColor="#FFFF00"
+            android:text="\nSOLUTION"
+            android:id="@+id/solution_age1"
+            android:onClick="age_answers1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 2 :  The product of the ages of A and B is 240. If twice the age of B is more than A’s age by 4 years, what was B’s age 2 years ago?"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:textColor="#FFFF00"
+            android:text="\nSOLUTION"
+            android:id="@+id/solution_age2"
+            android:onClick="age_answers2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 3 :  The present age of a mother is 3 years more than three times the age of her daughter. Three years hence, mother’s age will be 10 years more than twice the age of the daughter. Find the present age of the mother."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:textColor="#FFFF00"
+            android:text="\nSOLUTION"
+            android:id="@+id/solution_age3"
+            android:onClick="age_answers3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 4 : The ratio of present ages of A and B is 6 : 7. Five years hence, this ratio would become 7 : 8. Find the present age of A and B."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_age4"
+            android:onClick="age_answers4"/>
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

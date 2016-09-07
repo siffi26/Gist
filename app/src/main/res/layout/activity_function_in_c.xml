@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="#455A64"
+        tools:context="com.example.hp.above.FunctionInCActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Functions in c"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nA function is a block of code that performs a particular task. There are times when we need to write a particular block of code for more than once in our program. This may lead to bugs and irritation for the programmer. C language provides an approach in which you need to declare and define a group of statements once and that can be called and used whenever required. This saves both time and space.
+\n
+\nC functions can be classified into two categories,
+\n
+"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n1. Library functions
+\n2. User-defined functions"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/functions1"
+            android:scaleType="fitCenter"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nLibrary functions are those functions which are defined by C library, example printf(), scanf(), strcat() etc. You just need to include appropriate header files to use these functions. These are already declared and defined in C libraries.
+\n
+\nUser-defined functions are those functions which are defined by the user at the time of writing program. Functions are made for code reusability and for saving time and space."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Benefits of Using Functions"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n1. It provides modularity to the program.
+\n2. Easy code Reuseability. You just have to call the function by its name to use it.
+\n3. In case of large programs with thousands of code lines, debugging and editing becomes easier if you use functions.
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Function declaration"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Like variable and an array, a function must also be declared before its called. A function declaration tells the compiler about a function name and how to call the function. The actual body of the function can be defined separately. A function declaration consist of 4 parts.
+\n
+\n1. return-type
+\n2. function name
+\n3. parameter list
+\n4. terminating semicolon
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Function definition Syntax"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/functions3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="return-type"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="return type specifies the type of value(int,float,char,double) that function is expected to return to the program calling the function.
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="function-name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="function name specifies the name of the function. The function name is any valid C identifier and therefore must follow the same rule of formation as other variables in C.
+        "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="parameter-list"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="The parameter list declares the variables that will receive the data sent by calling program. They often referred to as formal parameters. These parameters are also used to send values to calling program.
+        "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="function-body"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="The function body contains the declarations and the statement(algorithm) necessary for performing the required task. The body is enclosed within curly braces { } and consists of three parts.
+\n
+\n1. local variable declaration.
+\n2. function statement that performs the tasks of the function.
+\n3. a return statement that return the value evaluated by the function."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Functions and Arguments"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Arguments are the values specified during the function call, for which the formal parameters are declared in the function.
+        "/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/functions4"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Recursion"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Recursion is a special of nesting functions, where a function calls itself inside it. We must have certain condition to break out of the recursion, otherwise recursion is infinite.
+        "/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/functions5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Storage classes"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="In C language, each variable has a storage class which decides scope, visibility and lifetime of that variable. The following storage classes are most oftenly used in C programming,
+\n
+\n1. Automatic variables
+\n2. External variables
+\n3. Static variables
+\n4. Register variables
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Automatic variables"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="A variable declared inside a function without any storage class specification, is by default an automatic variable. They are created when a function is called and are destroyed automatically when the function exits. Automatic variables can also be called local variables because they are local to a function. By default they are assigned garbage value by the compiler.
+
+"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/storage1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="External or Global variable"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="A variable that is declared outside any function is a Global variable. Global variables remain available throughout the entire program. One important thing to remember about global variable is that their values can be changed by any function in the program.
+\n
+Here the global variable number is available to all three functions.
+"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/storage2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="extern keyword"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="The extern keyword is used before a variable to inform the compiler that this variable is declared somewhere else. The extern declaration does not allocate storage for variables.
+
+"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/storage3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Problem when extern is not used"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/storage4"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/storage5"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Static variables"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="A static variable tells the compiler to persist the variable until the end of program. Instead of creating and destroying a variable every time when it comes into and goes out of scope, static is initialized only once and remains into existence till the end of program. A static variable can either be internal or external depending upon the place of declaraction. Scope of internal static variable remains inside the function in which it is defined. External static variables remain restricted to scope of file in each they are declared.
+\n
+\nThey are assigned 0 (zero) as default value by the compiler.
+"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/storage6"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Register variable"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Register variable inform the compiler to store the variable in register instead of memory. Register variable has faster access than normal variable. Frequently used variables are kept in register. Only few variables can be placed inside register.
+\n
+\nNOTE : We can never get the address of such variables.
+\n
+\nSyntax :
+"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/storage7"/>
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/english"
+        tools:context="com.example.hp.above.EnglishActivity">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:gravity="center_horizontal"
+            android:textColor="#fafafa"
+            android:textStyle="bold"
+            android:text="PASSAGE/SENTENCE REARRANGEMENT"
+            android:id="@+id/sentence_rearrange"
+            android:onClick="opensentencerearrange"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:gravity="center_horizontal"
+            android:textColor="#fafafa"
+            android:textStyle="bold"
+            android:text="ERROR DETECTION AND CORRECTION"
+            android:id="@+id/error_detect_correct"
+            android:onClick="openerrordetect"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:gravity="center_horizontal"
+            android:textColor="#fafafa"
+            android:textStyle="bold"
+            android:text="FILL IN THE BLANKS"
+            android:id="@+id/fill_in_blanks"
+            android:onClick="openfillinblank"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:gravity="center_horizontal"
+            android:textColor="#fafafa"
+            android:textStyle="bold"
+            android:text="COMPREHENSION PASSAGES"
+            android:id="@+id/comprehension"
+            android:onClick="opencomprehension"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:gravity="center_horizontal"
+            android:textColor="#fafafa"
+            android:textStyle="bold"
+            android:text="IDIOMS"
+            android:id="@+id/idioms"
+            android:onClick="openidioms"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:gravity="center_horizontal"
+            android:textColor="#fafafa"
+            android:textStyle="bold"
+            android:text="ONE WORD SUBSTITUTE"
+            android:id="@+id/oneword"
+            android:onClick="openoneword"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+    </LinearLayout>
+</ScrollView>

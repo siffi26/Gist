@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/background1"
+        tools:context="com.example.hp.above.SqlViewActivity">
+
+
+
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:textColor="#B71C1C"
+            android:layout_marginTop="10dp"
+            android:text="SQL VIEWS"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nA view in SQL is a logical subset of data from one or more tables. View is used to restrict data access"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nSyntax for creating a View,
+
+\n\nCREATE or REPLACE view view_name AS
+\nSELECT column_name(s)
+\nFROM table_name
+\nWHERE condition;"/>
+
+
+
+        <ImageView
+            android:src="@drawable/viewsale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="fitXY"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nSQL View to Create View
+            \n\nExample:select * from First
+\nUNION
+\nselect * from second;"/>
+
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:textColor="#B71C1C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="\n\nDISPLAY View"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nSyntax of displaying a view
+
+\n\nSELECT * from sale_view;"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:textColor="#B71C1C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="\n\nUPDATE a View"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nUpdate command for view is same as for tables
+
+\n\nSyntax to Update a View:
+
+\n\nUPDATE view-name
+\nset value
+\nWHERE condition;"/>
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#00796b"
+    tools:context="com.example.hp.above.SubsetSumActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#009688"
+        android:text="Greedy Algorithms | Subset Sum Problem"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nGiven a set of non-negative integers, and a value sum, determine if there is a subset of the given set with sum equal to given sum.
+\n
+\nExamples: set[] = {3, 34, 4, 12, 5, 2}, sum = 9
+\nOutput:  True  //There is a subset (4, 5) with sum 9.
+\n
+\nLet isSubSetSum(int set[], int n, int sum) be the function to find whether there is a subset of set[] with sum equal to sum. n is the number of elements in set[].
+\n
+\nThe isSubsetSum problem can be divided into two subproblems
+\n…a) Include the last element, recur for n = n-1, sum = sum – set[n-1]
+\n…b) Exclude the last element, recur for n = n-1.
+\nIf any of the above the above subproblems return true, then return true.
+\n
+\nFollowing is the recursive formula for isSubsetSum() problem.
+\n
+"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n\nRead More..\n\n"
+        android:textColor="#ffffff"
+        android:onClick="subset_code"
+        android:id="@+id/subset_code"/>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#00796b"
+    tools:context="com.example.hp.above.BiconnectedComponentsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Graph | Biconnected Components"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="#009688"
+        android:textColor="#ffffff"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nAn undirected graph is called Biconnected if there are two vertex-disjoint paths between any two vertices. In a Biconnected Graph, there is a simple cycle through any two vertices.
+\n\nBy convention, two nodes connected by an edge form a biconnected graph, but this does not verify the above properties. For a graph with more than two vertices, the above properties must be there for it to be Biconnected.
+\n\n"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/biconnected1"
+        android:scaleType="fitCenter"
+        android:layout_margin="8dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/biconnected2"
+        android:scaleType="fitCenter"
+        android:layout_margin="8dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/biconnected3"
+        android:scaleType="fitCenter"
+        android:layout_margin="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nHow to find if a given graph is Biconnected or not?
+\n\nA connected graph is Biconnected if it is connected and doesn’t have any Articulation Point.
+\nA vertex in an undirected connected graph is an articulation point (or cut vertex) iff removing it (and edges through it) disconnects the graph.
+\n\nArticulation points represent vulnerabilities in a connected network – single points whose failure would split the network into 2 or more disconnected components. They are useful for designing reliable networks.
+\n\n"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/biconnected4"
+        android:scaleType="fitCenter"
+        android:layout_margin="8dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/biconnected5"
+        android:scaleType="fitCenter"
+        android:layout_margin="8dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/biconnected6"
+        android:scaleType="fitCenter"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nWe mainly need to check two things in a graph.
+\n\n1) The graph is connected.
+\n\n2) There is not articulation point in graph.
+\n
+\n\nWe start from any vertex and do DFS traversal. In DFS traversal, we check if there is any articulation point. If we don’t find any articulation point, then the graph is Biconnected. Finally, we need to check whether all vertices were reachable in DFS or not. If all vertices were not reachable, then the graph is not even connected.
+\n\nFollowing is C++ implementation of above approach."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nRead More..\n\n"
+        android:onClick="biconnected_code"
+        android:id="@+id/biconnected_code"/>
+
+</LinearLayout>
+</ScrollView>

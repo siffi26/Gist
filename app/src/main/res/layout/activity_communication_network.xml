@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/algo"
+        tools:context="com.example.hp.above.CommunicationNetworkActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_height="wrap_content"
+            android:text="Types of Communication Networks"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/communication1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Local Area Network (LAN)"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nIt is also called LAN and designed for small physical areas such as an office, group of buildings or a factory. LANs are used widely as it is easy to design and to troubleshoot. Personal computers and workstations are connected to each other through LANs. We can use different types of topologies through LAN, these are Star, Ring, Bus, Tree etc.
+\n
+\nLAN can be a simple network like connecting two computers, to share files and network among each other while it can also be as complex as interconnecting an entire building.
+\n
+\nLAN networks are also widely used to share resources like printers, shared hard-drive etc."/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/communication2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Applications of LAN"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n1. One of the computer in a network can become a server serving all the remaining computers called clients. Software can be stored on the server and it can be used by the remaining clients.
+\n\n2. Connecting Locally all the workstations in a building to let them communicate with each other locally without any internet access.
+\n\n3. Sharing common resources like printers etc are some common applications of LAN."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Metropolitan Area Network (MAN)"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nIt is basically a bigger version of LAN. It is also called MAN and uses the similar technology as LAN. It is designed to extend over the entire city. It can be means to connecting a number of LANs into a larger network or it can be a single cable. It is mainly hold and operated by single private company or a public company.
+        "/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/communication3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Wide Area Network (WAN)"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nIt is also called WAN. WAN can be private or it can be public leased network. It is used for the network that covers large distance such as cover states of a country. It is not easy to design and maintain. Communication medium used by WAN are PSTN or Satellite links. WAN operates on low data rates.
+        "/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/communication4"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Wireless Network"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nIt is the fastest growing segment of computer. They are becoming very important in our daily life because wind connections are not possible in cars or aeroplane. We can access Internet at any place avoiding wire related troubles.. These can be used also when the telephone systems gets destroyed due to some calamity/disaster. WANs are really important now-a-days.
+        "/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/communication5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Inter Network"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nWhen we connect two or more networks then they are called internetwork or internet. We can join two or more individual networks to form an internetwork through devices like routers gateways or bridges.
+        "/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/communication6"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Connection Oriented and Connectionless Services"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nThese are the two services given by the layers to layers above them. These services are :
+\n
+\n1. Connection Oriented Service
+\n2. Connectionless Services"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Connection Oriented Services"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nThere is a sequence of operation to be followed by the users of connection oriented service. These are :
+\n
+\n1. Connection is established
+\n2. Information is sent
+\n3. Connection is released
+\n\nIn connection oriented service we have to establish a connection before starting the communication. When connection is established we send the message or the information and then we release the connection.
+\n
+\nConnection oriented service is more reliable than connectionless service. We can send the message in connection oriented service if there is an error at the receivers end. Example of connection oriented is TCP (Transmission Control Protocol) protocol.
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Connection Less Services"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nIt is similar to the postal services, as it carries the full address where the message (letter) is to be carried. Each message is routed independently from source to destination. The order of message sent can be different from the order received.
+\n
+\nIn connectionless the data is transferred in one direction from source to destination without checking that destination is still there or not or if it prepared to accept the message. Authentication is not needed in this. Example of Connectionless service is UDP (User Datagram Protocol) protocol.
+\n
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Difference between Connection oriented service and Connectionless service"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n1. In connection oriented service authentication is needed while connectionless service does not need any authentication.
+\n\n2. Connection oriented protocol makes a connection and checks whether message is received or not and sends again if an error occurs connectionless service protocol does not guarantees a delivery.
+\n\n3. Connection oriented service is more reliable than connectionless service.
+\n\n4. Connection oriented service interface is stream based and connectionless is message based.
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Service Primitives"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nA service is specified by a set of primitives. A primitive means operation. To access the service a user process can access these primitives. These primitives are different for connection oriented service and connectionless service. There are five types of service primitives :
+
+\n\n1. LISTEN : When a server is ready to accept an incoming connection it executes the LISTEN primitive. It blocks waiting for an incoming connection.
+\n\n2. CONNECT : It connects the server by establishing a connection. Response is awaited.
+\n\n3. RECIEVE: Then the RECIEVE call blocks the server.
+\n\n4. SEND : Then the client executes SEND primitive to transmit its request followed by the execution of RECIEVE to get the reply. Send the message.
+\n\n5. DISCONNECT : This primitive is used for terminating the connection. After this primitive one can’t send any message. When the client sends DISCONNECT packet then the server also sends the DISCONNECT packet to acknowledge the client. When the server package is received by client then the process is terminated.
+
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Connection Oriented Service Primitives"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nThere are 4 types of primitives for Connection Oriented Service :
+"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/communication7"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Connectionless Oriented Service Primitives"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nThere are 4 types of primitives for Connectionless Oriented Service:
+"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/communication8"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Relationship of Services to Protocol"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Services"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nThese are the operations that a layer can provide to the layer above it. It defines the operation and states a layer is ready to perform but it does not specify anything about the implementation of these operations.
+        "/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/communication9"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Protocols"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nThese are set of rules that govern the format and meaning of frames, messages or packets that are exchanged between the server and client.
+        "/>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/background6"
+        tools:context="com.example.hp.above.AutoboxingActivity">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:text="Type Wrapper"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nJava uses primitive types such as int, double or float to hold the basic data types for the sake of performance. Despite the performance benefits offered by the primitive types, there are situation when you will need an object representation. For example, many data structures in Java operate on objects, so you cannot use primitive types with those data structures. To handle these situations Java provides type Wrappers which provide classes that encapsulate a primitive type within an object.
+
+\n1. Character : It encapsulates primitive type char within object.
+\n   Character (char ch)
+\n2. Boolean : It encapsulates primitive type boolean within object.
+\n   Boolean (boolean boolValue)
+\n3. Numeric type wrappers : It is the most commonly used type wrapper.
+\n   Byte  Short  Integer    Long   Float  Double"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:text="Autoboxing Unboxing"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\n* Autoboxing and Unboxing features was added in Java5.
+\n* Autoboxing is a process by which primitive type is automatically encapsulated(boxed) into its equivalent type wrapper
+\n* Auto-Unboxing is a process by which the value of object is automatically extracted from a type wrapper.
+
+"/>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#FFFFFF"
+            android:text="\n\nExample:"/>
+
+        <ImageView
+            android:src="@drawable/autoboxing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:text="Benefits"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\n1. Autoboxing / Unboxing lets us use primitive types and Wrapper class objects interchangeably.
+\n2. We don't have to perform Explicit typecasting.
+\n3. It helps prevent errors, but may lead to unexpected results sometimes. Hence must be used with care.
+"/>
+
+
+
+    </LinearLayout>
+</ScrollView>

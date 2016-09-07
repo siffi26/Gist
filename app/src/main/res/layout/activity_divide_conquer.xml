@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@drawable/algo"
+    tools:context="com.example.hp.above.DivideConquerActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:gravity="center_horizontal"
+        android:textColor="#fafafa"
+        android:text="Introduction"
+        android:id="@+id/intro_divide"
+        android:onClick="open_intro_divide"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FFFFFF"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:gravity="center_horizontal"
+        android:textColor="#fafafa"
+        android:text="Power Function"
+        android:id="@+id/power_function"
+        android:onClick="open_power_function"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FFFFFF"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:gravity="center_horizontal"
+        android:textColor="#fafafa"
+        android:text="Median of Two Arrays"
+        android:id="@+id/median_arrays"
+        android:onClick="open_median_arrays"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FFFFFF"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:gravity="center_horizontal"
+        android:textColor="#fafafa"
+        android:text="Strassen’s Matrix Multiplication"
+        android:id="@+id/strassens_multiplication"
+        android:onClick="open_strassens_multiplication"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FFFFFF"/>
+
+</LinearLayout>
+</ScrollView>

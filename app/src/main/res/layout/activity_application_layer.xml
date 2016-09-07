@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/algo"
+        tools:context="com.example.hp.above.ApplicationLayerActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_height="wrap_content"
+            android:text="Application Layer - OSI Model"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nIt is the top most layer of OSI Model. Manipulation of data (information) in various ways is done in this layer which enables user or software to get access to the network. Some services provided by this layer includes: E-Mail, transferring of files, distributing the results to user, directory services, network resource etc.
+"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/application1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="FUNCTIONS OF APPLICATION LAYER:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n1. Mail Services : This layer provides the basis for E-mail forwarding and storage.
+\n\n2. Network Virtual Terminal : It allows a user to log on to a remote host. The application creates software emulation of a terminal at the remote host. User’s computer talks to the software terminal which in turn talks to the host and vice versa. Then the remote host believes it is communicating with one of its own terminals and allows user to log on.
+\n\n3. Directory Services : This layer provides access for global information about various services.
+\n\n4. File Transfer, Access and Management (FTAM) : It is a standard mechanism to access files and manages it. Users can access files in a remote computer and manage it. They can also retrieve files from a remote computer.
+
+"/>
+
+    </LinearLayout>
+</ScrollView>

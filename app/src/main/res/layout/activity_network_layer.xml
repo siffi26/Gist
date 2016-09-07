@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/algo"
+        tools:context="com.example.hp.above.NetworkLayerActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Network Layer - OSI Model"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nThe main aim of this layer is to deliver packets from source to destination across multiple links (networks). If two computers (system) are connected on the same link then there is no need for a network layer. It routes the signal through different channels to the other end and acts as a network controller.
+\n
+\nIt also divides the outgoing messages into packets and to assemble incoming packets into messages for higher levels.
+\n
+"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/network1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="FUNCTIONS OF NETWORK LAYER:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n1. It translates logical network address into physical address. Concerned with circuit, message or packet switching.
+\n\n2. Routers and gateways operate in the network layer. Mechanism is provided by Network Layer for routing the packets to final destination.
+\n\n3. Connection services are provided including network layer flow control, network layer error control and packet sequence control.
+\n\n4. Breaks larger packets into small packets.
+
+"/>
+
+
+
+    </LinearLayout>
+</ScrollView>

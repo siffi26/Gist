@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/background1"
+        tools:context="com.example.hp.above.SqlFunctionsActivity">
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:textColor="#B71C1C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="FUNCTIONS"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:textColor="#B71C1C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Aggregate Functions"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n1) AVG()
+            \nAverage returns average value after calculating from values in a numeric column.
+
+\nIts general Syntax is,
+
+\nSELECT AVG(column_name) from table_name"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n2) COUNT()
+            \nCount returns the number of rows present in the table either based on some condition or without condition.
+
+\nIts general Syntax is,
+
+\nSELECT COUNT(column_name) from table-name;"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n3) MAX()
+            \nMAX function returns maximum value from selected column of the table.
+
+\nSyntax of MAX function is,
+
+\nSELECT MAX(column_name) from table-name;"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n4) MIN()
+            \nMIN function returns minimum value from a selected column of the table.
+
+\nSyntax for MIN function is,
+
+\nSELECT MIN(column_name) from table-name;"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n5) SUM()
+            \nSUM function returns total sum of a selected columns numeric values.
+
+\nSyntax for SUM is,
+
+\nSELECT SUM(column_name) from table-name;"/>
+
+
+    </LinearLayout>
+</ScrollView>

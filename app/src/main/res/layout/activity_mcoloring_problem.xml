@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#00796b"
+    tools:context="com.example.hp.above.MColoringProblemActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Backtracking | m Coloring Problem"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="#009688"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nGiven an undirected graph and a number m, determine if the graph can be colored with at most m colors such that no two adjacent vertices of the graph are colored with same color. Here coloring of a graph means assignment of colors to all vertices.
+\n
+\nInput:
+\n1) A 2D array graph[V][V] where V is the number of vertices in graph and graph[V][V] is adjacency matrix representation of the graph. A value graph[i][j] is 1 if there is a direct edge from i to j, otherwise graph[i][j] is 0.
+\n2) An integer m which is maximum number of colors that can be used.
+\n
+\nOutput:
+\nAn array color[V] that should have numbers from 1 to m. color[i] should represent the color assigned to the ith vertex. The code should also return false if the graph cannot be colored with m colors.
+\n
+\nFollowing is an example graph (from Wiki page ) that can be colored with 3 colors.\n\n"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mcolor1"
+        android:scaleType="fitCenter"
+        android:layout_margin="16dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nNaive Algorithm
+\nGenerate all possible configurations of colors and print a configuration that satisfies the given constraints.
+\n
+\nwhile there are untried conflagrations
+\n{
+\n   generate the next configuration
+\n   if no adjacent vertices are colored with same color
+\n   {
+\n      print this configuration;
+\n   }
+\n}
+\nThere will be V^m configurations of colors.
+\n
+\nBacktracking Algorithm
+\nThe idea is to assign colors one by one to different vertices, starting from the vertex 0. Before assigning a color, we check for safety by considering already assigned colors to the adjacent vertices. If we find a color assignment which is safe, we mark the color assignment as part of solution. If we do not a find color due to clashes then we backtrack and return false.
+\n
+\nImplementation of Backtracking solution"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n\nRead More..\n\n"
+        android:onClick="mcolor_code"
+        android:id="@+id/mcolor_code"
+        android:textColor="#ffffff"/>
+
+</LinearLayout>
+</ScrollView>

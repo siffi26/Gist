@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/background6"
+        tools:context="com.example.hp.above.MultithreadingActivity">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:text="Introduction to Multithreading"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nA program can be divided into a number of small processes. Each small process can be addressed as a single thread (a lightweight process). Multithreaded programs contain two or more threads that can run concurrently. This means that a single program can perform two or more tasks simultaneously. For example, one thread is writing content on a file at the same time another thread is performing spelling check.
+
+\nIn Java, the word thread means two different things.
+
+\n\nAn instance of Thread class.
+\nor, A thread of execution.
+\nAn instance of Thread class is just an object, like any other object in java. But a thread of execution means an individual ''lightweight'' process that has its own call stack. In java each thread has its own call stack."/>
+
+        <ImageView
+            android:src="@drawable/threadcallstack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:text="The main Thraed"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nEven if you don't create any thread in your program, a thread called main thread is still created. Although the main thread is automatically created, you can control it by obtaining a reference to it by calling currentThread() method.
+
+\nTwo important things to know about main thread are,
+
+\nIt is the thread from which other threads will be produced.
+\nmain thread must be always the last thread to finish execution.
+\nclass MainThread
+\n{
+\n public static void main(String[] args)
+\n {
+\n  Thread t=Thread.currentThread();
+\n  t.setName(''MainThread'');
+\n  System.out.println(''Name of thread is ''+t);
+\n }
+\n}
+\nOutput :
+
+\nName of thread is Thread[MainThread,5,main]
+
+"/>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:text="Lifecycle of Thread"/>
+
+        <ImageView
+            android:src="@drawable/threadlifecycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nNew : A thread begins its life cycle in the new state. It remains in this state until the start() method is called on it.
+\nRunable : After invocation of start() method on new thread, the thread becomes runable.
+\nRunning : A method is in running thread if the thread scheduler has selected it.
+\nWaiting : A thread is waiting for another thread to perform a task. In this stage the thread is still alive.
+\nTerminated : A thread enter the terminated state when it complete its task."/>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:background="#000033"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hp.above.HashingActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textStyle="bold"
+        android:background="#5C6BC0"
+        android:textColor="#ffffff"
+        android:text="HASHING"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:text="\n\nThe problem at hands is to speed up searching. Consider the problem of searching an array for a given value. If the array is not sorted, the search might require examining each and all elements of the array. If the array is sorted, we can use the binary search, and therefore reduce the worse-case runtime complexity to O(log n). We could search even faster if we know in advance the index at which that value is located in the array. Suppose we do have that magic function that would tell us the index for a given value.\n\n"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textStyle="bold"
+        android:background="#5C6BC0"
+        android:textColor="#ffffff"
+        android:text="HASH FUNCTION"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+    android:text="\n\nWith this magic function our search is reduced to just one probe, giving us a constant runtime O(1). Such a function is called a hash function .
+\n\nA hash function is a function which when given a key, generates an address in the table.\n\n"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#00e676"
+        android:text="\n\nA good hash function should have following properties
+\n\n1) Efficiently computable.
+\n\n2) Should uniformly distribute the keys (Each table position equally likely for each key)
+\n\nFor example for phone numbers a bad hash function is to take first three digits. A better function is consider last three digits. Please note that this may not be the best hash function. There may be better ways.
+\n\nHash Table: An array that stores pointers to records corresponding to a given phone number. An entry in hash table is NIL if no existing phone number has hash function value equal to the index for the entry.
+\n\nCollision Handling: Since a hash function gets us a small number for a big key, there is possibility that two keys result in same value. The situation where a newly inserted key maps to an already occupied slot in hash table is called collision and must be handled using some collision handling technique. Following are the ways to handle collisions:
+\n\nChaining:The idea is to make each cell of hash table point to a linked list of records that have same hash function value. Chaining is simple, but requires additional memory outside the table.
+\n\nOpen Addressing: In open addressing, all elements are stored in the hash table itself. Each table entry contains either a record or NIL. When searching for an element, we one by one examine table slots until the desired element is found or it is clear that the element is not in the table.
+\n\n"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\n\nCollisions
+\n\nWhen we put objects into a hashtable, it is possible that different objects (by the equals() method) might have the same hashcode. This is called a collision.\n\n"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#00e676"
+        android:text="\n\nHow to resolve collisions?
+\n\nWhere do we put the second and subsequent values that hash to this same location? There are several approaches in dealing with collisions. One of them is based on idea of putting the keys that collide in a linked list! A hash table then is an array of lists!! This technique is called a separate chaining collision resolution.
+\n\nThere are mainly two methods to handle collision:
+\n\n1) Separate Chaining
+\n\n2) Open Addressing
+\n\nLet us consider a simple hash function as “key mod 7” and sequence of keys as 50, 700, 76, 85, 92, 73, 101.\n\n"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/hash1"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#ffffff"
+        android:text="\n\nOpen Addressing:
+\n\nLike separate chaining, open addressing is a method for handling collisions. In Open Addressing, all elements are stored in the hash table itself. So at any point, size of table must be greater than or equal to total number of keys (Note that we can increase table size by copying old data if needed).
+\n\nInsert(k): Keep probing until an empty slot is found. Once an empty slot is found, insert k.
+\n\nSearch(k): Keep probing until slot’s key doesn’t become equal to k or an empty slot is reached.
+\n\nDelete(k): Delete operation is interesting. If we simply delete a key, then search may fail. So slots of deleted keys are marked specially as “deleted”.
+\n\nInsert can insert an item in a deleted slot, but search doesn’t stop at a deleted slot.
+\n\n\nOpen Addressing is done following ways:
+\n\na) Linear Probing: In linear probing, we linearly probe for next slot. For example, typical gap between two probes is 1 as
+taken in below example also.
+Let us consider a simple hash function as “key mod 7” and sequence of keys as 50, 700, 76, 85, 92, 73, 101.\n\n"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hash2"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#00e676"
+        android:text="\n\nClustering: The main problem with linear probing is clustering, many consecutive elements form groups and it starts taking time to find a free slot or to search an element.
+\n\n\nb) Quadratic Probing We look for i2‘th slot in i’th iteration.
+\n\n\nc) Double Hashing We use another hash function hash2(x) and look for i*hash2(x) slot in i’th rotation.\n\n"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#00e676"
+        android:text="Read More.."
+        android:onClick="hash_more"
+        android:id="@+id/hash_more"/>
+
+
+</LinearLayout>
+</ScrollView>

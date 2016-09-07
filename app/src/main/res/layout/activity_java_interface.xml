@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/background6"
+        tools:context="com.example.hp.above.JavaInterfaceActivity">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:text="Interface"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nInterface is a pure abstract class.They are syntactically similar to classes, but you cannot create instance of an Interface and their methods are declared without any body. Interface is used to achieve complete abstraction in Java. When you create an interface it defines what a class can do without saying anything about how the class will do it.
+
+\nSyntax :
+
+\ninterface interface_name { }
+"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:text="Difference between Abstract and Interface "/>
+
+
+
+
+
+        <ImageView
+            android:src="@drawable/differenceabstractinterface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:layout_marginTop="16dp"/>
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

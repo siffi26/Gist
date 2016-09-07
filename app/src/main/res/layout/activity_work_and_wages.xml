@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/image1"
+        tools:context="com.example.hp.above.WorkAndWagesActivity">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#78909C"
+            android:textColor="#FFFFFF"
+            android:text="WORK AND WAGES"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nIf a person can do a piece of work in ‘n’ days, then in one day, the person will do ‘1/n’ work. Conversely, if the person does ‘1/n’ work in one day, the person will require ‘n’ days to finish the work.
+\n\nIn questions where there is a comparison of work and efficiency, we use the formula
+\n\nM1 D1 H1 E1 / W1 = M2 D2 H2 E2 / W2, where
+\n\nM = Number of workers
+\n\nD = Number of days
+\n\nH = Number of working hours in a day
+\n\nE = Efficiency of workers
+\n\nW = Units of work
+\n\nIn case we have more than one type of workers, then the formula modifies to
+\n\n∑(Mi Ei) D1 H1 / W1 = ∑(Mj Ej) D2 H2 / W2, where ‘i’ and ‘j’ may vary as per the number of workers.
+\n\nIf a person A is ‘n’ times more efficient than person B, then
+\n\nRatio of work done by A and B in one day (Ratio of efficiencies) = n : 1
+\n\nRatio of time taken by A and B = 1 : n
+\n\nTotal work = No. of Days x Efficiency
+\n\nIf a group of people are given salary for a job they do together, their individual salaries are in the ratio of their individual efficiencies if they work for same number of days. Otherwise, salaries are divided in the ratio of units of work done.
+\n\nIn this topic, the way of attempting the questions is the deciding factor for getting accurate answer in less time.
+We shall try to cover all the types of questions asked in this topic with detailed explanation of way of attempting them."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Sample Problems"
+            android:layout_marginTop="8dp"
+            android:background="#78909C"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQuestion 1 : To complete a work, a person A takes 10 days and another person B takes 15 days.
+         If they work together, in how much time will they complete the work ?"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:textStyle="bold"
+            android:id="@+id/solution_workwages"
+            android:onClick="workwages_answers"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQuestion 2 : Two friends A and B working together can complete an assignment in 4 days. If A can do the assignment alone in 12 days, in how many days can B alone do the assignment ?"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:textStyle="bold"
+            android:id="@+id/solution_workwages1"
+            android:onClick="workwages_answers1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQuestion 3 : Three people A, B and C are working in a factory. A and B working together can finish a task in 18 days whereas B and C working together can do the same task in 24 days and A and C working together can do it in 36 days. In how many days will A, B and C finish the task working together and working separately?"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:textStyle="bold"
+            android:id="@+id/solution_workwages2"
+            android:onClick="workwages_answers2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQuestion 4 : Two friends A and B are employed to do a piece of work in 18 days. If A is twice as efficient as B, find the time taken by each friend to do the work alone."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:textStyle="bold"
+            android:id="@+id/solution_workwages3"
+            android:onClick="workwages_answers3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQuestion 5 : Two workers A and B are employed to do a cleanup work. A can clean the whole area in 800 days. He works for 100 days and leaves the work. B working alone finishes the remaining work in 350 days. If A and B would have worked for the whole time, how much time would it have taken to complete the work?"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:textStyle="bold"
+            android:id="@+id/solution_workwages4"
+            android:onClick="workwages_answers4"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQuestion 6 : Three workers A, B and C are given a job to paint a room. At the end of each day, they are given Rs. 800 collectively as wages. If A worked alone, the work would be completed in 6 days. If B worked alone, the work would be completed in 8 days.If C worked alone, the work would be completed in 24 days. Find their individual daily wages."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:textStyle="bold"
+            android:id="@+id/solution_workwages5"
+            android:onClick="workwages_answers5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQuestion 7 : A person A can do a piece of work in 9 days, whereas another person B can do the same piece of work in 12 days. Because of busy schedule, they decide to work one day alternately. If B is the first one to start, find the time required for the work to be completed. Consider that if a part of day is used, the whole day is to be counted."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:textStyle="bold"
+            android:id="@+id/solution_workwages6"
+            android:onClick="workwages_answers6"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQuestion 8 : 45 men can dig a canal in 16 days. Six days after they started working, 30 more men joined them. In how many more days will the remaining work be completed ?"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:textStyle="bold"
+            android:id="@+id/solution_workwages7"
+            android:onClick="workwages_answers7"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQuestion 9 : 2 Men and 3 Women working together can finish a job in 10 days. It takes 8 days to finish the same job if 3 Men and 2 Women are employed. If only 2 Men and 1 Woman are employed, find the time they would take to complete the job." />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:textStyle="bold"
+            android:id="@+id/solution_workwages8"
+            android:onClick="workwages_answers8"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQuestion 10 : To complete a job, A alone takes 2 more days than A and B together. B alone takes 18 more days than A and B together. Find the time taken if they work together." />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:textStyle="bold"
+            android:id="@+id/solution_workwages9"
+            android:onClick="workwages_answers9"/>
+
+
+
+    </LinearLayout>
+</ScrollView>

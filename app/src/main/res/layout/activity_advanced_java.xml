@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/java1"
+        tools:context="com.example.hp.above.AdvancedJavaActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:gravity="center_horizontal"
+            android:textColor="#fafafa"
+            android:text="String Handling"
+            android:id="@+id/java_string"
+            android:onClick="openjava_string"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:gravity="center_horizontal"
+            android:textColor="#fafafa"
+            android:text="Exception Handling"
+            android:id="@+id/java_exception"
+            android:onClick="openjava_exception"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:gravity="center_horizontal"
+            android:textColor="#fafafa"
+            android:text="Multithreading"
+            android:id="@+id/java_multithreading"
+            android:onClick="openjava_multithreading"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:gravity="center_horizontal"
+            android:textColor="#fafafa"
+            android:text="Synchronization"
+            android:id="@+id/java_synchronization"
+            android:onClick="openjava_synchronization"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:gravity="center_horizontal"
+            android:textColor="#fafafa"
+            android:text="Autoboxing and Unboxing"
+            android:id="@+id/java_autoboxing"
+            android:onClick="openjava_autoboxing"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>

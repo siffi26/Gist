@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#00796b"
+    tools:context="com.example.hp.above.HuffmanCodingActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Greedy Algorithms | Huffman Coding"
+        android:textColor="#ffffff"
+        android:background="#009688"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nHuffman coding is a lossless data compression algorithm.
+\n\nThe idea is to assign variable-legth codes to input characters, lengths of the assigned codes are based on the frequencies of corresponding characters.
+\n\nThe most frequent character gets the smallest code and the least frequent character gets the largest code.
+\n\nThe variable-length codes assigned to input characters are Prefix Codes, means the codes (bit sequences) are assigned in such a way that the code assigned to one character is not prefix of code assigned to any other character.
+\n\nThis is how Huffman Coding makes sure that there is no ambiguity when decoding the generated bit stream.
+\n\nLet us understand prefix codes with a counter example. Let there be four characters a, b, c and d, and their corresponding variable length codes be 00, 01, 0 and 1. This coding leads to ambiguity because code assigned to c is prefix of codes assigned to a and b.
+\n\nIf the compressed bit stream is 0001, the de-compressed output may be “cccd” or “ccb” or “acd” or “ab”.
+\n
+\n\nThere are mainly two major parts in Huffman Coding
+\n\n1) Build a Huffman Tree from input characters.
+\n\n2) Traverse the Huffman Tree and assign codes to characters.
+\n
+\n\nSteps to build Huffman Tree
+\n\nInput is array of unique characters along with their frequency of occurrences and output is Huffman Tree.
+\n
+\n\n1. Create a leaf node for each unique character and build a min heap of all leaf nodes (Min Heap is used as a priority queue. The value of frequency field is used to compare two nodes in min heap. Initially, the least frequent character is at root)
+
+\n\n2. Extract two nodes with the minimum frequency from the min heap.
+
+\n\n3. Create a new internal node with frequency equal to the sum of the two nodes frequencies. Make the first extracted node as its left child and the other extracted node as its right child. Add this node to the min heap.
+
+\n\n4. Repeat steps#2 and #3 until the heap contains only one node. The remaining node is the root node and the tree is complete.
+
+\n\n\nLet us understand the algorithm with an example:
+
+\n\ncharacter   Frequency
+\n
+\n    a	        5
+\n    b           9
+\n    c           12
+\n    d           13
+\n    e           16
+\n    f           45
+\n\nStep 1. Build a min heap that contains 6 nodes where each node represents root of a tree with single node.
+\n
+\n\nStep 2 Extract two minimum frequency nodes from min heap. Add a new internal node with frequency 5 + 9 = 14.\n\n"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/huffman1"
+        android:scaleType="fitXY"
+        android:layout_margin="8dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nNow min heap contains 5 nodes where 4 nodes are roots of trees with single element each, and one heap node is root of tree with 3 elements
+\n\n
+\ncharacter           Frequency
+\n       c               12
+\n       d               13
+\n Internal Node         14
+\n       e               16
+\n       f                45
+\n\nStep 3: Extract two minimum frequency nodes from heap. Add a new internal node with frequency 12 + 13 = 25\n\n"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/huffman2"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nNow min heap contains 4 nodes where 2 nodes are roots of trees with single element each, and two heap nodes are root of tree with more than one nodes.
+\n
+\ncharacter           Frequency
+\nInternal Node          14
+\n                 e               16
+\nInternal Node          25
+\n                 f               45
+\n\nStep 4: Extract two minimum frequency nodes. Add a new internal node with frequency 14 + 16 = 30\n\n"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/huffman3"
+        android:scaleType="fitXY"
+
+        android:layout_gravity="center"
+        android:layout_margin="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nNow min heap contains 3 nodes.
+\n\n
+\ncharacter          Frequency
+\nInternal Node         25
+\nInternal Node         30
+\n      f               45
+\n\nStep 5: Extract two minimum frequency nodes. Add a new internal node with frequency 25 + 30 = 55\n\n"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/huffman4"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nNow min heap contains 2 nodes.
+\n\n
+\ncharacter     Frequency
+\n       f         45
+\nInternal Node    55
+\n\nStep 6: Extract two minimum frequency nodes. Add a new internal node with frequency 45 + 55 = 100\n\n"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/huffman5"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nNow min heap contains only one node.
+\n\n
+\n\ncharacter      Frequency
+\n\nInternal Node    100
+\n\nSince the heap contains only one node, the algorithm stops here.
+\n\n
+\n\nSteps to print codes from Huffman Tree:
+\n\nTraverse the tree formed starting from the root. Maintain an auxiliary array. While moving to the left child, write 0 to the array. While moving to the right child, write 1 to the array. Print the array when a leaf node is encountered.
+\n\n"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/huffman6"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nThe codes are as follows:
+\n\n
+\ncharacter   code-word
+\n    f          0
+\n    c          100
+\n    d          101
+\n    a          1100
+\n    b          1101
+\n    e          111\n\n"/>
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read More.."
+        android:textColor="#ffffff"
+        android:onClick="huffman_code"
+        android:id="@+id/huffman_code"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+</LinearLayout>
+</ScrollView>

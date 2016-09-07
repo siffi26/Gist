@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#00796b"
+    tools:context="com.example.hp.above.KnapsackTwoActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Branch and Bound | Implementation of 0/1 Knapsack"
+        android:textSize="20sp"
+        android:background="#009688"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nWe discussed different approaches to solve above problem and saw that the Branch and Bound solution is the best suited method when item weights are not integers.
+\n
+\nIn this post implementation of Branch and Bound method for 0/1 knapsack problem is discussed.
+\n
+\nHow to find bound for every node for 0/1 Knapsack?
+\nThe idea is to use the fact that the Greedy approach provides the best solution for Fractional Knapsack problem. So if we compute the solution assuming that fractions are allowed, we can get a bound using Greedy approach.
+\n
+\nComplete Algorithm:
+\n
+\nSort all items in decreasing order of ratio of value per unit weight so that an upper bound can be computed using Greedy Approach.
+\nInitialize maximum profit, maxProfit = 0
+\nCreate an empty queue, Q.
+\nCreate a dummy node of decision tree and enqueue it to Q. Profit and weight of dummy node are 0.
+\nDo following while Q is not empty.
+\nExtract an item from Q. Let the extracted item be u.
+\nCompute profit of next level node. If the profit is more than maxProfit, then update maxProfit.
+\nCompute bound of next level node. If bound is more than maxProfit, then add next level node to Q.
+\nConsider the case when next level node is not considered as part of solution and add a node to queue with level as next, but weight and profit without considering next level nodes.
+\n\nIllustration:
+\n
+\nInput:
+\n// First thing in every pair is weight of item
+\n// and second thing is value of item
+\n\nItem arr[] = {{2, 40}, {3.14, 50}, {1.98, 100},{5, 95}, {3, 30}};
+\nKnapsack Capacity W = 10
+\n
+\nOutput:
+\nThe maximum possible profit = 235
+\n"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/knapsacktwo1"
+        android:scaleType="fitCenter"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nAbove diagram shows illustration. Items are considered sorted by value/weight."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n\nRead More..\n\n"
+        android:textColor="#ffffff"
+        android:onClick="knapsacktwo_code"
+        android:id="@+id/knapsacktwo_code"/>
+
+</LinearLayout>
+</ScrollView>

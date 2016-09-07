@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#00796b"
+    tools:context="com.example.hp.above.NaiveActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Searching for Patterns | Naive Pattern Searching"
+        android:textSize="20sp"
+        android:background="#009688"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nGiven a text txt(0..n-1) and a pattern pat(0..m-1), write a function search(char pat[], char txt[]) that prints all occurrences of pat[] in txt[]. You may assume that n > m.
+\n
+\nExamples:
+\n1) Input:
+\n
+\n  txt =  'THIS IS A TEST TEXT'
+\n  pat = 'TEST'
+\n\nOutput:
+\n
+\nPattern found at index 10
+\n\n2) Input:
+\n
+\n  txt() =  'AABAACAADAABAAABAA'
+\n  pat() = 'AABA'
+\n\nOutput:
+\n
+\n  Pattern found at index 0
+\n  Pattern found at index 9
+\n  Pattern found at index 13
+\n\n
+\n\nNaive Pattern Searching:
+\n\nSlide the pattern over text one by one and check for a match. If a match is found, then slides by 1 again to check for subsequent matches.
+\n\n
+"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nRead More..\n\n"
+        android:onClick="naive_code"
+        android:id="@+id/naive_code"/>
+
+</LinearLayout>
+</ScrollView>

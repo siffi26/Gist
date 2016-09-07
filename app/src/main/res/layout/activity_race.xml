@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/image1"
+        tools:context="com.example.hp.above.RaceActivity">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONCEPT"
+            android:background="#78909C"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nWhen 2 or more people compete to reach a certain point, they are said to be participating in a race.
+\n\nStart : If one person gives a start to another person, it means that the second person has to run less than the first person. For example, if A gives a start of 40 m to B in 100 m race, it means that A will run for 100 m but B will run for 100 – 40 = 60 m."/>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:text="SAMPLE PROBLEMS"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 1 :  In a 100 m race, A beats B by 28 metres. Also, at the finish line, A was 7 seconds ahead of B. Find the time taken by A to complete the race"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_race1"
+            android:onClick="race_answers1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 2 :   In a 100 m race, A can give a start of 4 m to B and 6.4 m to C. How much start can B give to C ?"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_race2"
+            android:onClick="race_answers2"/>
+
+    </LinearLayout>
+</ScrollView>

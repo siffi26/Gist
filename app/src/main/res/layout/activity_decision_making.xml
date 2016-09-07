@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#455a64"
+    tools:context="com.example.hp.above.DecisionMakingActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="Decision making in C"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nDecision making is about deciding the order of execution of statements based on certain conditions or repeat a group of statements until certain specified conditions are met. C language handles decision-making by supporting the following statements,
+\n
+\n1. if statement
+\n2. switch statement
+\n3. conditional operator statement
+\n4. goto statement"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="Decision making with if statement"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nThe if statement may be implemented in different forms depending on the complexity of conditions to be tested. The different forms are,
+\n
+\n1. Simple if statement
+\n2. If....else statement
+\n3. Nested if....else statement
+\n4. else if statement"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="Simple if statement"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="If the expression is true, then 'statement-inside' it will be executed, otherwise 'statement-inside' is skipped and only 'statement-outside' is executed.
+        "/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/decision1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="if...else statement"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="If the 'expression' is true, the 'statement-block1' is executed, else 'statement-block1' is skipped and 'statement-block2' is executed.
+        "/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/decision2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="Nested if....else statement"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="If the expression is true, then 'statement-inside' it will be executed, otherwise 'statement-inside' is skipped and only 'statement-outside' is executed.
+        "/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nif 'expression' is false the 'statement-block3' will be executed, otherwise it continues to perform the test for 'expression 1' . If the 'expression 1' is true the 'statement-block1' is executed otherwise 'statement-block2' is executed.
+        "/>
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/decision3"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="else-if ladder"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="The general form of else-if ladder is,"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/decision4"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="Points to Remember"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n1. In if statement, a single statement can be included without enclosing it into curly braces { }"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/decision5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="No curly braces are required in the above case, but if we have more than one statement inside if condition, then we must enclose them inside curly braces.
+\n
+\n\n2. == must be used for comparison in the expression of if condition, if you use = the expression will always return true, because it performs assignment not comparison.
+\n\n3. Other than 0(zero), all other values are considered as true."/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/decision6"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="In above example, hello will be printed."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="Switch statement"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nSwitch statement is used to solve multiple option type problems for menu like program, where one value is associated with each option. The expression in switch case evaluates to return an integral value, which is then compared to the values in different cases, where it matches that block of code is executed, if there is no match, then default block is executed. The general form of switch statement is,
+        "/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/switch1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="Points to Remember"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n1. We don't use those expressions to evaluate switch case, which may return floating point values or strings.
+\n
+\n2. It isn't necessary to use break after each block, but if you do not use it, all the consecutive block of codes will get executed after the matching block.
+"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/switch2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="The output was supposed to be only A because only the first case matches, but as there is no break statement after the block, the next blocks are executed, until the cursor encounters a break.
+\n
+\n3. default case can be placed anywhere in the switch case. Even if we don't include the default case switch statement works."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="How to use Loops in C Lanugage"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nIn any programming language, loops are used to execute a set of statements repeatedly until a particular condition is satisfied.
+        "/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="How it Works"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loop1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nA sequence of statements are executed until a specified condition is true. This sequence of statements to be executed is kept inside the curly braces { } known as the Loop body. After every execution of loop body, condition is verified, and if it is found to be true the loop body is executed again. When the condition check returns false, the loop body is not executed.
+        "/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="There are 3 type of Loops in C language"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n1. while loop
+\n2. for loop
+\n3. do-while loop"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="while loop"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nwhile loop can be addressed as an entry control loop. It is completed in 3 steps.
+\n
+\n1. Variable initialization.( e.g int x=0; )
+\n2. condition( e.g while( x is less than or equal to 10) )
+\n3. Variable increment or decrement ( x++ or x-- or x=x+2 )
+"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loop2"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loop3"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="for loop"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nfor loop is used to execute a set of statements repeatedly until a particular condition is satisfied. we can say it an open ended loop. General format is,
+
+"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loop4"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="In for loop we have exactly two semicolons, one after initialization and second after condition. In this loop we can have more than one initialization or increment/decrement, separated using comma operator. for loop can have only one condition.
+        "/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loop5"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="Nested for loop"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nWe can also have nested for loops, i.e one for loop inside another for loop. Basic syntax is,
+"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loop6"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loop7"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="do while loop"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nIn some situations it is necessary to execute body of the loop before testing the condition. Such situations can be handled with the help of do-while loop. do statement evaluates the body of the loop first and at the end, the condition is checked using while statement. General format of do-while loop is,
+        "/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loop8"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loop9"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="Jumping Out of Loops"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nSometimes, while executing a loop, it becomes necessary to skip a part of the loop or to leave the loop as soon as certain condition becomes true, that is called jumping out of loop. C language allows jumping from one statement to another within a loop as well as jumping out of the loop.
+        "/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="1) break statement"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nWhen break statement is encountered inside a loop, the loop is immediately exited and the program continues with the statement immediately following the loop.
+        "/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/break1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="2) continue statement"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nIt causes the control to go directly to the test-condition and then continue the loop process. On encountering continue, cursor leave the current cycle of loop, and starts with the next cycle.
+        "/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/continue1"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+</ScrollView>

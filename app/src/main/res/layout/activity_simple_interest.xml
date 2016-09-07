@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/image1"
+        tools:context="com.example.hp.above.SimpleInterestActivity">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONCEPT"
+            android:background="#78909C"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nThe amount which is lent / deposited is called Principal
+\nThe money that the principal generates is called Interest. This is the money generated as a result of borrowing/lending.
+\n\nSimple Interest is the interest calculated on the Principal amount, rather than being calculated on cumulative amount.
+\nSimple Interest, SI = P x R x T / 100, where P is the principal, R is the rate of interest per unit time period and T is the time period.
+\nFinal Amount = Principal + SI"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:text="SAMPLE PROBLEMS"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 1 : A sum of money amounts to Rs. 28,000 in 2 years at 20 % simple interest per annum. Find the sum."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_si1"
+            android:onClick="si_answers1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 2 :  A man borrowed a certain sum of money at the rate of 6 % per annum for the first two years , 9% per annum for the next three years, and 14% per annum for the period beyond 5 years. If he pays a total interest of Rs. 22,800 at the end of 9 years, find the amount he borrowed"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_si2"
+            android:onClick="si_answers2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 3 : At what annual rate of interest will a sum of money be thrice in 10 years?"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_si3"
+            android:onClick="si_answers3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 4 : The simple interest on a sum of money in 5 years at 12 % per annum is Rs. 400 less than the simple interest accrued on the same sum in 7 years at 10 % per annum. Find the sum."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_si4"
+            android:onClick="si_answers4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 5 :  A sum of Rs. 1000 was lent to two people, one at the rate of 5 % and other at the rate of 8 %. If the simple interest after one year is Rs. 62, find the sum lent at each rate."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_si5"
+            android:onClick="si_answers5"/>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

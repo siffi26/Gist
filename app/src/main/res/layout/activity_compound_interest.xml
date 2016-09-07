@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/image1"
+        tools:context="com.example.hp.above.CompoundInterestActivity">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONCEPT"
+            android:background="#78909C"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nCompound Interest is the interest calculated on the cumulative amount, rather than being calculated on the principal amount only.
+*Amount, A = P [1 + (R / 100)]n, where P is the principal, R is the rate of interest per unit time period and n is the time period.
+*Compound Interest, CI = Amount – Principal
+*If compounding period is not annual, rate of interest is divided in accordance with the compounding period.
+*If interest is compounded daily, rate of interest = R / 365
+*If interest is compounded monthly, rate of interest = R / 12
+*If interest is compounded half yearly, rate of interest = R / 2
+*When rate of interest is different for different years, say R1, R2, R3 and so on, the amount is calculated as A = P [1 + (R1 / 100)] [1 + (R2 / 100)] [1 + (R3 / 100)] …"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:text="SAMPLE PROBLEMS"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 1 :Find the compound interest on Rs. 10,000 at 10% per annum for a time period of three and a half years"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_ci1"
+            android:onClick="ci_answers1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 2 :  The difference between the SI and CI on a certain sum of money at 10 % rate of annual interest for 2 years is Rs. 549. Find the sum"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_ci2"
+            android:onClick="ci_answers2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 3 : A sum of Rs. 1000 is to be divided among two brothers such that if the interest being compounded annually is 5 % per annum, then the money with the first brother after 4 years is equal to the money with the second brother after 6 years."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_ci3"
+            android:onClick="ci_answers3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 4 : The simple interest on a sum of money in 5 years at 12 % per annum is Rs. 400 less than the simple interest accrued on the same sum in 7 years at 10 % per annum. Find the sum."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_ci4"
+            android:onClick="ci_answers4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 5 :  A sum of money amounts to Rs. 669 after 3 years and to Rs. 1003.50 after 6 years on compound interest. Find the sum."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_ci5"
+            android:onClick="ci_answers5"/>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/background6"
+        tools:context="com.example.hp.above.StringHandlingActivity">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:text="Introduction to String Handling"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nString is probably the most commonly used class in java library. String class is encapsulated under java.lang package. In java, every string that you create is actually an object of type String. One important thing to notice about string object is that string objects are immutable that means once a string object is created it cannot be altered."/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:text="What is immutable object?"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nAn object whose state cannot be changed after it is created is known as an Immutable object. String, Integer, Byte, Short, Float, Double and all other wrapper class's objects are immutable.
+
+"/>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:text="Creating String Object"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nString can be created in number of ways, here are a few ways of creating string object.
+
+\n1) Using a String literal
+
+\nString literal is a simple string enclosed in double quotes. A string literal is treated as a String object.
+
+\n        String str1 = ''Hello'';
+
+\n2) Using another String object
+
+\n        String str2 = new String(str1);
+
+\n3) Using new Keyword
+
+\n        String str3 = new String(''Java'');
+
+\n4) Using + operator (Concatenation)
+
+\nString str4 = str1 + str2;
+  \n      or,
+   \n     String str5 = ''hello''+''Java'';
+
+   \n     Each time you create a String literal, the JVM checks the string pool first. If the string literal already exists in the pool, a reference to the pool instance is returned. If string does not exist in the pool, a new string object is created, and is placed in the pool."/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:text="Concatenate String"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nThere are 2 methods to concatenate two or more string.
+
+\n1) Using concat() method
+\n2) Using + operator"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:text="\n1) Concatenate method()
+
+\nstring s = ''Hello'';
+\nstring str = ''Java'';
+\nstring str2 = s.concat(str);
+\nString str1 = ''Hello''.concat(''Java'');    //works with string literals too.
+"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:text="\n2) Using + operator
+
+\nstring str = ''Rahul'';
+\nstring str1 = ''Dravid'';
+\nstring str2 = str + str1;
+\nstring st = ''Rahul''+''Dravid'';
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:text="String Comparison"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nString comparison can be done in 3 ways.
+
+\n1) Using equals() method
+\n2) Using == operator
+\n3) By CompareTo() method
+"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:text="\n1) Using equals() method"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\nequals() method compares two strings for equality. Its general syntax is,
+
+\nboolean equals (Object str)
+\nIt compares the content of the strings. It will return true if string matches, else returns false.
+
+\nString s = ''Hell'';
+\nString s1 = ''Hello'';
+\nString s2 = ''Hello'';
+\ns1.equals(s2);    //true
+\ns.equals(s1) ;   //false
+"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:text="\n2)Using == operator"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n== operator compares two object references to check whether they refer to same instance. This also, will return true on successful match.
+
+\nString s1 = ''Java'';
+\nString s2 = ''Java'';
+\nString s3 = new string (''Java'');
+\ntest(Sl == s2)     //true
+\ntest(s1 == s3)      //false
+
+"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:text="\n3) By compareTo() method"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\ncompareTo() method compares values and returns an int which tells if the string compared is less than, equal to or greater than th other string. Its general syntax is,
+
+\nint compareTo(String str)
+\nTo use this function you must implement the Comparable Interface. compareTo() is the only function in Comparable Interface.
+
+\nString s1 = ''Abhi'';
+\nString s2 = ''Viraaj'';
+\nString s3 = ''Abhi'';
+\ns1.compareTo(S2);     //return -1 because s1 greater than s2
+\ns1.compareTo(S3);     //return 0 because s1 == s3
+\ns2.compareTo(s1);     //return 1 because s2 smaller than s1
+"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

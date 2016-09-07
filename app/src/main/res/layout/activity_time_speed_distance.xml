@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/image1"
+        tools:context="com.example.hp.above.TimeSpeedDistanceActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONCEPT"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nDistance = Speed x Time"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text=" \nTo convert km / hour to m / sec, we multiply by 5 / 18
+        \ni.e. 1km/hr=5/18 m/sec"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nFor a certain distance,
+            \nif the ratio of speeds is x : y
+            \nthen the ratio of times= y : x  "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nIf a person covers a certain 'same' distance multiple times with different speeds
+             \nthen  Average speed = n / ∑ (1/si),
+             \nwhere n=number of times the distance is covered
+si=respective speeds of covering the distance. "/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="12dp"
+            android:text="RELATIVE SPEED  "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n1)Objects moving in same direction with speeds x km / h and y km / h (x > y), then relative speed=(x – y) km / h
+\n2)Objects moving in opposite direction, then their relative speed=(x + y) km / h   "/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="4dp"
+            android:background="#FFFFFF"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:text="SAMPLE PROBLEMS"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 1 : A postman traveled from his post office to a village in order to distribute mails. He started on his bicycle from the post office at the speed of 25 km / hr. But, when he was about to return, a thief stole his bicycle. As a result, he had to walk back to the post office on foot at the speed of 4 km / hr. If the traveling part of his day lasted for 2 hours and 54 minutes, find the distance between the post office and the village."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_tds1"
+            android:onClick="tds_answers1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 2 : Walking at the speed of 5 km / hr from his home, a geek misses his train by 7 minutes. Had he walked 1 km / hr faster, he would have reached the station 5 minutes before the actual departure time of the train. Find the distance between his home and the station"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_tds2"
+            android:onClick="tds_answers2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 3 : Two stations B and M are 465 km distant. A train starts from B towards M at 10 AM with the speed 65 km / hr. Another train leaves from M towards B at 11 AM with the speed 35 km / hr. Find the time when both the trains meet"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_tds3"
+            android:onClick="tds_answers3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 4 : A policeman sighted a robber from a distance of 300 m. The robber also noticed the policeman and started running at 8 km / hr. The policeman also started running after him at the speed of 10 km / hr. Find the distance that the robber would run before being caught"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_tds4"
+            android:onClick="tds_answers4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 5 : To cover a certain distance, a geek had two options, either to ride a horse or to walk. If he walked one side and rode back the other side, it would have taken 4 hours. If he had walked both ways, it would have taken 6 hours. How much time will he take if he rode the horse both ways ?"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_tds5"
+            android:onClick="tds_answers5"/>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="#455A64"
+        tools:context="com.example.hp.above.PointerCActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:text="Introduction to Pointers"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nPointers are variables that hold address of another variable of same data type.
+\n
+\nPointers are one of the most distinct and exciting features of C language. It provides power and flexibility to the language. Although pointer may appear little confusing and complicated in the beginning, but trust me its a powerful tool and handy to use once its mastered.
+"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Benefit of using pointers"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n1. Pointers are more efficient in handling Array and Structure.
+\n2. Pointer allows references to function and thereby helps in passing of function as arguments to other function.
+\n3. It reduces length and the program execution time.
+\n4. It allows C to support dynamic memory management."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Concept of Pointer"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nWhenever a variable is declared, system will allocate a location to that variable in the memory, to hold value. This location will have its own address number.
+\n
+\nLet us assume that system has allocated memory location 80F for a variable a."/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pointer1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="We can access the value 10 by either using the variable name a or the address 80F. Since the memory addresses are simply numbers they can be assigned to some other variable. The variable that holds memory address are called pointer variables. A pointer variable is therefore nothing but a variable that contains an address, which is a location of another variable. Value of pointer variable will be stored in another memory location."/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pointer2"/>
+
+    </LinearLayout>
+</ScrollView>

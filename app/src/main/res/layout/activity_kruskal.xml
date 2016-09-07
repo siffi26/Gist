@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#00796b"
+    tools:context="com.example.hp.above.KruskalActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#009688"
+        android:text="Greedy Algorithms | Kruskal’s Minimum Spanning Tree Algorithm"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nWhat is Minimum Spanning Tree?
+\n
+\nGiven a connected and undirected graph, a spanning tree of that graph is a subgraph that is a tree and connects all the vertices together.
+\n\nA single graph can have many different spanning trees.
+\n\nA minimum spanning tree (MST) or minimum weight spanning tree for a weighted, connected and undirected graph is a spanning tree with weight less than or equal to the weight of every other spanning tree.
+\n\nThe weight of a spanning tree is the sum of weights given to each edge of the spanning tree.
+\n
+\n\nHow many edges does a minimum spanning tree has?
+\n\nA minimum spanning tree has (V – 1) edges where V is the number of vertices in the given graph.
+\n
+
+\nBelow are the steps for finding MST using Kruskal’s algorithm
+\n
+\n1. Sort all the edges in non-decreasing order of their weight.
+\n
+\n2. Pick the smallest edge. Check if it forms a cycle with the spanning tree formed so far. If cycle is not formed, include this edge. Else, discard it.
+\n
+\n3. Repeat step#2 until there are (V-1) edges in the spanning tree.
+\n
+\nThe algorithm is a Greedy Algorithm. The Greedy Choice is to pick the smallest weight edge that does not cause a cycle in the MST constructed so far. Let us understand it with an example: Consider the below input graph.\n\n
+"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kruskal1"
+        android:layout_margin="8dp"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nThe graph contains 9 vertices and 14 edges. So, the minimum spanning tree formed will be having (9 – 1) = 8 edges.
+\n
+\n\nAfter sorting:
+\n\nWeight   Src    Dest
+\n1         7      6
+\n2         8      2
+\n2         6      5
+\n4         0      1
+\n4         2      5
+\n6         8      6
+\n7         2      3
+\n7         7      8
+\n8         0      7
+\n8         1      2
+\n9         3      4
+\n10        5      4
+\n11        1      7
+\n14        3      5
+\n\n\nNow pick all edges one by one from sorted list of edges
+\n\n1. Pick edge 7-6: No cycle is formed, include it.\n\n"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kruskal2"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\n2. Pick edge 8-2: No cycle is formed, include it.\n\n"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kruskal3"
+        android:scaleType="fitCenter"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\n3. Pick edge 6-5: No cycle is formed, include it.\n\n"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kruskal4"
+        android:scaleType="fitCenter"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\n4. Pick edge 0-1: No cycle is formed, include it.\n\n"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kruskal5"
+        android:scaleType="fitCenter"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\n5. Pick edge 2-5: No cycle is formed, include it.\n\n"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kruskal6"
+        android:scaleType="fitCenter"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\n6. Pick edge 8-6: Since including this edge results in cycle, discard it.
+\n
+\n\n7. Pick edge 2-3: No cycle is formed, include it.\n\n"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kruskal7"
+        android:scaleType="fitCenter"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\n8. Pick edge 7-8: Since including this edge results in cycle, discard it.
+\n
+\n\n9. Pick edge 0-7: No cycle is formed, include it."/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kruskal8"
+        android:scaleType="fitCenter"
+        android:layout_margin="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\n10. Pick edge 1-2: Since including this edge results in cycle, discard it.
+\n
+\n\n11. Pick edge 3-4: No cycle is formed, include it."/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kruskal9"
+        android:scaleType="fitCenter"
+        android:layout_margin="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nSince the number of edges included equals (V – 1), the algorithm stops here.\n\n"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Read More.."
+        android:textColor="#ffffff"
+        android:onClick="kruskal_code"
+        android:id="@+id/kruskal_code"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"/>
+
+
+
+
+</LinearLayout>
+</ScrollView>

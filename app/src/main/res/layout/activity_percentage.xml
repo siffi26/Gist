@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/image1"
+        tools:context="com.example.hp.above.PercentageActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONCEPT"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nPercentage means per 100, i.e., p% means p / 100"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nExpenditure = Price x Consumption
+\n1) If price of an article increases by P %, the necessary reduction in consumption to avoid increase in expenditure = [( P / (100 + P) ) x 100] %
+\n2) If price of an article decreases by P %, the necessary increase in consumption to keep the same expenditure = [( P / (100 – P) ) x 100] %"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nPopulation : If the population of a group/community/country/place(etc.) is currently P and if it increases by R % every year, then :
+\n1) Population after ‘n’ years = P x [1 + (R / 100)]n
+\n2) Population before ‘n’ years = P / [1 + (R / 100)]n"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nDepreciation : If the price (or value) of an article is currently P and if it depreciates by R % every year, then:
+\n1) Price after ‘n’ years = P x [1 – (R / 100)]n
+\n2) Price before ‘n’ years = P / [1 – (R / 100)]n"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nx % of y and y % of x are same. For example, 10 % of 100 and 100 % of 10 are same
+\n\nA successive increase of a% and b% is equivalent to a net increase of a + b – ((a x b) / 100) %
+\n\nA successive decrease of a% and b% is equivalent to a net decrease of a + b – ((a x b) / 100) %
+\n\nA successive increase of a% and decrease of b% is equivalent to a net change of a – b + ((a x b) / 100) %
+\n\nA successive decrease of a% and increase of b% is equivalent to a net change of b – a + ((a x b) / 100) %
+\n\nAn increase by n % and a successive decrease by n % is equal to an equivalent decrease of (n/10)2 %. "/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="4dp"
+            android:background="#FFFFFF"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:text="SAMPLE PROBLEMS"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 1 : A defect finding machine rejects 0.085% of all the cricket bats. Find the number of bats manufactured on a particular day if it is given that on that day, the machine rejected only 34 bats"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_p1"
+            android:onClick="p_answers1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 2 :  25 % of a number is 8 less than one third of that number. Find the number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_p2"
+            android:onClick="p_answers2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 3 :  In a gaming event, 75 % of the registered participants actually turned up. Out of those, 2 % were declared unfit for participation. The winner defeated 9261 participants which is 75 % of the total valid participations. Find the number of registered participants"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_p3"
+            android:onClick="p_answers3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 4 :  A geek gave 40% of his retirement money to his wife. He also gave 20 % of the remaining amount to each of his 3 sons. 50 % of the amount now left was spent on miscellaneous items and the remaining amount of Rs. 1,20,000 was deposited in the bank. How much money did the geek got as the retirement money?"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:textColor="#FFFF00"
+            android:text="\nSOLUTION"
+            android:id="@+id/solution_p4"
+            android:onClick="p_answers4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 5 : The price of a commodity increased by 25 %. By what percent should the consumption be reduced so as to keep the expenditure same ?"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_p5"
+            android:onClick="p_answers5"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 6 : The value of a car is Rs 1,60,000 in the current year. If it depreciates at the rate of 5% per annum, what will be the value of the car 3 years from now ?"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_p6"
+            android:onClick="p_answers6"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 7 :  How much sugar (in KG) must be added to 50 KG of a 2 % sugar solution so as to make the concentration 10 % ?"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_p7"
+            android:onClick="p_answers7"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 8 :  In an examination , 80% of the students passed in English , 85% in Mathematics and 75% in both English and Mathematics. If 40 students failed in both the subjects, find the total number of students who appeared in the examination"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_p8"
+            android:onClick="p_answers8"/>
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

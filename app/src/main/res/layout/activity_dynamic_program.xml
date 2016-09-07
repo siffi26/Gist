@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/algo"
+        tools:context="com.example.hp.above.DynamicProgramActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:gravity="center_horizontal"
+        android:textColor="#fafafa"
+        android:text="0-1 Knapsack Problem"
+        android:id="@+id/knapsack_problem"
+        android:onClick="openknapsack"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:gravity="center_horizontal"
+        android:textColor="#fafafa"
+        android:text="Floyd Warshall Algorithm"
+        android:id="@+id/warshall_algo"
+        android:onClick="openwarshall"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:gravity="center_horizontal"
+        android:textColor="#fafafa"
+        android:text="Bellman-Ford"
+        android:id="@+id/bellman_ford"
+        android:onClick="openbellmanford"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:gravity="center_horizontal"
+        android:textColor="#fafafa"
+        android:text="Subset Sum"
+        android:id="@+id/subset_sum"
+        android:onClick="opensubsetsum"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:gravity="center_horizontal"
+        android:textColor="#fafafa"
+        android:text="Weighted Job Scheduling"
+        android:id="@+id/weighted_job_scheduling"
+        android:onClick="openweightedjobsch"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+</LinearLayout>
+

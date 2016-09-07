@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#455a64"
+    tools:context="com.example.hp.above.OverviewCActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Overview of C language"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nC is a structured programming language developed by Dennis Ritchie in 1973 at Bell Laboratories. It is one of the most popular computer languages today because of its structure, high-level abstraction, machine independent feature. C language was developed with UNIX operating system, so it is strongly associated with UNIX, which is one of the most popular network operating system in use today and heart of internet data superhighway.
+        "/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Features of C language"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n1. It is a robust language with rich set of built-in functions and operators that can be used to write any complex program.
+\n\n2. The C compiler combines the capabilities of an assembly language with features of a high-level language.
+\n\n3. Programs Written in C are efficient and fast. This is due to its variety of data type and powerful operators.
+\n\n4. It is many time faster than BASIC.
+\n\n5. C is highly portable this means that programs once written can be run on another machines with little or no modification.
+\n\n6. Another important feature of C program, is its ability to extend itself.
+\n\n7. A C program is basically a collection of functions that are supported by C library. We can also create our own function and add it to C library.
+\n\n8. C language is the most widely used language in operating systems and embedded system development today."/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/overviewc"/>
+
+</LinearLayout>
+</ScrollView>

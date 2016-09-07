@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/c"
+        tools:context="com.example.hp.above.ComprehendActivity">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFF00"
+            android:text="\nParagraph 1:
+        \n\n1) I felt the wall of the tunnel shiver. The master alarm squealed through my earphones. Almost simultaneously, Jack yelled down to me that there was a warning light on. Fleeting but spectacular sights snapped into ans out of view, the snow, the shower of debris, the moon, looming close and big, the dazzling sunshine for once unfiltered by layers of air. The last twelve hours before re-entry were particular bone-chilling. During this period, I had to go up in to command module. Even after the fiery re-entry splashing down in 81o water in south pacific, we could still see our frosty breath inside the command module.
+
+"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\n\nQ1.    The word 'Command Module' used twice in the given passage indicates perhaps that it deals with
+   \n\nA. an alarming journey
+\n\nB. a commanding situation
+\n\nC. a journey into outer space
+\n\nD. a frightful battle"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\nQ2. Which one of the following reasons would one consider as more as possible for the warning lights to be on?
+\n\nA. There was a shower of debris.
+\n\nB. Jack was yelling.
+\n\nC. A catastrophe was imminent.
+\n\nD. The moon was looming close and big."
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\nQ3. The statement that the dazzling sunshine was 'for once unfiltered by layers of air' means
+\n\nA. hat the sun was very hot
+\n\nB. that there was no strong wind
+\n\nC. that the air was unpolluted
+\n\nD. none of above"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#FFFFFF" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFF00"
+            android:text="\nParagraph 2. \n\nLaws of nature are not commands but statements of acts. The use of the word 'law' in this context is rather unfortunate. It would be better to speak of uniformities in nature. This would do away with the elementary fallacy that a law implies a law giver. If a piece of matter does not obey a law of nature it is punished. On the contrary, we say that the law has been incorrectly started.
+
+"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQ1.  If a piece of matter violates nature's law, it is not punished because
+   \n\nA. it is not binding to obey it
+\n\nB. there is no superior being to enforce the law of nature
+\n\nC. it cannot be punished
+\n\nD. it simply means that the facts have not been correctly stated by law"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQ2. Laws of nature differ from man-made laws because
+   \n\nA. the former state facts of Nature
+\n\nB. they must be obeyed
+\n\nC. they are natural
+\n\nD. unlike human laws, they are systematic"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQ3. The laws of nature based on observation are
+\n\nA. conclusion about the nature of the universe.
+\n\nB. true and unfalsifiable.
+\n\nC. figments of the observer imagination.
+\n\nD. subject to change in the light of new facts."/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQ4. The author is not happy with word 'law' because
+\n\nA. it connotes rigidity and harshness
+\n\nB. it implies an agency which has made them
+\n\nC. it does not convey the sense of nature's uniformity
+\nD. it gives rise to false beliefs"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="Answers"
+            android:padding="16dp"
+            android:layout_gravity="center"
+            android:onClick="answers_comprehend" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="#FFFF00"
+            android:layout_margin="48dp"
+            android:id="@+id/comprehend_button"/>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/c"
+        tools:context="com.example.hp.above.SentenceRearrangeActivity">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFF00"
+            android:text="\n\nIn questions below, each passage consist of six sentences. The first and sixth sentence are given in the begining. The middle four sentences in each have been removed and jumbled up. These are labelled as P, Q, R and S. Find out the proper order for the four sentences.
+"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\n\nQuestion 1:
+\nS1:  In the middle of one side of the square sits the Chairman of the committee, the most important person in the room.
+\n\nP :    For a committee is not just a mere collection of individuals.
+\n\nQ  On him rests much of the responsibility for the success or failure of the committee.
+\n\nR :    While this is happening we have an opportunity to get the 'feel' of this committee.
+\n\nS :    As the meeting opens, he runs briskly through a number of formalities.
+\n\nS6:    From the moment its members meet, it begins to have a sort nebulous life of its own.
+\n\nThe Proper sequence should be:
+\n\nA. RSQP
+\nB. PQRS
+\nC. SQPR
+\nD. QSRP"
+            android:textColor="#FFFFFF"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="Question 2:
+        \nS1:  A force of exists between everybody in the universe.
+\n\nP :    Normally it is very small but when the one of the bodies is a planet, like earth, the force is considerable.
+\n\nQ :    It has been investigated by many scientists including Galileo and Newton.
+\n\nR :    Everything on or near the surface of the earth is attracted by the mass of earth.
+\n\nS :    This gravitational force depends on the mass of the bodies involved.
+\n\nS6:    The greater the mass, the greater is the earth's force of attraction on it. We can call this force of attraction gravity.
+\n\nThe Proper sequence should be:
+\n\nA. PRQS
+\nB. PRSQ
+\nC. QSRP
+\nD. QSPR"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="Question 3:
+        \nS1:  Calcutta unlike other cities kepts its trams.
+\n\nP :    As a result there horrendous congestion.
+\n\nQ :    It was going to be the first in South Asia.
+\n\nR :    They run down the centre of the road
+\n\nS :    To ease in the city decided to build an underground railway line.
+\n\nS6:    The foundation stone was laid in 1972.
+\n\nThe Proper sequence should be:
+\n\nA. PRSQ
+\nB. PSQR
+\nC. SQRP
+\nD. RPSQ"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="Question 4:
+        \nS1:  For some time in his youth Abraham Lincoln was manager for a shop.
+\n\nP :    Then a chance Customer would come.
+\n\nQ :    Young Lincoln way of keeping shop was entirely unlike anyone else's
+\n\nR :    Lincoln would jump up and attend to his needs and then revert to his reading.
+\n\nS :    He used to lie full length on the counter of the shop eagerly reading a book.
+\n\nS6:    Never before had Lincoln had so much time for reading as had then.
+\n\nThe Proper sequence should be:
+\nA. SRQP
+\nB. QSPR
+\nC.SQRP
+\nD.QPSR"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="Question 5:
+        \nS1:  All the land was covered by the ocean.
+\n\nP :    The leading god fought the monster, killed it and chopped its body in to two halves.
+\n\nQ :    A terrible monster prevented the gods from separating the land from the water.
+\n\nR :    The god made the sky out of the upper part of the body and ornamented it with stars.
+\n\nS :    The god created the earth from the lower part, grew plants on it and populated it with animals.
+\n\nS6:    The god moulded the first people out of clay according to his own image and mind.
+\n\nThe Proper sequence should be:
+\n\nA. PQRS
+\nB. PQSR
+\nC. QPSR
+\nD. QPRS"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="Question 6:
+        \nS1:  Smoke oozed up between the planks.
+\n\nP :    Passengers were told to be ready to quit the ship.
+\n\nQ :    The rising gale fanned the smouldering fire.
+\n\nR :    Everyone now knew there was fire on board.
+\n\nS :    Flames broke out here and there.
+\n\nS6:    Most people bore the shock bravely.
+\n\nThe Proper sequence should be:
+\n\nA. SRQP
+\nB. QPSR
+\nC. RSPQ
+\nD. QSRP"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="Question 7:
+        \nS1:  You know my wife, Madhavi, always urged me to give up smoking.
+\n\nP :    I really gave it up.
+\n\nQ :    And so When I went to jail I said to myself I really must give it up, if for no other reason than of being self-reliant.
+\n\nR :    When I emerged from jail, I wanted to tell her of my great triumph.
+\n\nS :    But when I met her, there she was with a packet of cigarettes.
+\n\nS6:    poor girl!.
+\n\nThe Proper sequence should be:
+\n\nA. PSRQ
+\nB. SPQR
+\nC. QPRS
+\nD. RSPQ"/>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="Question 8:
+    \nS1:  When a satellite is launched, the rocket begins by going slowly upwards through the air.
+    \n\nP :    However, the higher it goes, the less air it meets.
+    \n\nQ :    As the rocket goes higher, it travels faster.
+    \n\nR :    For the atmosphere becomes thinner.
+    \n\nS :    As a result there is less friction.
+    \n\nS6:    Consequently, the rocket still does not become too hot.
+    \n\nThe Proper sequence should be:
+    \n\nA. QPRS
+    \nB. QSPR
+    \nC. PQRS
+    \nD. PQSR"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="Question 9:
+       \nS1:  A father having offered to take the baby out in a perambulator, was tempted by the sunny morning to slip into a pub for a glass of beer.
+\n\nP :    Indignant at her husband's behaviour, she decided to teach him a lesson.
+\n\nQ :    She wheeled away the pram.
+\n\nR :    A little later, his wife came by, where to her horror, she discovered her sleeping baby.
+\n\nS :    Leaving the pram outside, he disappeared inside the bar.
+\n\nS6:    She waited for him, anticipating the white face and quivering lips which would soon appear with the news that the baby had been stolen.
+\n\nThe Proper sequence should be:
+   \n\nA. SRPQ
+\nB. RQPS
+\nC. SPQR
+\nD. PQSR"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="Question 10:
+       \nS1:  The city is almost a slum and stinks most of time.
+\n\nP :    The slush on the road did not deter them.
+\n\nQ :    The occasional slips and falls were considered a small price to pay for the trip.
+\n\nR :    They were excited, fascinated by the sight of fresh snow on the roads.
+\n\nS :    Even so, it looked beautiful to tourists of various categories.
+\n\nS6:    But some visitors came away with the unforgettable sight of young labours scantily clad.
+\n\nThe Proper sequence should be:
+\n\nA. RQPS
+\nB. QPRS
+\nC. RSQP
+\nD. SPQR"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="Question 11:
+       \nS1:  Venice is a strange and beautiful city in the north of Italy.
+\n\nP :    There are about four hundred old stone bridges joining the island of Venice.
+\n\nQ :    In this city there are no motor cars, no horses, no buses.
+\n\nR :    These small islands are near one another.
+\n\nS :    It is not an island but a hundred and seventeen islands.
+\n\nS6:    This is because Venice has no streets.
+\n\nThe Proper sequence should be:
+\n\nA. PQRS
+\nB. PRQS
+\nC. SRPQ
+\nD. PQSR"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="Question 12:
+       \nS1:  The Hound of Baskervilles was feared by the people of the area.
+\n\nP :    Some people spoke of seeing a huge, shadowy form a Hound at midnight on the moor.
+\n\nQ :    But they spoke of it in tones of horror.
+\n\nR :    Nobody had actually seen the hound.
+\n\nS :    This shadowy form did not reveal any details about the animal.
+\n\nS6:    The Hound of Baskervilles remains an unsolved mystery.
+\n\nThe Proper sequence should be:
+\n\nA. SPQR
+\nB. SPRQ
+\nC. PSRQ
+\nD. PQRS"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="Answers"
+            android:padding="16dp"
+            android:layout_gravity="center"
+            android:onClick="answers" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_margin="48dp"
+            android:textColor="#FFFF00"
+            android:id="@+id/answers_button"/>
+
+    </LinearLayout>
+</ScrollView>

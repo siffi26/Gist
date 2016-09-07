@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="16dp"
+        android:orientation="vertical"
+        android:background="@drawable/c"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.hp.above.ErrorDetectCorrectActivity">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFF00"
+            android:text="Read the each sentence to find out whether there is any grammatical error in it. The error, if any will be in one part of the sentence.
+The letter of that part is the answer. If there is no error, the answer is 'D'.(Ignore the errors of punctuation, if any)."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQuestion 1:  \n(solve as per the direction given above)
+   \n\nA. We discussed about the problem so thoroughly
+\n\nB. on the eve of the examination
+\n\nC. that I found it very easy to work it out.
+\n\nD. No error."/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQuestion 2:
+   \n\nA. An Indian ship
+\n\nB. laden with merchandise
+\n\nC. got drowned in the Pacific Ocean.
+\n\nD. No error."/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQuestion 3:
+   \n\nA. I could not put up in a hotel
+\n\nB. because the boarding and lodging charges
+\n\n\C. were exorbitant.
+\n\nD. No error.
+"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQuestion 4:
+   \n\nA. The Indian radio
+\n\nB. which was previously controlled by the British rulers
+\n\nC. is free now from the narrow vested interests.
+\n\nD. No error.
+"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQuestion 5:
+   \n\nA. If I had known
+    \n\nB. this yesterday
+    \n\nC. I will have helped him.
+    \n\nD. No error.
+"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQuestion 6:
+   \n\nA. A lot of travel delay is caused
+\n\nB. due to the inefficiency and lack of good management
+\n\nC. on behalf of the railways.
+\n\nD. No error.
+"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQuestion 7:
+   \n\nA. One of the members
+\n\nB. expressed doubt if
+\n\nC. the Minister was an atheist.
+\n\nD. No error.
+"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQuestion 8:
+   \n\nA. I have got
+\n\nB. my M.Sc. degree
+\n\nC. in 1988.
+\n\nD. No error."/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQuestion 9:
+   \n\nA. Having received your letter
+\n\nB. this morning, we are writing
+\n\nC. to thank you for the same.
+\n\nD. No error."/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQuestion 10:
+   \n\nA. If you lend him a book
+\n\nB. he will lend it to some one else
+\n\nC. and never you will get it back.
+\n\nD. No error.
+"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:onClick="answers_error"
+            android:text="Answers"
+            android:layout_marginLeft="32dp"
+            android:layout_gravity="clip_horizontal"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="32dp"
+            android:textColor="#FFFF00"
+            android:id="@+id/error_detect"/>
+
+
+
+    </LinearLayout>
+</ScrollView>

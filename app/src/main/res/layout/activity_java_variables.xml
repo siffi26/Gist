@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/background6"
+        tools:context="com.example.hp.above.JavaVariablesActivity">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Datatypes and Identifiers"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Datatypes "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nIn java, data types are classified into two catagories :
+
+\n1. Primitive Data type
+\n2. Non-Primitive Data type"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="1. Primitive Datatype"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nThese are of eight types:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:text="\n\n1) Integer"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\nbyte : It is 8 bit integer data type. Value range from -128 to 127. Default value zero. example: byte b=10;
+
+\nshort : It is 16 bit integer data type. Value range from -32768 to 32767. Default value zero. example: short s=11;
+
+\nint : It is 32 bit integer data type. Value range from -2147483648 to 2147483647. Default value zero. example: int i=10;
+
+\nlong : It is 64 bit integer data type. Value range from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807. Default value zero. example: long l=100012;
+
+"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:text="\n\n2) Floating-Point Number"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\nfloat : It is 32 bit float data type. Default value 0.0f. example: float ff=10.3f;
+
+\ndouble : It is 64 bit float data type. Default value 0.0d. example: double db=11.123;
+"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:text="\n\n3) Characters"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\nThis group represent char, which represent symbols in a character set, like letters and numbers.
+
+char : It is 16 bit unsigned unicode character. Range 0 to 65,535. example: char c='a';
+"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:text="\n\n4) Boolean"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text=" \nThis group represent boolean, which is a special type for representing true/false values. They are defined constant of the language. example: boolean b=true;
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="2. Non-Primitive Datatype"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nA reference data type is used to refer to an object. A reference variable is declare to be of specific and that type can never be change."/>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Identifiers in Java "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nAll Java components require names. Name used for classes, methods, interfaces and variables are called Identifier. Identifier must follow some rules. Here are the rules:
+
+\n1. All identifiers must start with either a letter( a to z or A to Z ) or currency character($) or an underscore.
+\n2. After the first character, an identifier can have any combination of characters.
+\n3. A Java keyword cannot be used as an identifier.
+\n4. Identifiers in Java are case sensitive, foo and Foo are two different identifiers."/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Variables"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nJava Programming language defines mainly three kind of variables.
+
+\n1. Instance variables
+\n2. Static Variables
+\n3. Local Variables
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="1. Instance Variable"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nInstance variables are variables that are declare inside a class but outside any method,constructor or block. Instance variable are also variable of object commonly known as field or property.
+\n\nExample:
+\nclass Student
+\n{
+\n String name;
+\n int age;
+\n}
+\nHere name and age are instance variable of Student class."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="2. Static Variable"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nStatic are class variables declared with static keyword. Static variables are initialized only once. Static variables are also used in declaring constant along with final keyword.
+\n\nExample:
+\nclass Student
+\n{
+\n String name;
+\n int age;
+\n static int instituteCode=1101;
+\n}
+\nHere instituteCode is a static variable. Each object of Student class will share instituteCode property."/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="3. Local Variable"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nLocal variables are declared in method constructor or blocks. Local variables are initialized when method or constructor block start and will be destroyed once its end. Local variable reside in stack. Access modifiers are not used for local variable.
+
+\n\nExample:
+\nfloat getDiscount(int price)
+\n{
+\n float discount;
+\n discount=price*(20/100);
+\n return discount;
+\n}
+\nHere discount is a local variable."/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Operators"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nJava operators can be divided into following categories
+
+\n1. Arithmetic operators
+\n2. Relation operators
+\n3. Logical operators
+\n4. Bitwise operators
+\n5. Assignment operators
+\n6. Conditional operators"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="ARITHMETIC OPERATORS"/>
+
+        <ImageView
+            android:src="@drawable/arithmetic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="RELATIONAL OPERATORS"/>
+
+        <ImageView
+            android:src="@drawable/relational"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="LOGICAL OPERATORS"/>
+
+        <ImageView
+            android:src="@drawable/logicaloperators"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="BITWISE OPERATORS"/>
+
+        <ImageView
+            android:src="@drawable/bitwise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="ASSIGNMENT OPERATORS"/>
+
+        <ImageView
+            android:src="@drawable/assignment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="CONDITIONAL OPERATORS"/>
+
+        <ImageView
+            android:src="@drawable/conditional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"/>
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

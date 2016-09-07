@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#000033"
+    android:orientation="vertical"
+    tools:context="com.example.hp.above.StackActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="STACK"
+        android:background="#5C6BC0"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nA stack or LIFO (last in, first out) is an abstract data type that serves as a collection of elements.
+\n\n2. It has two principal operations:
+\npush adds an element to the collection;
+\npop removes the last element that was added.\n"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/stack1"
+        android:layout_margin="8dp"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nFor example, we can place or remove a card or plate from top of the stack only.
+\nLikewise, Stack data type allows all data operations at one end only. At any given time, We can only access the top element of a stack.
+\nThis feature makes it LIFO data structure. LIFO stands for Last-in-first-out.
+\nBelow given diagram tries to depict a stack and its operations −\n"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/stack2"
+        android:scaleType="fitXY"
+        android:layout_margin="8dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Basic Operations"
+        android:textStyle="bold"
+        android:background="#5C6BC0"
+        android:textColor="#ffffff"
+        android:textSize="16sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\n•	push() − pushing (storing) an element on the stack.
+\n\n•	pop() − removing (accessing) an element from the stack.
+\n\n EXPRESSION PARSING
+\n\nThe way to write arithmetic expression is known as notation.These notations are −
+\n\n•	Infix Notation - eg. a-b+c, where operators are used in-between operands.
+\n\n•	Prefix (Polish) Notation - eg. +ab. This is equivalent to its infix notation a+b. Prefix notation is also known as Polish Notation.
+\n\n•	Postfix (Reverse-Polish) Notation - eg. ab+. This is equivalent to its infix notation a+b.\n"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\n\nRead More..."
+        android:textSize="15sp"
+        android:textColor="#00E676"
+        android:id="@+id/stack"
+        android:onClick="stack"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/stackimage1"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/stack1"
+        android:textColor="#FFEE58"
+        android:onClick="stack"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/stackimage2"
+        android:scaleType="fitXY"/>
+
+
+
+</LinearLayout>
+</ScrollView>

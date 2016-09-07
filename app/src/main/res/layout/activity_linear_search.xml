@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#00796B"
+    tools:context="com.example.hp.above.LinearSearchActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LINEAR SEARCH"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="#009688"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nA linear search is the basic and simple search algorithm. \n\nA linear search searches an element or value from an array till the desired element or value is not found and it searches in a sequence order. \n\nIt compares the element with all the other elements given in the list and if the element is matched it returns the value index else it return -1. \n\nLinear Search is applied on the unsorted or unordered list when there are fewer elements in a list.
+\n
+\nExample with Implementation
+\n
+\nTo search the element 5 it will go step by step in a sequence order.
+\n"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/linsearch"
+        android:padding="1dp"
+        android:scaleType="fitXY"
+        android:layout_margin="8dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:textColor="#ffffff"
+        android:text="Read More.."
+        android:id="@+id/lin_search"
+        android:onClick="lin_search"/>
+
+</LinearLayout>
+</ScrollView>

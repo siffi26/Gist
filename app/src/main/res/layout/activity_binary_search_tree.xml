@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#000033"
+    tools:context="com.example.hp.above.BinarySearchTreeActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BINARY SEARCH TREE"
+        android:background="#5C6BC0"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nBinary Search Tree, is a node-based binary tree data structure which has the following properties:
+\n\nThe left subtree of a node contains only nodes with keys less than the node’s key.
+\n\nThe right subtree of a node contains only nodes with keys greater than the node’s key.
+\n\nThe left and right subtree each must also be a binary search tree.
+\n\nThere must be no duplicate nodes.\n"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bst"
+        android:background="#BDBDBD"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nSearching a key
+\n\nTo search a given key in Binary Search Tree, we first compare it with root, if the key is present at root, we return root. If key is greater than root’s key, we recur for right subtree of root node. Otherwise we recur for left subtree.\n\n"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="See Code.."
+        android:textColor="#00E676"
+        android:id="@+id/bst_search"
+        android:onClick="search_bst"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFEE58"
+        android:text="\n\nInsertion of a key
+\n\nA new key is always inserted at leaf. We start searching a key from root till we hit a leaf node. Once a leaf node is found, the new node is added as a child of the leaf node."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\n\nSee Code..\n\n"
+        android:textColor="#00E676"
+        android:id="@+id/bst_insert"
+        android:onClick="insert_bst"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFEE58"
+        android:text="\n\nDeletion of a key
+        \n\nWhen we delete a node, there possibilities arise.
+        \n\n1) Node to be deleted is leaf: Simply remove from the tree.
+        \n\n2) Node to be deleted has only one child: Copy the child to the node and delete the child
+        \n\n3) Node to be deleted has two children: Find inorder successor of the node. Copy contents of the inorder successor
+        to the node and delete the inorder successor. Note that inorder predecessor can also be used.
+        \n\nThe important thing to note is, inorder successor is needed only when right child is not empty. In this particular case,
+        inorder successor can be obtained by finding the minimum value in right child of the node.\n\n"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\n\nSee Code..\n\n"
+        android:textColor="#00E676"
+        android:id="@+id/bst_delete"
+        android:onClick="delete_bst"/>
+
+
+
+</LinearLayout>
+</ScrollView>

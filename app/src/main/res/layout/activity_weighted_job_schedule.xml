@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#00796b"
+    tools:context="com.example.hp.above.WeightedJobScheduleActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dynamic Programming | Weighted Job Scheduling"
+        android:textSize="20sp"
+        android:background="#009688"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nGiven N jobs where every job is represented by following three elements of it.
+\n
+\n\nStart Time
+\n\nFinish Time
+\n\nProfit or Value Associated
+\n\nFind the maximum profit subset of jobs such that no two jobs in the subset overlap.
+\n\n
+Example:
+\n\n
+\nInput: Number of Jobs n = 4
+\n       Job Details {Start Time, Finish Time, Profit}
+\n       Job 1:  {1, 2, 50}
+\n       Job 2:  {3, 5, 20}
+\n       Job 3:  {6, 19, 100}
+\n       Job 4:  {2, 100, 200}
+\n\nOutput: The maximum profit is 250.
+\n\nWe can get the maximum profit by scheduling jobs 1 and 4.
+\n\nNote that there is longer schedules possible Jobs 1, 2 and 3
+\n\nbut the profit with this schedule is 20+50+100 which is less than 250. \n\n"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n\nRead More..\n\n"
+        android:textColor="#ffffff"
+        android:onClick="weighted_code"
+        android:id="@+id/weighted_code"/>
+</LinearLayout>
+</ScrollView>

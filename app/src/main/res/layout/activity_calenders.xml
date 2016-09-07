@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/image1"
+        tools:context="com.example.hp.above.CalendersActivity">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONCEPT"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nFinding day from date is based on calculating number of odd days. By odd days, we mean number of days more than complete number of weeks. For example,
+\n\nNumber of days in a non – leap year = 365
+\n365 mod 7 = 1
+\nSo, number of odd days in a non – leap year = 1
+\n\nNumber of days in a leap year = 366
+\n=> Number of odd days in a leap year = 366 mod 7 = 2
+\n\nNumber of odd days in 100 years (76 non – leap years + 24 leap years) = [(76 x 1) + (24 x 2)] mod 7 = (76 + 48) mod 7 = 124 mod 7 = 5 days
+\n\nNumber of odd days in 200 years = (2 x Number of odd days in 100 years) mod 7 = 10 mod 7 = 3
+\n\nNumber of odd days in 300 years = (3 x 5) mod 7 = 1
+\n\nNumber of odd days in 400 years = (4 x 5 + 1) mod 7 = 21 mod 7 = 0
+\n\nNote that here, we have added 1 day extra because 400th year would itself be a leap year.
+\n\nTo check if a non – centennial year is a leap year, we divide it by 4. If the remainder is 0, the year is a leap year. For example, 2016 mod 4 = 0. Thus, we can safely deduce that 2016 is a leap year.
+\n\nTo check if a centennial year is a leap year, we divide it by 400. If the remainder is 0, the year is a leap year. For example, 1700 mod 400 = 100. So, it was not a leap year. But 1600 mod 400 = 0. Thus, we can safely deduce that 1600 was a leap year.
+\n\nNumber of odd days = 0, Day = Sunday
+\n\nNumber of odd days = 1, Day = Monday
+\n\nNumber of odd days = 2, Day = Tuesday
+\n\nNumber of odd days = 3, Day = Wednesday
+\n\nNumber of odd days = 4, Day = Thursday
+\n\nNumber of odd days = 5, Day = Friday
+\n\nNumber of odd days = 6, Day = Saturday"/>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:text="SAMPLE PROBLEMS"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 1 :  What was the day on 14 April, 2000 ?"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_cal1"
+            android:onClick="cal_answers1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 2 :  What was the day on 16 August, 1947 ?"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_cal2"
+            android:onClick="cal_answers2"/>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#00796B"
+    tools:context="com.example.hp.above.BinarySearchActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BINARY SEARCH"
+        android:textSize="20sp"
+        android:background="#009688"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nGiven a sorted array arr() of n elements, write a function to search a given element x in arr().\n
+\n\nA simple approach is to do linear search, i.e., start from the leftmost element of array and one by one compare x with each element of arr(), if x matches with an element, return the index. If x doesn’t match with any of elements, return -1.
+\n\nThe time complexity of linear search algorithm is O(n).
+\n\nThe idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(Logn).
+\n\nWe basically ignore half of the elements just after one comparison.
+\n\n1) Compare x with the middle element.
+\n\n2) If x matches with middle element, we return the mid index.
+\n\n3) Else If x is greater than the mid element, then x can only lie in right half subarray after the mid element. So we recur for right half.
+\n\n4) Else (x is smaller) recur for the left half.
+\n\nFollowing is Recursive implementation of Binary Search.
+"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Read More.."
+        android:textColor="#ffffff"
+        android:id="@+id/bin_search"
+        android:onClick="bin_search"/>
+
+</LinearLayout>
+</ScrollView>

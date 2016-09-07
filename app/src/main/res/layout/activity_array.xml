@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#000033"
+    tools:context="com.example.hp.above.ArrayActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="ARRAY"
+        android:textColor="#ffffff"
+        android:background="#5c6bc0"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nAn array is a sequence of data item of homogeneous value(same type).
+\n\nArrays are of two types:
+
+\n\n1. One-dimensional arrays
+\n\n2. Multidimensional arrays( will be discussed in next chapter )
+
+\n\nDeclaration of one-dimensional array
+\n\ndata_type array_name[array_size];
+
+\n\nFor example:
+\n\nint age[5];
+\n\nHere, the name of array is age. The size of array is 5,i.e., there are 5 items(elements) of array age.
+\nAll element in an array are of the same type (int, in this case).
+\n\nArray elements
+\n\nSize of array defines the number of elements in an array. Each element of array can be accessed and used by user according to the need of program.
+\nFor example:
+
+\n\nint age[5];"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/array1"
+        android:layout_margin="8dp"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nNote that, the first element is numbered 0 and so  on.
+
+\n\nHere, the size of array age is 5 times the size of int because there are 5 elements.
+
+\n\nSuppose, the starting address of age[0] is 2120d and the size of int be 4 bytes.
+\n\nThen, the next address (address of a[1]) will be 2124d, address of a[2] will be 2128d and so on.
+\n\nArrays can be initialized at declaration time in  this source code as:
+
+\n\nint age[5]={2,4,34,3,4};
+\n\nIt is not necessary to define the size of arrays during initialization.
+
+\n\nint age[]={2,4,34,3,4};
+\n\nIn this case, the compiler determines the size of array by calculating the number of elements of an array.\n\n
+"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="See code.."
+        android:textColor="#ffeb3b"
+        android:onClick="array_code"
+        android:id="@+id/array_code"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nNote: Suppose, you declared the array of 10 students. For example: arr[10]. You can use array members from arr[0] to arr[9]. But, what if you want to use element arr[10],
+arr[13] etc. Compiler may not show error using these elements but, may cause fatal error during program execution.\n"
+/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#00e676"
+    android:text="\n\nEXERCISE:
+\n\nC Program to Calculate Average Using Arrays
+\n\nC Program to Find Largest Element of an Array
+\n\nC Program to Calculate Standard Deviation\n"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\n\nSolution\n\n"
+        android:textColor="#ffffff"
+        android:onClick="answers_array"
+        android:id="@+id/answers_array"/>
+
+
+
+</LinearLayout>
+</ScrollView>

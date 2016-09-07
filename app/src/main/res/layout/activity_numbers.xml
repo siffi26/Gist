@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/image1"
+        tools:context="com.example.hp.above.NumbersActivity">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TYPES OF NUMBERS"
+            android:background="#78909C"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:textColor="#FFFFFF"
+            android:text="\n\nIntegers : All numbers whose fractional part is 0 (zero) like -3, -2, 1, 0, 10, 100 are integers.
+\n\nNatural Numbers : Counting numbers like 1, 2, 3, 4, 5, 6 … Basically, all integers greater than 0 are natural numbers.
+\n\nWhole Numbers : All natural numbers and 0 (zero) are whole numbers.
+\n\nPrime Numbers : All numbers having only two distinct factors, the number itself and 1, are called prime numbers. Some prime numbers are 2, 3, 53, 67 and 191.
+\n\nComposite Numbers : All numbers greater than 1 which are NOT prime are composite numbers. Some composite numbers are 4, 60, 91 and 100."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:background="#78909C"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:text="IMPORTANT POINTS ON PRIME NUMBERS"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:textColor="#FFFFFF"
+            android:text="
+\n\n1 is neither prime, nor composite.
+\n\n2 is the only even prime number.
+\n\nThere are 25 prime numbers less than 100. They are : 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97.
+\n\nTo check if a number ‘p’ is prime, find a number ‘n’ such that ‘n’ is the smallest natural number which satisfies n2 >= p. Now, check if ‘p’ is divisible by any of the prime numbers less than or equal to ‘n’. If ‘p’ is NOT divisible by any such prime numbers, ‘p’ is a prime number. Otherwise, p is not a prime number.
+\n\nCo-primes : Two numbers ‘a’ and ‘b’ are called co-prime if their highest common factor (HCF) is 1."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:background="#78909C"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:text="DIVISIBILITY TESTS"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:textColor="#FFFFFF"
+            android:text="
+\n\nDivisibility By 2 : A number is divisible by 2 if the last digit is any of 0, 2, 4, 6, 8.
+\n\nDivisibility By 3 : A number is divisible by 3 if the sum of its digits is divisible by 3. For example, 12321 is divisible by 3 because 1 + 2 + 3 + 2 + 1 = 9 and 9 is divisible by 3.
+\n\nDivisibility By 4 : A number is divisible by 4 if the last two digits are divisible by 4. For example, 1234 is not divisible by 4 as the last two digits 34 is not divisible by 4. But, 1232 is divisible by 4 as the last two digits 32 is divisible by 4.
+\n\nDivisibility By 5 : A number is divisible by 5 if the last digit is either 0 or 5.
+\n\nDivisibility By 6 : A number is divisible by 6 if it is divisible by both 2 and 3. For example, 114 is divisible by 6 as it is divisible by both 2(last digit is 4) and 3 (1+1+4=6, 6 is divisible by 3).
+\n\nDivisibility By 7 : A number is divisible by 7 iff repeatedly doing following steps until a single digit left leaves the single digit as 0 or 7. (1) Remove the last digit. (2) Subtract double of last digit from the number obtained after step 1 (number with last digit removed). Example, given number is 196. After removing last digit, we get 19. After subtracting 12 (double of removed digit), we get 7. Since the last left digit is 7, number is multiple of 7.
+\n\nDivisibility By 8 : A number is divisible by 8 if the last three digits are divisible by 8. For example, 1234 is not divisible by 8 as the last three digits 234 is not divisible by 8. But, 1232 is divisible by 8 as the last three digits 232 is divisible by 8.
+\n\nDivisibility By 9 : A number is divisible by 9 if the sum of its digits is divisible by 9. For example, 12321 is divisible by 3 because 1 + 2 + 3 + 2 + 1 = 9 and 9 is divisible by 9.
+\n\nDivisibility By 11 : A number is divisible by 11 if the difference between the sum of numbers at even positions and odd positions is either 0 or a multiple of 11."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#B2FF59"
+            android:text="\n\nNOTE : If ‘p’ and ‘q’ are co-primes and we have a number ‘n’ that is divisible by both ‘p’ and ‘q’, ‘n’ will be divisible by p x q.
+\n\nFor example, 48 is divisible by both 3 and 8 and also by 3 x 8 = 24.
+\n\nBut, if ‘p’ and ‘q’ are NOT co-prime, then the fact that ‘n’ would be divisible by p x q given that ‘n’ is divisible by both ‘p’ and ‘q’ is not necessary. For example, 144 is divisible by both 8 and 12 (not co-prime), but it is not divisible by 8 x 12 = 96."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="8dp"
+            android:text="DIVISION THEOREM"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:textColor="#FFFFFF"
+            android:text="
+\n\nDividend = (Divisor x Quotient) + Remainder
+\n\n(xn – an) is divisible by (x – a) for all values of n.
+\n\nFor example, for n = 2, x2 – a2 = (x – a) (x + a), which is divisible by (x – a).
+\n\nSimilarly, for n = 3, x3 – a3 = (x – a) (x2 + a2 + xa), which is divisible by (x – a).
+\n\n(xn – an) is divisible by (x + a) for all even values of n.
+\n\nFor example, for n = 2, x2 – a2 = (x – a) (x + a), which is divisible by (x+a).
+\n\nSimilarly, for n = 3, x3 – a3 = (x – a) (x2 + a2 + xa), which is not divisible by (x + a).
+\n\n(xn + an) is divisible by (x + a) for all odd values of n.
+\n\nFor example, for n = 3, x3 + a3 = (x + a) (x2 + a2 – xa), which is divisible by (x + a)."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Sample Problems"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#78909C"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="Question 1 : When a number is successively divided by 2, 3, 7, we get 1, 2, 3 as the remainder respectively. What is the smallest such number ?"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_numbers"
+            android:onClick="numbers_answers"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:textColor="#FFFFFF"
+            android:text="Question 2 : When a number is successively divided by 2, 4, 8, we get 1, 1, 0 as the remainder respectively. What is the smallest such number ?"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_numbers1"
+            android:onClick="numbers_answers1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQuestion 3 : What would be the maximum value of ‘B’ in the following equation :
+\n\n  1 2 B
+\n+ B 4 C
+\n+ C 6 7
+\n--------
+\n  1035
+\n--------"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_numbers2"
+            android:onClick="numbers_answers2"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQuestion 4 : Which of the following are prime numbers ?
+\n\n(i) 247
+\n\n(ii) 397
+\n\n(iii) 423"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_numbers3"
+            android:onClick="numbers_answers3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:textColor="#FFFFFF"
+            android:text="Question 5 : Find the unit’s digit in the product (17)153 x (31)62."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_numbers4"
+            android:onClick="numbers_answers4"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:textColor="#FFFFFF"
+            android:text="Question 6 : Find the unit’s digit in (17)153 + (31)62."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_numbers5"
+            android:onClick="numbers_answers5"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:textColor="#FFFFFF"
+            android:text="Question 7 : Find the total number of prime factors in the expression (14)11 x (7)2 x (11)3 ."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_numbers6"
+            android:onClick="numbers_answers6"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:textColor="#FFFFFF"
+            android:text="Question 8 : Which digits should come in place of * and # such that the number 12386*# is divisible by both 8 and 5 ?"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_numbers7"
+            android:onClick="numbers_answers7"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:textColor="#FFFFFF"
+            android:text="Question 9 : What is the least number that must be subtracted from 9999 to make it exactly divisible by 19 ?"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_numbers8"
+            android:onClick="numbers_answers8"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:textColor="#FFFFFF"
+            android:text="Question 10 : A number when divided by 340 gives a remainder 47. What would be the remainder when the same number is divided by 17 ?"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_numbers9"
+            android:onClick="numbers_answers9"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:textColor="#FFFFFF"
+            android:text="Question 11 : Find the remainder when 321 is divided by 5."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_numbers10"
+            android:onClick="numbers_answers10"/>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

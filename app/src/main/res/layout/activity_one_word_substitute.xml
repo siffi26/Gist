@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/c"
+        tools:context="com.example.hp.above.OneWordSubstituteActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFF00"
+            android:text="\n\nIn questions given below out of four alternatives, choose the one which can be substituted for the given word/sentence.
+"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQ1.  Extreme old age when a man behaves like a fool
+\n\nA. Imbecility
+\n\nB. Senility
+\n\nC. Dotage
+\n\nD. Superannuation"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQ2.  That which cannot be corrected
+   \n\nA. Unintelligible
+\n\nB. Indelible
+\n\nC. Illegible
+\n\nD. Incorrigible"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQ3. The study of ancient societies
+   \n\nA. Anthropology
+\n\nB. Archaeology
+\n\nC. History
+\n\nD. Ethnology"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQ4. A person of good understanding knowledge and reasoning power
+\n\nA. Expert
+\n\nB. Intellectual
+\n\nC. Snob
+\n\nD. Literate"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQ5. A person who insists on something
+\n\nA. Disciplinarian
+\n\nB. Stickler
+\n\nC. Instantaneous
+\n\nD. Boaster"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQ6. State in which the few govern the many
+\n\nA. Monarchy
+\n\nB. Oligarchy
+\n\nC. Plutocracy
+\n\nD. Autocracy"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQ7. A style in which a writer makes a display of his knowledge
+\n\nA. Pedantic
+\n\nB. Verbose
+\n\nC. Pompous
+\n\nD. Ornate"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQ8. List of the business or subjects to be considered at a meeting
+\n\nA. Schedule
+\n\nB. Timetable
+\n\nC. Agenda
+\n\nD. Plan"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQ9. Leave or remove from a place considered dangerous
+\n\nA. Evade
+\n\nB. Evacuate
+\n\nC. Avoid
+\n\nD. Exterminate"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nQ10. A prima facie case is such
+\n\nA. As it seems at first sight
+\n\nB. As it is made to seem at first sight
+\n\nC. As it turns out to be at the end
+\n\nD. As it seems to the court after a number of hearings"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="Answers"
+            android:padding="16dp"
+            android:layout_gravity="center"
+            android:onClick="answers_oneword" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_margin="48dp"
+            android:textColor="#FFFF00"
+            android:id="@+id/fill_oneword"/>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="#455A64"
+        tools:context="com.example.hp.above.StrucInCActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:text="Introduction to Structure"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nStructure is a user-defined data type in C which allows you to combine different data types to store a particular type of record. Structure helps to construct a complex data type in more meaningful way. It is somewhat similar to an Array. The only difference is that array is used to store collection of similar datatypes while structure can store collection of any type of data.
+\n
+\nStructure is used to represent a record. Suppose you want to store record of Student which consists of student name, address, roll number and age. You can define a structure to hold this information.
+"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Defining a structure"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nstruct keyword is used to define a structure. struct define a new data type which is a collection of different type of data.
+\n
+\nSyntax :"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cstruc1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Here the struct Book declares a structure to hold the details of book which consists of three data fields, namely name, price and pages. These fields are called structure elements or members. Each member can have different data type,like in this case, name is of char type and price is of int type etc. Book is the name of the structure and is called structure tag.
+        "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Declaring Structure Variables"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nIt is possible to declare variables of a structure, after the structure is defined. Structure variable declaration is similar to the declaration of variables of any other data types. Structure variables can be declared in following two ways.
+        "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="1) Declaring Structure variables separately"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nHere S1 and S2 are variables of structure Student. However this approach is not much recommended.
+        "/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cstruc2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Accessing Structure Members"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nStructure members can be accessed and assigned values in number of ways. Structure member has no meaning independently. In order to assign a value to a structure member, the member name must be linked with the structure variable using dot . operator also called period or member access operator.
+        "/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cstruc3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Structure Initialization"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nLike any other data type, structure variable can also be initialized at compile time.
+        "/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cstruc4"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Array of Structure"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nWe can also declare an array of structure. Each element of the array representing a structure variable. Example : struct employee emp[5];
+\n
+\nThe above code define an array emp of size 5 elements. Each element of array emp is of type employee
+"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cstruc5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Unions in C Language"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nUnions are conceptually similar to structures. The syntax of union is also similar to that of structure. The only differences is in terms of storage. In structure each member has its own storage location, whereas all members of union uses a single shared memory location which is equal to the size of its largest data member.
+        "/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cstruc6"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="This implies that although a union may contain many members of different types, it cannot handle all the members at same time. A union is declared using union keyword.
+        "/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cstruc7"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="This declares a variable It1 of type union item. This union contains three members each with a different data type. However only one of them can be used at a time. This is due to the fact that only one location is allocated for a union variable, irrespective of its size. The compiler allocates the storage that is large enough to hold largest variable type in the union. In the union declared above the member x requires 4 bytes which is largest among the members in 16-bit machine. Other members of union will share the same address.
+        "/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cstruc8"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="typedef"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\ntypedef is a keyword used in C language to assign alternative names to existing types. Its mostly used with user defined data types, when names of data types get slightly complicated. Following is the general syntax for using typedef,
+        "/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/typedef1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nLets take an example and see how typedef actually works."/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/typedef2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nThe above statement define a term ulong for an unsigned long type. Now this ulong identifier can be used to define unsigned long type variables.
+        "/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/typedef3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Application of typedef"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\ntypedef can be used to give a name to user defined data type as well. Lets see its use with structures.
+"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/typedef4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Here type_name represents the stucture definition associated with it. Now this type_name can be used to declare a variable of this stucture type.
+        "/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/typedef5"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/typedef6"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="typedef and Pointers"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\ntypedef can be used to give an alias name to pointers also. Here we have a case in which use of typedef is beneficial during pointer declaration.
+\n
+\nIn Pointers * binds to the right and not the left."/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/typedef7"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="By this declaration statement, we are actually declaring x as a pointer of type int, whereas y will be declared as a plain integer.
+        "/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/typedef8"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="But if we use typedef like in above example, we can declare any number of pointers in a single statement.
+\n
+\nNOTE : If you do not have any prior knowledge of pointers, do study Pointers first.
+\n
+"/>
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

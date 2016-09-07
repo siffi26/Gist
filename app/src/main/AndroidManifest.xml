@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hp.above">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Gist"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AptitudeActivity"
+            android:label="Aptitude" />
+        <activity
+            android:name=".ReasoningActivity"
+            android:label="Reasoning" />
+        <activity
+            android:name=".EnglishActivity"
+            android:label="English" />
+        <activity
+            android:name=".DataStrucActivity"
+            android:label="Data Structures" />
+        <activity
+            android:name=".AlgorithmsActivity"
+            android:label="Algorithms" />
+        <activity
+            android:name=".ProgrammingActivity"
+            android:label="C Programming" />
+        <activity
+            android:name=".OopsActivity"
+            android:label="Java" />
+        <activity
+            android:name=".OperatingSysActivity"
+            android:label="Operating System" />
+        <activity
+            android:name=".DbmsActivity"
+            android:label="DBMS" />
+        <activity
+            android:name=".LinkedListActivity"
+            android:label="Linked List" />
+        <activity
+            android:name=".StackActivity"
+            android:label="Stack" />
+        <activity
+            android:name=".QueueActivity"
+            android:label="Queue" />
+        <activity
+            android:name=".BinaryTreeActivity"
+            android:label="Binary Tree" />
+        <activity
+            android:name=".BinarySearchTreeActivity"
+            android:label="Binary Search Tree" />
+        <activity
+            android:name=".HeapActivity"
+            android:label="Heap" />
+        <activity
+            android:name=".HashingActivity"
+            android:label="Hashing" />
+        <activity
+            android:name=".ArrayActivity"
+            android:label="Array" />
+        <activity
+            android:name=".MatrixActivity"
+            android:label="Matrix" />
+        <activity
+            android:name=".GraphActivity"
+            android:label="Graph" />
+        <activity
+            android:name=".AnalysisOfAlgoActivity"
+            android:label="Analysis Of Algorithms" />
+        <activity
+            android:name=".SeachingSortingActivity"
+            android:label="Searching And Sorting" />
+        <activity
+            android:name=".GreedyAlgoActivity"
+            android:label="Greedy Algorithms" />
+        <activity
+            android:name=".DynamicProgramActivity"
+            android:label="Dynamic Programming" />
+        <activity
+            android:name=".PatternSearchingActivity"
+            android:label="Pattern Searching" />
+        <activity
+            android:name=".BacktrackingActivity"
+            android:label="Backtracking" />
+        <activity
+            android:name=".DivideConquerActivity"
+            android:label="Divide And Conquer" />
+        <activity
+            android:name=".BranchBoundActivity"
+            android:label="Branch and Bound" />
+        <activity
+            android:name=".GraphAlgoActivity"
+            android:label="Graph Algorithms" />
+        <activity
+            android:name=".AsymptoticActivity"
+            android:label="Asymptotic Notation" />
+        <activity
+            android:name=".AnalysisLoopActivity"
+            android:label="Analysis of Loops" />
+        <activity
+            android:name=".RecurrencesActivity"
+            android:label="Solving Recurrences" />
+        <activity
+            android:name=".SpaceTimeComplexity"
+            android:label="Space and Time Complexity" />
+        <activity
+            android:name=".SearchingActivity"
+            android:label="Searching" />
+        <activity
+            android:name=".SortingActivity"
+            android:label="Sorting" />
+        <activity
+            android:name=".LinearSearchActivity"
+            android:label="Linear Search" />
+        <activity
+            android:name=".BinarySearchActivity"
+            android:label="Binary Search" />
+        <activity
+            android:name=".ActivitySelectionProbActivity"
+            android:label="Activity Selection Problem" />
+        <activity
+            android:name=".KruskalActivity"
+            android:label="Kruskal&apos;s MST" />
+        <activity
+            android:name=".HuffmanCodingActivity"
+            android:label="Huffman Coding" />
+        <activity
+            android:name=".PrimActivity"
+            android:label="Prim&apos;s MST" />
+        <activity
+            android:name=".DijkstraActivity"
+            android:label="Dijkstra" />
+        <activity
+            android:name=".KCentreProbActivity"
+            android:label="K Centre&apos;s Problem" />
+        <activity
+            android:name=".QuicksortActivity"
+            android:label="Quicksort" />
+        <activity
+            android:name=".MergesortActivity"
+            android:label="Mergesort" />
+        <activity
+            android:name=".HeapsortActivity"
+            android:label="Heapsort" />
+        <activity
+            android:name=".InsertionsortActivity"
+            android:label="Insertion sort" />
+        <activity
+            android:name=".SelectionsortActivity"
+            android:label="Selecttion sort" />
+        <activity
+            android:name=".BubblesortActivity"
+            android:label="Bubble sort" />
+        <activity
+            android:name=".CountingsortActivity"
+            android:label="Counting Sort" />
+        <activity
+            android:name=".RadixsortActivity"
+            android:label="Radix sort " />
+        <activity
+            android:name=".BucketsortActivity"
+            android:label="Bucket sort" />
+        <activity
+            android:name=".ShellsortActivity"
+            android:label="Shell sort" />
+        <activity
+            android:name=".KnapsackProbActivity"
+            android:label="Knapsack" />
+        <activity
+            android:name=".FloydWarshallActivity"
+            android:label="Floyd Warshall" />
+        <activity
+            android:name=".BellmanFordActivity"
+            android:label="Bellman Ford" />
+        <activity
+            android:name=".SubsetSumActivity"
+            android:label="Subset Sum" />
+        <activity
+            android:name=".WeightedJobScheduleActivity"
+            android:label="Weighted Job Scheduling" />
+        <activity
+            android:name=".SentenceRearrangeActivity"
+            android:label="Sentence Rearrangement" />
+        <activity
+            android:name=".ErrorDetectCorrectActivity"
+            android:label="Error Detection and Correction" />
+        <activity
+            android:name=".FillInBlankActivity"
+            android:label="Fill in the blanks" />
+        <activity
+            android:name=".ComprehendActivity"
+            android:label="Comprehension" />
+        <activity
+            android:name=".Idioms_Activity"
+            android:label="Idioms" />
+        <activity
+            android:name=".OneWordSubstituteActivity"
+            android:label="One Word Substitute" />
+        <activity
+            android:name=".SeriesActivity"
+            android:label="Series" />
+        <activity
+            android:name=".DatasufficiencyActivity"
+            android:label="Data Sufficiency" />
+        <activity
+            android:name=".AssumptionsActivity"
+            android:label="Assumptioms and Conclusions" />
+        <activity
+            android:name=".PuzzlesActivity"
+            android:label="Puzzles" />
+        <activity
+            android:name=".SyllogismActivity"
+            android:label="Syllogism" />
+        <activity
+            android:name=".DataInterpretationActivity"
+            android:label="Data Interpretation" />
+        <activity
+            android:name=".NumbersActivity"
+            android:label="Numbers" />
+        <activity
+            android:name=".LCMandHCFActivity"
+            android:label="LCM and HCF" />
+        <activity
+            android:name=".WorkAndWagesActivity"
+            android:label="Work and Wages" />
+        <activity
+            android:name=".PipesAndCisternsActivity"
+            android:label="Pipes and Cistern" />
+        <activity
+            android:name=".TimeSpeedDistanceActivity"
+            android:label="Time, Speed and Distance" />
+        <activity
+            android:name=".TrainsBoatsStreamsActivity"
+            android:label="Trains, Boats and Streams" />
+        <activity
+            android:name=".PercentageActivity"
+            android:label="Percentage" />
+        <activity
+            android:name=".RatioProportionPartnershipActivity"
+            android:label="Ratio, Proportion and Partnership" />
+        <activity
+            android:name=".MixtureAndAlligationActivity"
+            android:label="Mixture and Alligation" />
+        <activity
+            android:name=".AverageActivity"
+            android:label="Average" />
+        <activity
+            android:name=".AgeActivity"
+            android:label="Age" />
+        <activity
+            android:name=".ProfitAndLossActivity"
+            android:label="Profit and Loss" />
+        <activity
+            android:name=".SimpleInterestActivity"
+            android:label="Simple Interest" />
+        <activity
+            android:name=".CompoundInterestActivity"
+            android:label="Compound Interest" />
+        <activity
+            android:name=".Mensuration2dActivity"
+            android:label="Mensuration 2D" />
+        <activity
+            android:name=".Mensuration3dActivity"
+            android:label="Mensuration 3D" />
+        <activity
+            android:name=".ProgressionsActivity"
+            android:label="Progressions" />
+        <activity
+            android:name=".PermutationAndCombinationActivity"
+            android:label="Permutation and Combination" />
+        <activity
+            android:name=".ProbabilityActivity"
+            android:label="Probability" />
+        <activity
+            android:name=".ClocksActivity"
+            android:label="Clocks" />
+        <activity
+            android:name=".CalendersActivity"
+            android:label="Calender" />
+        <activity
+            android:name=".RaceActivity"
+            android:label="Race" />
+        <activity
+            android:name=".BigOCheatsheetActivity"
+            android:label="Big-O Complexity Chart" />
+        <activity
+            android:name=".OverviewActivity"
+            android:label="Overview" />
+        <activity
+            android:name=".DatabaseArchitectureActivity"
+            android:label="Database Architecture" />
+        <activity
+            android:name=".DatabaseModelActivity"
+            android:label="Database Model" />
+        <activity
+            android:name=".CoddRulesActivity"
+            android:label="Codd&apos;s Rules" />
+        <activity
+            android:name=".RDBMSActivity"
+            android:label="RDBMS" />
+        <activity
+            android:name=".NormalizationActivity"
+            android:label="Normalization" />
+        <activity
+            android:name=".GeneralizationAndSpecializationActivity"
+            android:label="Generalization and Specialization" />
+        <activity
+            android:name=".ERDiagramActivity"
+            android:label="ER Diagrams" />
+        <activity
+            android:name=".SQLActivity"
+            android:label="SQL" />
+        <activity
+            android:name=".BasicSQLActivity"
+            android:label="Basic SQL" />
+        <activity
+            android:name=".AdvancedSQLActivity"
+            android:label="Advanced SQL" />
+        <activity
+            android:name=".NPCompleteActivity"
+            android:label="NP Complete" />
+        <activity
+            android:name=".NaiveActivity"
+            android:label="Naive Pattern Matching" />
+        <activity
+            android:name=".KMPActivity"
+            android:label="KMP Algorithm" />
+        <activity
+            android:name=".BoyerMooreActivity"
+            android:label="Boyer Moore" />
+        <activity
+            android:name=".RabinKarpActivity"
+            android:label="Rabin Karp" />
+        <activity
+            android:name=".NQueensProblemActivity"
+            android:label="N-Queens Problem" />
+        <activity
+            android:name=".MColoringProblemActivity"
+            android:label="M-Coloring Problem" />
+        <activity
+            android:name=".HamiltonianCycleActivity"
+            android:label="Hamiltonian Cycle" />
+        <activity
+            android:name=".SudokuActivity"
+            android:label="Sudoku" />
+        <activity
+            android:name=".SubsetSumBacktrackingActivity"
+            android:label="Subset Sum" />
+        <activity
+            android:name=".StringPermutationsActivity"
+            android:label="String Permutations" />
+        <activity
+            android:name=".IntroDivideAndConquerActivity"
+            android:label="Introduction" />
+        <activity
+            android:name=".PowerFuncActivity"
+            android:label="Power Function" />
+        <activity
+            android:name=".MedianSortedArrayActivity"
+            android:label="Median Sorted Arrays" />
+        <activity
+            android:name=".StrassensMatrixActivity"
+            android:label="Strassen’s Matrix Multiplication" />
+        <activity
+            android:name=".KnapsackOneActivity"
+            android:label="0/1 Knapsack Introduction" />
+        <activity
+            android:name=".KnapsackTwoActivity"
+            android:label="0/1 Knapsack Implementation" />
+        <activity
+            android:name=".JobAssignmentActivity"
+            android:label="Job Assignment" />
+        <activity
+            android:name=".EightPuzzleBranchActivity"
+            android:label="8-Puzzle Problem" />
+        <activity
+            android:name=".GraphDefinitionRepresentationActivity"
+            android:label="Graph Representation" />
+        <activity
+            android:name=".BreadthFirstSearchActivity"
+            android:label="Breadth First Search" />
+        <activity
+            android:name=".DepthFirstSearchActivity"
+            android:label="Depth First Search" />
+        <activity
+            android:name=".BipartiteGraphActivity"
+            android:label="Bipartite Graph" />
+        <activity
+            android:name=".TopologicalSortingActivity"
+            android:label="Topological Sorting" />
+        <activity
+            android:name=".BiconnectedComponentsActivity"
+            android:label="Biconnected Components" />
+        <activity
+            android:name=".MemoryManagementActivity"
+            android:label="Memory Management" />
+        <activity
+            android:name=".DeadlocksActivity"
+            android:label="Deadlocks" />
+        <activity
+            android:name=".ProcessSynchronizationActivity"
+            android:label="Process Synchronization" />
+        <activity
+            android:name=".IntroThreadsActivity"
+            android:label="Threads" />
+        <activity
+            android:name=".CpuSchedulingActivity"
+            android:label="CPU Scheduling" />
+        <activity
+            android:name=".ProcessSchedulingActivity"
+            android:label="Process Scheduling" />
+        <activity
+            android:name=".OsIntroductionActivity"
+            android:label="Introduction" />
+        <activity
+            android:name=".MemManageActivity"
+            android:label="Memory Management" />
+        <activity
+            android:name=".VirtualMemoryActivity"
+            android:label="Virtual Memory" />
+        <activity
+            android:name=".FileSystemActivity"
+            android:label="File System" />
+        <activity
+            android:name=".SqlintroActivity"
+            android:label="Introduction" />
+        <activity
+            android:name=".SqlDdlActivity"
+            android:label="DDL" />
+        <activity
+            android:name=".SqlDmlActivity"
+            android:label="DML" />
+        <activity
+            android:name=".SqlTclActivity"
+            android:label="TCL" />
+        <activity
+            android:name=".SqlDclActivity"
+            android:label="DCL" />
+        <activity
+            android:name=".SqlClausesActivity"
+            android:label="Clauses" />
+        <activity
+            android:name=".SqlConstraintsActivity"
+            android:label="SQL Constraints" />
+        <activity
+            android:name=".SqlFunctionsActivity"
+            android:label="SQL Functions" />
+        <activity
+            android:name=".SqlJoinActivity"
+            android:label="SQL Join" />
+        <activity
+            android:name=".SqlSetActivity"
+            android:label="SQL Set" />
+        <activity
+            android:name=".SqlViewActivity"
+            android:label="SQL View" />
+        <activity
+            android:name=".ComputerNetworksActivity"
+            android:label="Computer Networks" />
+        <activity
+            android:name=".KeyTermsActivity"
+            android:label="Key Terms" />
+        <activity
+            android:name=".TcpIpActivity"
+            android:label="TCP Model" />
+        <activity
+            android:name=".OsiModelActivity"
+            android:label="OSI Model" />
+        <activity
+            android:name=".IntroModelActivity"
+            android:label="Introduction" />
+        <activity
+            android:name=".CommunicationNetworkActivity"
+            android:label="Communication Networks" />
+        <activity
+            android:name=".TransmissionMediaActivity"
+            android:label="Transmission Mediums" />
+        <activity
+            android:name=".IntroComputerNetworksActivity"
+            android:label="Introduction" />
+        <activity
+            android:name=".PhysicalLayerActivity"
+            android:label="Physical Layer" />
+        <activity
+            android:name=".DatalinkLayerActivity"
+            android:label="DataLink Layer" />
+        <activity
+            android:name=".NetworkLayerActivity"
+            android:label="Network Layer" />
+        <activity
+            android:name=".TransportLayerActivity"
+            android:label="Transport Layer" />
+        <activity
+            android:name=".SessionLayerActivity"
+            android:label="Session Layer" />
+        <activity
+            android:name=".PresentationLayerActivity"
+            android:label="Presentation Layer" />
+        <activity
+            android:name=".ApplicationLayerActivity"
+            android:label="Application Layer" />
+        <activity
+            android:name=".DynamicCProgramActivity"
+            android:label="Dynamic Programming" />
+        <activity
+            android:name=".FileHandlingCActivity"
+            android:label="File Handling" />
+        <activity
+            android:name=".PointerCActivity"
+            android:label="Pointers" />
+        <activity
+            android:name=".StrucInCActivity"
+            android:label="Structures" />
+        <activity
+            android:name=".FunctionInCActivity"
+            android:label="Functions" />
+        <activity
+            android:name=".DecisionMakingActivity"
+            android:label="Decision Making" />
+        <activity
+            android:name=".DataTypesCActivity"
+            android:label="Data Types" />
+        <activity
+            android:name=".CInputOutputActivity"
+            android:label="C Input Output" />
+        <activity
+            android:name=".OverviewCActivity"
+            android:label="Overview" />
+        <activity
+            android:name=".CProgramsActivity"
+            android:label="C Programs" />
+        <activity
+            android:name=".FactorialProgramActivity"
+            android:label="Factorial Program" />
+        <activity
+            android:name=".ReverseProgramActivity"
+            android:label="Reverse of a String" />
+        <activity
+            android:name=".FibonacciProgramActivity"
+            android:label="Fibonacci Program" />
+        <activity
+            android:name=".SumProgramActivity"
+            android:label="Sum of Digits Program" />
+        <activity
+            android:name=".SwapProgramActivity"
+            android:label="Swapping Numbers" />
+        <activity
+            android:name=".LargestProgramActivity"
+            android:label="Find Largest" />
+        <activity
+            android:name=".PalindromeProgramActivity"
+            android:label="Palindrome Program" />
+        <activity
+            android:name=".RemoveProgramActivity"
+            android:label="Remove Elements Program" />
+        <activity
+            android:name=".SortingProgramActivity"
+            android:label="Sorting an Array" />
+        <activity
+            android:name=".BasicJavaActivity"
+            android:label="Basic Java" />
+        <activity
+            android:name=".JavaOopsActivity"
+            android:label="OOPs Concepts" />
+        <activity
+            android:name=".AdvancedJavaActivity"
+            android:label="Advanced Java" />
+        <activity
+            android:name=".JavaOverviewActivity"
+            android:label="Overview" />
+        <activity
+            android:name=".JavaVariablesActivity"
+            android:label="Java Variables" />
+        <activity
+            android:name=".JavaArrayActivity"
+            android:label="Array" />
+        <activity
+            android:name=".JavaClassesActivity"
+            android:label="Classes" />
+        <activity
+            android:name=".JavaConstructorsActivity"
+            android:label="Constructors" />
+        <activity
+            android:name=".JavaAccessmodifierActivity"
+            android:label="Access Modifier" />
+        <activity
+            android:name=".JavaInheritanceActivity"
+            android:label="Inheritance" />
+        <activity
+            android:name=".JavaPolymorphismActivity"
+            android:label="Polymorphism" />
+        <activity
+            android:name=".JavaPackageActivity"
+            android:label="Packages" />
+        <activity
+            android:name=".JavaAbstractionActivity"
+            android:label="Abstraction" />
+        <activity
+            android:name=".JavaInterfaceActivity"
+            android:label="Interface" />
+        <activity
+            android:name=".StringHandlingActivity"
+            android:label="String Handling" />
+        <activity
+            android:name=".ExceptionHandlingActivity"
+            android:label="Exception Handling" />
+        <activity
+            android:name=".MultithreadingActivity"
+            android:label="Multi-Threading" />
+        <activity
+            android:name=".SynchronizationActivity"
+            android:label="Synchronization" />
+        <activity
+            android:name=".AutoboxingActivity"
+            android:label="Autoboxing" />
+        <activity android:name=".AboutActivity"
+            android:label="About"/>
+        <activity android:name=".HelpActivity"
+            android:label="Help"></activity>
+    </application>
+
+</manifest>

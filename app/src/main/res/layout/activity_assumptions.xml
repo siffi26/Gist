@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#303F9F"
+    tools:context="com.example.hp.above.AssumptionsActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3F51B5"
+        android:textColor="#ffffff"
+        android:text="Assumptions and Conclusions, Courses of Action"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#ffffff"
+        android:text="\n\n\nAssumptions and Conclusions : In these type of questions, we are given a conclusion and we have to find the most appropriate assumption from the given options.
+\n\nCourses of action : In these type of questions, we are given a scenario and a set of statements. We have to select a course of action that would be appropriate."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffff00"
+            android:text="\n\nDirections to Solve
+\n\nIn each question below is given a statement followed by two assumptions numbered I and II. You have to consider the statement and the following assumptions and decide which of the assumptions is implicit in the statement.
+\n\nGive answer
+\n(A) If only assumption I is implicit
+\n(B) If only assumption II is implicit
+\n(C) If either I or II is implicit
+\n(D) If neither I nor II is implicit
+\n(E) If both I and II are implicit.
+"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:text="\n\nQuestion 1:
+\n\nStatement: Anger is energy, in a more proactive way and how to channelise it is in itself a skill.
+\n\nAssumptions:
+\n\nAnger need to be channelized.
+\n\nOnly skillful people can channelise anger to energy.
+
+
+\n\n(1) If only assumption I is implicit.
+\n(2) If only assumption II is implicit.
+\n(3) if either I or II is implicit.
+\n(4) if neither I or II is implicit.
+\n(5) if both I and II are implicit.
+"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:textColor="#ffff00"
+        android:text="Solution"
+        android:id="@+id/assume_ques1"
+        android:onClick="assume_ques1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="8dp"
+        android:background="#ffffff" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:text="\n\nQuestion 2:
+\n\nStatement: Medicine ‘x’ is a drug which is causing ripples in the medical field.
+\n\nAssumptions:
+\n\nNo other drug is causing ripples in the medical field.
+\n\nMedicine ‘x’ is a great drug.
+
+
+\n\n(1) If only assumption I is implicit.
+\n\n(2) If only assumption II is implicit.
+\n\n(3) if either I or II is implicit.
+\n\n(4) if neither I or II is implicit
+\n\n(5) if both I and II are implicit."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Solution"
+        android:layout_marginTop="16dp"
+        android:textColor="#ffff00"
+        android:id="@+id/assume_ques2"
+        android:onClick="assume_ques2"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="8dp"
+        android:background="#ffffff" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:text="\n\nQuestion 3:
+\n\nStatement: The ticket for Balcony class is atrociously priced at Rs. 200.
+\n\nAssumptions:
+\n\nThe tickets for other classes are decently priced.
+ \n\nRs 200 is a very big amount to pay for a balcony ticket.
+
+\n\n(1) If only assumption I is implicit.
+\n\n(2) If only assumption II is implicit.
+\n\n(3) if either I or II is implicit.
+\n\n(4) if neither I or II is implicit.
+\n\n(5) if both I and II are implicit.
+
+"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="#ffff00"
+        android:text="Solution"
+        android:id="@+id/assume_ques3"
+        android:onClick="assume_ques3"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="8dp"
+        android:background="#ffffff" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:text="\n\nQuestion 4:
+\n\nStatement: 'You are hereby appointed as a programmer with a probation period of one year and your performance will be reviewed at the end of the period for confirmation.' - A line in an appointment letter.
+\n\nAssumptions:
+\n\nThe performance of an individual generally is not known at the time of appointment offer.
+\n\nGenerally an individual tries to prove his worth in the probation period.
+\n\nA. Only assumption I is implicit
+\n\nB. Only assumption II is implicit
+\n\nC. Either I or II is implicit
+\n\nD. Neither I nor II is implicit
+\n\nE. Both I and II are implicit
+
+"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Solution"
+        android:layout_marginTop="16dp"
+        android:textColor="#ffff00"
+        android:id="@+id/assume_ques4"
+        android:onClick="assume_ques4"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="8dp"
+        android:background="#ffffff" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:text="\n\nQuestion 5:
+\n\nStatement: It is desirable to put the child in school at the age of 5 or so.
+\n\nAssumptions:
+\n\nAt that age the child reaches appropriate level of development and is ready to learn.
+\n\nThe schools do not admit children after six years of age.
+\n\nA. Only assumption I is implicit
+\n\nB. Only assumption II is implicit
+\n\nC. Either I or II is implicit
+\n\nD. Neither I nor II is implicit
+\n\nE. Both I and II are implicit
+"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Solution"
+        android:layout_marginTop="16dp"
+        android:textColor="#ffff00"
+        android:id="@+id/assume_ques5"
+        android:onClick="assume_ques5"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="8dp"
+        android:background="#ffffff" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:text="\n\nQuestion 6:
+\n\nStatement: 'In order to bring punctuality in our office, we must provide conveyance allowance to our employees.' - In charge of a company tells Personnel Manager.
+    \n\nAssumptions:
+    \n\nConveyance allowance will not help in bringing punctuality.
+    \n\nDiscipline and reward should always go hand in hand.
+    \n\nA. Only assumption I is implicit
+    \n\nB. Only assumption II is implicit
+    \n\nC. Either I or II is implicit
+    \n\nD. Neither I nor II is implicit
+    \n\nE. Both I and II are implicit
+    "/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Solution"
+        android:layout_marginTop="16dp"
+        android:textColor="#ffff00"
+        android:id="@+id/assume_ques6"
+        android:onClick="assume_ques6"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="8dp"
+        android:background="#ffffff" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:text="\n\nQuestion 7:
+\n\nStatement: Unemployment allowance should be given to all unemployed Indian youth above 18 years of age.
+\n\nAssumptions:
+\n\nThere are unemployed youth in India who needs monetary support.
+\n\nThe government has sufficient funds to provide allowance to all unemployed youth.
+\n\nA. Only assumption I is implicit
+\n\nB. Only assumption II is implicit
+\n\nC. Either I or II is implicit
+\n\nD. Neither I nor II is implicit
+\n\nE. Both I and II are implicit
+    "/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Solution"
+        android:layout_marginTop="16dp"
+        android:textColor="#ffff00"
+        android:id="@+id/assume_ques7"
+        android:onClick="assume_ques7"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="8dp"
+        android:background="#ffffff" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:text="\n\nQuestion 7:
+\n\nStatement: 'If you trouble me, I will slap you.' - A mother warns her child.
+    \n\nAssumptions:
+    \n\nWith the warning, the child may stop troubling her.
+    \n\nAll children are basically naughty.
+    \n\nA. Only assumption I is implicit
+    \n\nB. Only assumption II is implicit
+    \n\nC. Either I or II is implicit
+    \n\nD. Neither I nor II is implicit
+    \n\nE. Both I and II are implicit
+    "/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Solution"
+        android:textSize="15sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="#ffff00"
+        android:id="@+id/assume_ques8"
+        android:onClick="assume_ques8"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="8dp"
+        android:background="#ffffff" />
+
+
+</LinearLayout>
+</ScrollView>

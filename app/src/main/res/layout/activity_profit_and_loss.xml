@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/image1"
+        tools:context="com.example.hp.above.ProfitAndLossActivity">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONCEPT"
+            android:background="#78909C"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nCost Price (CP) : The price at which an article is purchased.
+\n\nSelling Price (SP) : The price at which the article is sold to the customer.
+\n\nMarked Price (MP) : The price mentioned on the article
+\n\nProfit/Gain (P) : The extra money that the seller gets on selling an article.
+                             \n\n       P = SP – CP
+               \n           Profit percent = (P / CP) x 100
+\n\nLoss (L) : The less money a seller gets on selling an article.
+    \n                            L = CP – SP
+      \n                Loss percent = (L / CP) x 100
+\n\nDiscount (D) : The reduction in price offered by the seller is called discount.
+    \n                            D = MP – SP
+      \n                Discount percent = (D / MP) x 100
+\n\n*Profit or Loss is always calculated on the cost price. Discount is calculated on marked price or list price.
+\n\n*If two articles are sold at the same selling price, one at a gain of A% and one at the loss of A%, then the seller always incurs a loss of (A / 10)^2.
+\n\n*If a seller claims to sell at cost price but uses false weights, then
+   \n Profit percent = [ (True Value – Given Value) / Given Value ] x 100 %"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:background="#78909C"
+            android:textColor="#FFFFFF"
+            android:text="SAMPLE PROBLEMS"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 1 :  A person buys a pen from a wholesaler at Rs. 10 for 20 pens. He sells those pens at Rs. 10 for 15 pens. Find his profit or loss percent."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:textColor="#FFFF00"
+            android:text="\nSOLUTION"
+            android:id="@+id/solution_pal1"
+            android:onClick="pal_answers1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 2 :  A dealer incurs a loss of 5 % if he sells an article for Rs. 1805. What price must he sell the article so as to gain 5 % on that article ?"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:textColor="#FFFF00"
+            android:text="\nSOLUTION"
+            android:id="@+id/solution_pal2"
+            android:onClick="pal_answers2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 3 : A shopkeeper purchased two varieties of rice, 80 KG at Rs. 13.50 per KG and 120 KG at Rs. 16 per KG. The shopkeeper being greedy, mixed the two varieties of rice and sold the mixture at a gain of 16 %. Find the per KG selling price of the mixture."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_pal3"
+            android:onClick="pal_answers3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 4 : A seller claims to sell at cost price but gives 750 gm for each KG. Find his gain percent."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_pal4"
+            android:onClick="pal_answers4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 5 :  A shopkeeper gives two successive discounts of 20 % and 10 % on surplus stock. Further, he also gives 5 % extra discount on cash payment. If a person buys a shirt from the surplus stock and pays in cash, what overall discount percent will he get on the shirt ?"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_pal5"
+            android:onClick="pal_answers5"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 6 :  A dealer wants to mark the price of an article such that on offering a 5 % discount, he is able to get 33 % profit. Find the percent of CP above which the article should be marked"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_pal6"
+            android:onClick="pal_answers6"/>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

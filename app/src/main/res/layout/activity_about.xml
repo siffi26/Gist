@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#1976D2"
+    android:orientation="vertical"
+    tools:context="com.example.hp.above.AboutActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="40dp"
+            android:text="GIST"
+            android:textColor="#ffffff"
+            android:textSize="32sp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:text="Welcome to Gist!
+\n\nThis application consists of precise notes to prepare for the written test conducted for various IT jobs.
+\n\nGist provides you a wide variety of questions and articles that can be asked during written test for fresher’s recruitment.
+\n\n
+Made by :
+\nSiffi Singh
+\nDiksha Mittal
+
+\n\n
+Source:
+\n
+http://www.wikipedia.org
+\n
+http://www.geeksforgeeks.org
+\n
+http://www.studytonight.com
+\n
+http://www.tutorialspoint.com
+\n
+https://docs.oracle.com
+\n
+http://www.cprogramming.com"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="#303F9F"
+        tools:context="com.example.hp.above.SeriesActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#3F51B5"
+            android:textColor="#ffffff"
+            android:text="SERIES"
+            android:textSize="20sp"
+            android:layout_margin="8dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffff00"
+            android:text="I)  Below are four problems dealing with series, you have to find the wrong number from the given number series."/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:text="\nQuestion 1:   121, 102, 84, 72, 61, 54
+\n\na)  102
+\n\nb)  84
+\n\nc) 72
+\n\nd)  all are right
+"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+            android:background="#ffffff" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:text="Question 2:   5, 6, 14, 45, 184, 925
+\n\na) 45
+\n\n b) 925
+\n\n c) 184
+\n\n d) all are right
+"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+            android:background="#ffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:text=" Question 3:  764, 620, 520, 456, 400, 404.
+\n\n a) 400
+\n\n b) 404
+\n\n c) 456
+\n\n d) all are right"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+            android:background="#ffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:text=" Question 4:  1337, 662, 331, 164, 81, 40
+\n\na) 164
+\n\nb) 81
+\n\nc) 662
+\n\nd) all are right.
+"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#ffffff" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffff00"
+            android:text="II)  Find the missing term"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:text="Question 1.  0, 7, 26, 63, 124, _
+\n\na) 216
+\n\nb) 215
+\n\nc) 217
+\n\nd) 324
+\n\ne) 219
+
+"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+
+            android:background="#ffffff" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:text="Question 2.  6, 8 ,14, 22, 36,_
+\n\na)50
+\n\nb)72
+\n\nc)58
+\n\nd)62
+\n\ne)63
+"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+            android:background="#ffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:text="Question 3.  7, 13, 17, 19, 23,_
+\n\na) 25
+\n\nb) 27
+\n\nc) 29
+\n\nd) 30
+\n\ne) 31
+
+"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+            android:background="#ffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:text="Question 4.  10, 22, 38, 58, 82,_
+\n\na)100
+\n\nb)110
+\n\nc)120
+\n\nd)130
+\n\ne)134
+"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#ffffff" />
+
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="Answers"
+            android:padding="16dp"
+            android:background="#999999"
+            android:layout_gravity="center"
+            android:onClick="answers_series" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_margin="48dp"
+            android:textColor="#ffff00"
+            android:id="@+id/series_button"/>
+    </LinearLayout>
+</ScrollView>

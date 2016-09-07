@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#455a64"
+    tools:context="com.example.hp.above.DataTypesCActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="Data types in C Language"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nData types specify how we enter data into our programs and what type of data we enter. C language has some predefined set of data types to handle various kinds of data that we use in our program. These datatypes have different storage capacities.
+\n
+\nC language supports 2 different type of data types,"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="Primary data types"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nThese are fundamental data types in C namely integer(int), floating(float), charater(char) and void."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="Derived data types"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nDerived data types are like arrays, functions, stuctures and pointers. These are dicussed in detail later."/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/datatype1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="Integer type"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nIntegers are used to store whole numbers.
+\n
+\nSize and range of Integer type on 16-bit machine"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/datatype2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="Floating type"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nFloating types are used to store real numbers.
+\n
+\nSize and range of Integer type on 16-bit machine."/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/datatype3"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="Character type"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\nCharacter types are used to store characters value.
+\n
+\nSize and range of Integer type on 16-bit machine."/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/datatype4"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="void type"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nvoid type means no value. This is usually used to specify the type of functions.
+
+"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="Variables in C Language"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nvoid type means no value. This is usually used to specify the type of functions.
+
+"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="Rules to define variable name"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n1. Variable name must be upto 8 characters.
+\n\n2. Variable name must not start with a digit.
+\n\n3. Variable name can consist of alphabets, digits and special symbols like underscore _.
+\n\n4. Blank or spaces are not allowed in variable name.
+\n\n5. Keywords are not allowed as variable name.
+"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#607d8b"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="Declaration of variable"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nDeclaration of variables must be done before they are used in the program. Declaration does two things.
+
+\n\n1. It tells the compiler what the variable name is.
+\n2. It specifies what type of data the variable will hold.
+"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/datatype5"/>
+
+
+
+
+
+
+
+</LinearLayout>
+</ScrollView>

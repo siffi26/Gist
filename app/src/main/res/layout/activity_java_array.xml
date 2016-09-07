@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/background6"
+        tools:context="com.example.hp.above.JavaArrayActivity">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:text="Arrays"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nAn array is a collection of similar data types.It is also known as static data structure because size of an array must be specified at the time of its declaration.
+
+\nAn array can be either primitive or reference type. It gets memory in heap area. Index of array starts from zero to size-1."/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:text="Array Declaration"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nSyntax :
+
+\ndatatype[] identifier;
+\nor
+\ndatatype identifier[];
+
+
+\nExample :
+
+\nint[] arr;
+\nchar[] arr;
+\nshort[] arr;
+\nlong[] arr;
+\nint[][] arr; //two dimensional array."/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:text="Initialization of Array"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\n'new' operator is used to initialize an array.
+
+\n\nExample :
+
+\nint[] arr = new int[10];    //10 is the size of array.
+\nor
+\nint[] arr = {10,20,30,40,50};
+"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:text="Accessing array element"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nAs mentioned earlier array index starts from 0. To access nth element of an array. Syntax
+
+\narrayname[n-1];
+\n\nExample : To access 4th element of a given array
+
+\nint[] arr={10,20,30,40};
+\nSystem.out.println(Element at 4th place +arr[3]);
+        The above code will print the 4th element of array arr on console.
+"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#311B92"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:text="foreach or Enhanced for Loop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nUsing foreach loop you can access complete array sequentially without using index of array. Let us see an example of foreach loop.
+
+\n\nclass Test
+\n{
+\npublic static void main(String[] args)
+\n  {
+\n    int[] arr={10,20,30,40};
+\n for(int x:arr)
+\n {
+\n System.out.println(x);
+\n }
+\n   }
+\n}
+\n\nOutput :
+
+\n20
+\n30
+\n40
+"/>
+
+
+
+
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray"/>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#00796b"
+    tools:context="com.example.hp.above.IntroDivideAndConquerActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Divide and Conquer | Introduction"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:background="#009688"
+        android:textStyle="bold"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nLike Greedy and Dynamic Programming, Divide and Conquer is an algorithmic paradigm. A typical Divide and Conquer algorithm solves a problem using following three steps.
+\n
+\n1. Divide: Break the given problem into subproblems of same type.
+\n2. Conquer: Recursively solve these subproblems
+\n3. Combine: Appropriately combine the answers
+\n
+\nFollowing are some standard algorithms that are Divide and Conquer algorithms.
+\n
+\n1) Binary Search is a searching algorithm. In each step, the algorithm compares the input element x with the value of the middle element in array. If the values match, return the index of middle. Otherwise, if x is less than the middle element, then the algorithm recurs for left side of middle element, else recurs for right side of middle element.
+\n
+\n2) Quicksort is a sorting algorithm. The algorithm picks a pivot element, rearranges the array elements in such a way that all elements smaller than the picked pivot element move to left side of pivot, and all greater elements move to right side. Finally, the algorithm recursively sorts the subarrays on left and right of pivot element.
+\n
+\n3) Merge Sort is also a sorting algorithm. The algorithm divides the array in two halves, recursively sorts them and finally merges the two sorted halves.
+\nDivide and Conquer (D and C) vs Dynamic Programming (DP)
+\nBoth paradigms (D and C and DP) divide the given problem into subproblems and solve subproblems.
+\n\nHow to choose one of them for a given problem? Divide and Conquer should be used when same subproblems are not evaluated many times.
+\n\nOtherwise Dynamic Programming or Memoization should be used. For example, Binary Search is a Divide and Conquer algorithm, we never evaluate the same subproblems again.
+\n\nOn the other hand, for calculating nth Fibonacci number, Dynamic Programming should be preferred
+\n"/>
+
+
+</LinearLayout>
+</ScrollView>

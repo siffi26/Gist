@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/image1"
+        tools:context="com.example.hp.above.TrainsBoatsStreamsActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TRAINS"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nTwo trains moving in same direction,their relative speed=|a – b| km / hr.
+\n\nTwo trains moving in different directions,then their relative speed=(a + b) km / hr"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nTime taken by a train, ‘t’ meters long, to pass a stationary object of length ‘l’ meters,
+            \n time= (t + l)/v m/sec
+           \n where, v= speed of train"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nTime taken by a train, ‘t’ meters long, to pass a stationary object of negligible length(ex. pole or man),
+            \n time= t/v m/sec
+            \n where, v= speed of train"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nTwo trains of lengths L1 and L2 travelling with
+            speeds S1 and S2, then the time required by faster train to overtake the slower train would be,
+
+            \n\nCASE1: Moving in same direction
+                   \nTime = (L1 + L2) / |S1 – S2|
+
+            \n\nCASE 2: Moving in opposite direction
+                    \nTime = (L1 + L2) / (S1 + S2)"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nIf two trains started moving towards each other with speeds S1 and S2 respectively at the same time and after meeting, they take ‘T1′ and ‘T2′ seconds respectively, then S1 : S2 = T21/2 : T11/2"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="17dp"
+            android:text=" BOATS ANd STREAMS"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nIf the boat is moving in the direction of the stream, it is said to be going downstream. And if the boat is moving opposite to the direction of stream, it is said to be going upstream  "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nIf the speed of boat in still water is B km / hr and speed of the stream is S km / hr,
+\nSpeed Upstream = B – S km / hr
+\nSpeed Downstream = B + S km / hr "/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="4dp"
+            android:background="#FFFFFF"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:text="SAMPLE PROBLEMS"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 1 :How long does a train 1000 m long moving at a speed of 90 km / hr would take to pass through a 500 m long bridge?"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_tbs1"
+            android:onClick="tbs_answers1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 2 :  A man standing near a railway track observes that a train passes him in 80 seconds but to pass by a 180 m long bridge, the same train takes 200 seconds. Find the speed of the train."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_tbs2"
+            android:onClick="tbs_answers2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 3 :  Two trains 140 m and 160 m long are moving towards each other on parallel tracks with speeds 40 km / hr and 50 km / hr respectively. How much time would they take to pass each other completely ?"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_tbs3"
+            android:onClick="tbs_answers3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 4 :  A 500 m long train takes 36 seconds to cross a man walking in the opposite direction at the speed of 10 km / hr. Find the speed of the train."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_tbs4"
+            android:onClick="tbs_answers4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 5 :A non – stop train started from Delhi towards Mumbai and at the same time, another non – stop train started from Mumbai towards Delhi. If after meeting in Bhopal they took 9 and 16 hours respectively to reach their destinations, find the speed of the train that started from Delhi, given that the speed of the train that started from Mumbai was moving at a speed of 90 km / hr"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_tbs5"
+            android:onClick="tbs_answers5"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 6 :A boatman can row a boat upstream at 14 km / hr and downstream at 20 km / hr. Find the speed of the boat in still water and speed of the stream."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_tbs6"
+            android:onClick="tbs_answers6"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 7 :A boatman can row a boat at the speed of 5 km upstream and 15 km downstream. To cover upstream he needs 2.5 hours and to cover downstream, he needs 1.5 hours. Find the speed of the stream and speed of the boat in still water"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_tbs7"
+            android:onClick="tbs_answers7"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 8 : A man has to go from a port to an island and return. He can row a boat with the speed 7 km / hr in still water. The speed of the stream is 2 km / hr. If he takes 56 minutes to complete the round trip, find the distance between the port and the island"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_tbs8"
+            android:onClick="tbs_answers8"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 9 :In a boat race, a person rows a boat 6 km upstream and return to the starting point in 4 hours. If the speed of the stream is 2 km / hr, find the speed of the boat in still water"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_tbs9"
+            android:onClick="tbs_answers9"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 10 :A racer can row a boat 30 km upstream and 44 km downstream in 10 hours. Also, he can row 40 km upstream and 55 km downstream in 13 hours. Find the speed of the boat in still water and speed of the stream"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_tbs10"
+            android:onClick="tbs_answers10"/>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

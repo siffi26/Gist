@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@drawable/english"
+    tools:context="com.example.hp.above.ProcessSynchronizationActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="#FFFFFF"
+        android:background="#78909C"
+        android:layout_height="wrap_content"
+        android:text="Process Synchronization"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffff00"
+        android:text="\nProcess Synchronization means sharing system resources by processes in a such a way that, Concurrent access to shared data is handled thereby minimizing the chance of inconsistent data. Maintaining data consistency demands mechanisms to ensure synchronized execution of cooperating processes.
+\n
+\nProcess Synchronization was introduced to handle problems that arose while multiple process executions. Some of the problems are discussed below.
+\n
+"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="#FFFFFF"
+        android:background="#78909C"
+        android:layout_height="wrap_content"
+        android:text="Critical Section Problem"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffff00"
+        android:text="\nA Critical Section is a code segment that accesses shared variables and has to be executed as an atomic action. It means that in a group of cooperating processes, at a given point of time, only one process must be executing its critical section. If any other process also wants to execute its critical section, it must wait until the first one finishes.
+        "/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/processsync1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="#FFFFFF"
+        android:background="#78909C"
+        android:layout_height="wrap_content"
+        android:text="Solution to Critical Section Problem"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffff00"
+        android:text="\nA solution to the critical section problem must satisfy the following three conditions :
+\n
+\n1. Mutual Exclusion
+\nOut of a group of cooperating processes, only one process can be in its critical section at a given point of time.
+\n
+\n2. Progress
+\nIf no process is in its critical section, and if one or more threads want to execute their critical section then any one of these threads must be allowed to get into its critical section.
+\n
+\n3. Bounded Waiting
+\nAfter a process makes a request for getting into its critical section, there is a limit for how many other processes can get into their critical section, before this process's request is granted. So after the limit is reached, system must grant the process permission to get into its critical section.
+"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="#FFFFFF"
+        android:background="#78909C"
+        android:layout_height="wrap_content"
+        android:text="Synchronization Hardware"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffff00"
+        android:text="\nMany systems provide hardware support for critical section code. The critical section problem could be solved easily in a single-processor environment if we could disallow interrupts to occur while a shared variable or resource is being modified.
+\n
+\nIn this manner, we could be sure that the current sequence of instructions would be allowed to execute in order without pre-emption. Unfortunately, this solution is not feasible in a multiprocessor environment.
+\n
+\nDisabling interrupt on a multiprocessor environment can be time consuming as the message is passed to all the processors.
+\n
+\nThis message transmission lag, delays entry of threads into critical section and the system efficiency decreases."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="#FFFFFF"
+        android:background="#78909C"
+        android:layout_height="wrap_content"
+        android:text="Mutex Locks"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffff00"
+        android:text="\nAs the synchronization hardware solution is not easy to implement fro everyone, a strict software approach called Mutex Locks was introduced. In this approach, in the entry section of code, a LOCK is acquired over the critical resources modified and used inside critical section, and in the exit section that LOCK is released.
+
+As the resource is locked while a process executes its critical section hence no other process can access it."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="#FFFFFF"
+        android:background="#78909C"
+        android:layout_height="wrap_content"
+        android:text="Semaphores"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nIn 1965, Dijkstra proposed a new and very significant technique for managing concurrent processes by using the value of a simple integer variable to synchronize the progress of interacting processes. This integer variable is called semaphore. So it is basically a synchronizing tool and is accessed only through two low standard atomic operations, wait and signal designated by P() and V() respectively.
+\n
+\nThe classical definition of wait and signal are :
+\n
+\n1. Wait : decrement the value of its argument S as soon as it would become non-negative.
+\n2. Signal : increment the value of its argument, S as an individual operation."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="#FFFFFF"
+        android:background="#78909C"
+        android:layout_height="wrap_content"
+        android:text="Properties of Semaphores"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffff00"
+        android:text="\nSimple
+\n1. Works with many processes
+\n2. Can have many different critical sections with different semaphores
+\n3. Each critical section has unique access semaphores
+\n4. Can permit multiple processes into the critical section at once, if desirable."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="#FFFFFF"
+        android:background="#78909C"
+        android:layout_height="wrap_content"
+        android:text="Types of Semaphores"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffff00"
+        android:text="\nSemaphores are mainly of two types:
+\n
+\n1. Binary Semaphore
+\nIt is a special form of semaphore used for implementing mutual exclusion, hence it is often called Mutex. A binary semaphore is initialized to 1 and only takes the value 0 and 1 during execution of a program.
+\n
+\n2. Counting Semaphores
+\nThese are used to implement bounded concurrency."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="#FFFFFF"
+        android:background="#78909C"
+        android:layout_height="wrap_content"
+        android:text="Limitations of Semaphores"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffff00"
+        android:text="\n1. Priority Inversion is a big limitation os semaphores.
+\n2. Their use is not enforced, but is by convention only.
+\n3. With improper use, a process may block indefinitely. Such a situation is called Deadlock. We will be studying deadlocks in details in coming lessons.
+"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="#FFFFFF"
+        android:background="#78909C"
+        android:layout_height="wrap_content"
+        android:text="Classical Problem of Synchronization"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="#FFFFFF"
+        android:background="#78909C"
+        android:layout_height="wrap_content"
+        android:text="Bounded Buffer Problem"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffff00"
+        android:text="\n1. This problem is generalised in terms of the Producer-Consumer problem.
+\n\n2. Solution to this problem is, creating two counting semaphores 'full' and 'empty' to keep track of the current number of full and empty buffers respectively.
+"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="#FFFFFF"
+        android:background="#78909C"
+        android:layout_height="wrap_content"
+        android:text="The Readers Writers Problem"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffff00"
+        android:text="\n1. In this problem there are some processes(called readers) that only read the shared data, and never change it, and there are other processes(called writers) who may change the data in addition to reading or instead of reading it.
+\n\n2. There are various type of the readers-writers problem, most centred on relative priorities of readers and writers"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="#FFFFFF"
+        android:background="#78909C"
+        android:layout_height="wrap_content"
+        android:text="Dining Philosophers Problem"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffff00"
+        android:text="\n1. The dining philosopher’s problem involves the allocation of limited resources from a group of processes in a deadlock-free and starvation-free manner.
+\n\n2. There are five philosophers sitting around a table, in which there are five chopsticks kept beside them and a bowl of rice in the centre, When a philosopher wants to eat, he uses two chopsticks - one from their left and one from their right. When a philosopher wants to think, he keeps down both chopsticks at their original place.
+"/>
+
+
+
+
+
+</LinearLayout>
+</ScrollView>

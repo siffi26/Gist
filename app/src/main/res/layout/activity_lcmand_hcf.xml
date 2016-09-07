@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/image1"
+        tools:context="com.example.hp.above.LCMandHCFActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="LCM AND HCF"
+            android:background="#78909C"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nFactors and Multiples : All the numbers that divide a number completely, i.e., without leaving any remainder, are called factors of that number. For example, 24 is completely divisible by 1, 2, 3, 4, 6, 8, 12, 24. Each of these numbers is called a factor of 24 and 24 is called a multiple of each of these numbers.
+\n\nLCM : The least number which is exactly divisible by each of the given numbers is called the least common multiple of those numbers. For example, consider the numbers 3, 31 and 62 (2 x 31). The LCM of these numbers would be 2 x 3 x 31 = 186.
+\n\nTo find the LCM of the given numbers, we express each number as a product of prime numbers. The product highest power of the prime numbers that appear in prime factorization of any of the numbers gives us the LCM.
+\n\nFor example, consider the numbers 2, 3, 4 (2 x 2), 5, 6 (2 x 3). The LCM of these numbers is 2 x 2 x 3 x 5 = 60. The highest power of 2 comes from prime factorization of 4, the highest power of 3 comes from prime factorization of 3 and prime factorization of 6 and the highest power of 5 comes from prime factorization of 5.
+\n\nHCF : The largest number that divides two or more numbers is the highest common factor (HCF) for those numbers. For example, consider the numbers 30 (2 x 3 x 5), 36 (2 x 2 x 3 x 3), 42 (2 x 3 x 7), 45 (3 x 3 x 5). 3 is the largest number that divides each of these numbers, and hence, is the HCF for these numbers.
+\n\nHCF is also known as Greatest Common Divisor (GCD).
+
+\n\nTo find the HCF of two or more numbers, express each number as product of prime numbers. The product of the least powers of common prime terms gives us the HCF. This is the method we illustrated in the above step.
+\n\nAlso, for finding the HCF of two numbers, we can also proceed by long division method. We divide the larger number by the smaller number (divisor). Now, we divide the divisor by the remainder obtained in the previous stage. We repeat the same procedure until we get zero as the remainder. At that stage, the last divisor would be the required HCF.
+\n\nFor example, we find the HCF of 30 and 42."/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/lcm_hcf"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\n\nFor two numbers ‘a’ and ‘b’, LCM x HCF = a x b
+\n\nHCF of co-primes = 1
+\n\nFor two fractions,
+\n\nHCF = HCF (Numerators) / LCM (Denominators)
+\n\nLCM = LCM (Numerators) / HCF (Denominators)"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:background="#78909C"
+            android:textColor="#FFFFFF"
+            android:text="Sample Problems"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 1 : Two numbers are in the ratio of 5:11. If their HCF is 7, find the numbers."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:textStyle="bold"
+            android:id="@+id/solution_lcmhcf"
+            android:onClick="lcmhcf_answers"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 2 : Find the length of the plank which can be used to measure exactly the lengths 4 m 50 cm, 9 m 90 cm and 16 m 20 cm in the least time."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:textStyle="bold"
+            android:id="@+id/solution_lcmhcf1"
+            android:onClick="lcmhcf_answers1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 3 : Find the greatest number which on dividing 70 and 50 leaves remainders 1 and 4 respectively."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:textStyle="bold"
+            android:id="@+id/solution_lcmhcf2"
+            android:onClick="lcmhcf_answers2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 4 : Find the largest number which divides 64, 136 and 238 to leave the same remainder in each case."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:textStyle="bold"
+            android:id="@+id/solution_lcmhcf3"
+            android:onClick="lcmhcf_answers3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 5 : Find the least number which when divided by 5,7,9 and 12, leaves the same remainder 3 in each case."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:textStyle="bold"
+            android:id="@+id/solution_lcmhcf4"
+            android:onClick="lcmhcf_answers4"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 6 : Find the largest four digit number exactly divisible by 15,21 and 28."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:textStyle="bold"
+            android:id="@+id/solution_lcmhcf5"
+            android:onClick="lcmhcf_answers5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 7 : The policemen at three different places on a ground blow a whistle after every 42 sec, 60 sec and 78 sec respectively. If they all blow the whistle simultaneously at 9:30:00 hours, then at what time do they whistle again together ?"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:textStyle="bold"
+            android:id="@+id/solution_lcmhcf6"
+            android:onClick="lcmhcf_answers6"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 8 : Find the least number which when divided by 6,7,8 leaves a remainder 3, but when divided by 9 leaves no remainder ."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:textStyle="bold"
+            android:id="@+id/solution_lcmhcf7"
+            android:onClick="lcmhcf_answers7"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 9 : Two numbers are in the ratio 2:3. If the product of their LCM and HCF is 294, find the numbers."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:textStyle="bold"
+            android:id="@+id/solution_lcmhcf8"
+            android:onClick="lcmhcf_answers8"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 10 : A rectangular field of dimension 180m x 105m is to be paved by identical square tiles. Find the size of each tile and the number of tiles required."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:textStyle="bold"
+            android:id="@+id/solution_lcmhcf9"
+            android:onClick="lcmhcf_answers9"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 11 : Three rectangular fields having area 60 m2, 84 m2 and 108 m2 are to be divided into identical rectangular flower beds, each having length 6 m. Find the breadth of each flower bed."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:textStyle="bold"
+            android:id="@+id/solution_lcmhcf10"
+            android:onClick="lcmhcf_answers10"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 12 : Find the maximum number of students among whom 182 chocolates and 247 candies can be distributed such that each student gets same number of each. Also, find the number of chocolates and candies each student will get."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nSolution"
+            android:textColor="#FFFF00"
+            android:textStyle="bold"
+            android:id="@+id/solution_lcmhcf11"
+            android:onClick="lcmhcf_answers11"/>
+
+    </LinearLayout>
+</ScrollView>

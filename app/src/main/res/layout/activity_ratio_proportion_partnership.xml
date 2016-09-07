@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/image1"
+        tools:context="com.example.hp.above.RatioProportionPartnershipActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RATIO PROPORTION"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nThe equivalence of two ratios is called proportion. If a : b = c : d, then a, b, c, d are said to be in proportion. Here, a x d = b x c"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nMean proportional is the geometric mean. For example, the mean proportional of ‘a’ and ‘b’ is square root of (a x b)"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nIf we have two ratios, say a : b and c : d, then (a x c) : (b x d) is called the compounded ratio"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nIf a : b = c : d, i.e., a/b = c/d, then (a + b) / (a – b) = (c + d) / (c – d)
+This is called Componendo and Dividendo"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nIf we say that ‘a’ is directly proportional to ‘b’, it means that a = k x b, where ‘k’ is the constant of proportionality "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nIf we say that ‘a’ is inversely proportional to ‘b’, it means that a = k / b or a x b = k, where ‘k’ is the constant of proportionality "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nIf a ratio is multiplied or divided by a certain number, the properties of the ratio do not change "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PARTNERSHIP"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nWhen more than one person is involved in a business, it is said to be running in partnership"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nThe gains/losses from the business are divided in the ratio of their inputs, where input is calculated as the product of amount of investment and time period of investment.
+If A and B invest Rs. V1 and Rs. V2 in a business for a time period of T1 and T2 respectively, then the profit/loss from the business is divided in the ratio (V1 x T1) : (V2 x T2)"/>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="4dp"
+            android:background="#FFFFFF"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="#78909C"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:text="SAMPLE PROBLEMS"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 1 :If a : b = 5 : 9 and b : c = 7 : 4, then find a : b : c"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_rpp1"
+            android:onClick="rpp_answers1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 2 : Divide Rs. 981 in the ratio 5 : 4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_rpp2"
+            android:onClick="rpp_answers2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 3 :  A bag contains 50 p, 25 p and 10 p coins in the ratio 2 : 5 : 3, amounting to Rs. 510. Find the number of coins of each type"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_rpp3"
+            android:onClick="rpp_answers3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 4 : A mixture contains sugar solution and colored water in the ratio 4 : 3. If 10 liters of colored water is added to the mixture, the ratio becomes 4 : 5. Find the initial quantity of sugar solution in the given mixture"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_rpp4"
+            android:onClick="rpp_answers4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 5 : Two friends A and B started a business with initial capital contribution of Rs. 1 lac and Rs. 2 lacs. At the end of the year, the business made a profit of Rs. 30,000. Find the share of each in the profit"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_rpp5"
+            android:onClick="rpp_answers5"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 6 :Three friends A, B and C started a business, each investing Rs. 10,000. After 5 months A withdrew Rs. 3000, B withdrew Rs. 2000 and C invested Rs. 3000 more. At the end of the year, a total profit of Rs. 34,600 was recorded. Find the share of each"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_rpp6"
+            android:onClick="rpp_answers6"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 7 : A invested Rs. 70,000 in a business. After few months, B joined him with Rs. 60,000. At the end of the year, the total profit was divided between them in ratio 2 : 1. After how many months did B join?"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFFFF"
+            android:id="@+id/solution_rpp7"
+            android:onClick="rpp_answers7"/>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

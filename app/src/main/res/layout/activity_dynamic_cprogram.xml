@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="#455A64"
+        tools:context="com.example.hp.above.DynamicCProgramActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Dynamic Memory Allocation"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nThe process of allocating memory at runtime is known as dynamic memory allocation. Library routines known as 'memory management functions' are used for allocating and freeing memory during execution of a program. These functions are defined in stdlib.h.
+        "/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dynamic1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Memory Allocation Process"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nGlobal variables, static variables and program instructions get their memory in permanent storage area whereas local variables are stored in area called Stack. The memory space between these two region is known as Heap area. This region is used for dynamic memory allocation during execution of the program. The size of heap keep changing.
+        "/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dynamic2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Allocating block of Memory"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nmalloc() function is used for allocating block of memory at runtime. This function reserves a block of memory of given size and returns a pointer of type void. This means that we can assign it to any type of pointer using typecasting. If it fails to locate enough space it returns a NULL pointer.
+\n
+\nExample using malloc() :"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dynamic3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="calloc() is another memory allocation function that is used for allocating memory at runtime. calloc function is normally used for allocating memory to derived data types such as arrays and structures. If it fails to locate enough space it returns a NULL pointer.
+\n
+\nExample using calloc() :"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dynamic4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="realloc() changes memory size that is already allocated to a variable.
+\n
+\nExample using realloc() :"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dynamic5"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dynamic6"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#607d8b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Command Line Argument"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nCommand line argument is a parameter supplied to the program when it is invoked. Command line argument is an important concept in C programming. It is mostly used when you need to control your program from outside. command line arguments are passed to main() method.
+\n
+\nSyntax :"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dynamic7"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Here argc counts the number of arguments on the command line and argv[ ] is a pointer array which holds pointers of type char which points to the arguments passed to the program."/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dynamic8"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Remember that argv[0] holds the name of the program and argv[1] points to the first command line argument and argv[n] gives the last argument. If no argument is supplied, argc will be one."/>
+
+    </LinearLayout>
+</ScrollView>

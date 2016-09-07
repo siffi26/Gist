@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#00796b"
+    android:orientation="vertical"
+    tools:context="com.example.hp.above.CountingsortActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="COUNTING SORT"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="#009688"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nCounting sort is a sorting technique based on keys between a specific range. It works by counting the number of objects having distinct key values (kind of hashing). Then doing some arithmetic to calculate the position of each object in the output sequence.
+\n\n
+\n\nLet us understand it with the help of an example.
+\n
+\nFor simplicity, consider the data in the range 0 to 9.
+\n\nInput data: 1, 4, 1, 2, 7, 5, 2
+\n  1) Take a count array to store the count of each unique object.
+\n  Index:     0  1  2  3  4  5  6  7  8  9
+\n  Count:     0  2  2  0   1  1  0  1  0  0
+\n\n
+\n  2) Modify the count array such that each element at each index
+\n  stores the sum of previous counts.
+\n  Index:     0  1  2  3  4  5  6  7  8  9
+\n  Count:     0  2  4  4  5  6  6  7  7  7
+\n\n
+\nThe modified count array indicates the position of each object in
+the output sequence.
+\n\n
+  3) Output each object from the input sequence followed by
+  decreasing its count by 1.
+\n\n  Process the input data: 1, 4, 1, 2, 7, 5, 2. Position of 1 is 2.
+\n\n  Put data 1 at index 2 in output. Decrease count by 1 to place
+  next data 1 at an index 1 smaller than this index.
+"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read More.."
+        android:onClick="counting_code"
+        android:id="@+id/counting_code"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:textColor="#ffffff"/>
+
+</LinearLayout>
+</ScrollView>

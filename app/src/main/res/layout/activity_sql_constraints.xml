@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/background1"
+        tools:context="com.example.hp.above.SqlConstraintsActivity">
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:textColor="#B71C1C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="JOIN"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text=" Join Keyword is used in SQL queries for joining two or more tables. Minimum required condition for joining table, is (n-1) where n, is number of tables. A table can also join to itself known as, Self Join"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:textColor="#B71C1C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Types Of JOIN"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n1) Inner
+\n2) Outer
+\n3) Left
+\n4) Right"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:textColor="#B71C1C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Cross Join OR Cartesian Product"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="It will return a table which consists of records which combines each row from the first table with each row of the second table
+            \n\nSyntax: SELECT column-name-list
+\nfrom table-name1
+\nCROSS JOIN
+\ntable-name2;"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nExample:"/>
+
+        <ImageView
+            android:src="@drawable/crossjoin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nSELECT *
+\nfrom class,
+\ncross JOIN class_info;
+ \n\n the result will be:"/>
+
+
+        <ImageView
+            android:src="@drawable/crossjoin2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="fitXY"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:textColor="#B71C1C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="INNER Join OR EQI Join"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nThis is a simple JOIN in which the result is based on matched data as per the equality condition specified in the query.
+
+\n\nSyntax is,
+
+\nSELECT column-name-list
+\nfrom table-name1
+\nINNER JOIN
+\ntable-name2
+\nWHERE table-name1.column-name = table-name2.column-name;"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nExample:"/>
+
+        <ImageView
+            android:src="@drawable/crossjoin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nSELECT * from class, class_info where class.id = class_info.id;;
+ \n\n the result will be:"/>
+
+
+        <ImageView
+            android:src="@drawable/innerjoin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="fitXY"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:textColor="#B71C1C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Natural Join"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nNatural Join is a type of Inner join which is based on column having same name and same datatype present in both the tables to be joined.
+
+\n\nSyntax is,
+
+\nSELECT *
+\nfrom table-name1
+\nNATURAL JOIN
+\ntable-name2;"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nExample:"/>
+
+        <ImageView
+            android:src="@drawable/innerjoin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nSELECT * from class NATURAL JOIN class_info;
+ \n\n the result will be:"/>
+
+
+        <ImageView
+            android:src="@drawable/naturaljoin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="fitXY"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:textColor="#B71C1C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Outer Join"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nOuter Join is based on both matched and unmatched data. Outer Joins subdivide further into,
+
+\nLeft Outer Join
+\nRight Outer Join
+\nFull Outer Join
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:textColor="#B71C1C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Left Outer Join"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nThe left outer join returns a result table with the matched data of two tables then remaining rows of the left table and null for the right table's column.
+
+\n\nLeft Outer Join syntax is,
+
+\n\nSELECT column-name-list
+\nfrom table-name1
+\nLEFT OUTER JOIN
+\ntable-name2
+\non table-name1.column-name = table-name2.column-name;"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nExample:"/>
+
+        <ImageView
+            android:src="@drawable/leftouterjoin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nSELECT * FROM class LEFT OUTER JOIN class_info ON (class.id=class_info.id);
+ \n\n the result will be:"/>
+
+
+        <ImageView
+            android:src="@drawable/leftouterjoin2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="fitXY"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:textColor="#B71C1C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Right Outer Join"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nThe right outer join returns a result table with the matched data of two tables then remaining rows of the right table and null for the left table's columns.
+
+\n\nRight Outer Join Syntax is,
+
+\n\nselect column-name-list
+\nfrom table-name1
+\nRIGHT OUTER JOIN
+\ntable-name2
+\non table-name1.column-name = table-name2.column-name;"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nExample:"/>
+
+        <ImageView
+            android:src="@drawable/leftouterjoin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nSELECT * FROM class RIGHT OUTER JOIN class_info on (class.id=class_info.id);
+ \n\n the result will be:"/>
+
+
+        <ImageView
+            android:src="@drawable/rightouterjoin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="fitXY"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:textColor="#B71C1C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Full Outer Join"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nThe full outer join returns a result table with the matched data of two table then remaining rows of both left table and then the right table.
+
+\n\nFull Outer Join Syntax is,
+
+\n\nselect column-name-list
+\nfrom table-name1
+\nFULL OUTER JOIN
+\ntable-name2
+\non table-name1.column-name = table-name2.column-name;"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\n\nExample:"/>
+
+        <ImageView
+            android:src="@drawable/leftouterjoin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nSELECT * FROM class FULL OUTER JOIN class_info on (class.id=class_info.id);
+ \n\n the result will be:"/>
+
+
+        <ImageView
+            android:src="@drawable/fullouterjoin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="fitXY"/>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

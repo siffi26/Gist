@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/image1"
+        tools:context="com.example.hp.above.ClocksActivity">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONCEPT"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nThe markings on the face of a clock are 60 spaces, one each for a minute. Every hour, the minute hand completes one round of 60 spaces and the hour hand completes one full round every 12 hours.
+\n\nIn 60 minutes, the minute hand gains 55 spaces (also known as minute spaces) over the hour hand. For example, if the initial time is 12:00, then after 1 hour, the minute hand would cover 60 spaces whereas the hour hand would cover only 5 spaces. Thus, the minute hand covers 55 spaces extra than the hour hand.
+\n\nThe minute hand covers 360 degrees in 60 minutes.
+\n=> In 1 minute, the minute hand covers 360 / 60 = 6 degrees
+\n\nThe hour hand covers 360 degrees in 12 hours.
+\n=> In 1 hour, the hour hand covers 360 / 12 = 30 degrees
+\n=> In 1 minute, the hour hand covers 30 / 60 = 0.50 degrees
+\n\nThe angle between the minute hand and the hour hand increases by 5.50 degrees every minute. For example, after 2 minutes, angle made by the minute hand = 2 x 6 = 12 degrees and angle made by the hour hand = 2 x 0.50 = 1 degree
+\n=> Angle between the hour hand and the minute hand after 2 minutes = 12 – 1 = 11 degrees = 2 x 5.50 degrees
+\n\nIn every hour, the minute hand and the hour hand coincide once.
+\n\nIf the minute hand and the hour hand are in the same line, then the angle between them is either 0 degree or 180 degrees.
+\n\nThe angle between the minute hand and the hour hand is 180 degrees if they are 30 spaces apart, 90 degrees if they are 15 spaces apart, and 0 degrees if they are 0 minute spaces apart.
+\n\nIf the clock shows time ahead of the actual time, it is said to be running fast.
+\nFor example, if the clock is showing 12:15 PM but it is actually 12:00 PM, then the clock is said to be running 15 minutes fast.
+\n\nIf the clock shows time behind the actual time, it is said to be running slow.
+\nFor example, if the clock is showing 2:15 PM but it is actually 2:30 PM, then the clock is said to be running 15 minutes slow."/>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:text="SAMPLE PROBLEMS"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 1 :  Find the angle between the hands of a clock at 3:20 PM."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_clock1"
+            android:onClick="clock_answers1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF00"
+            android:text="\nQuestion 2 : At what time between 3 PM and 4 PM would the two hands of the clock be together ?"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_clock2"
+            android:onClick="clock_answers2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 3 :  How many times in a day the two hands of a clock coincide?
+
+"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\nSOLUTION"
+            android:textColor="#FFFF00"
+            android:id="@+id/solution_clock3"
+            android:onClick="clock_answers3"/>
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

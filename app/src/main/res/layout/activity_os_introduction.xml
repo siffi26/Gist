@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/english"
+        tools:context="com.example.hp.above.OsIntroductionActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_height="wrap_content"
+            android:text="Introduction of Operating Systems"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF00"
+            android:text="\nA computer system has many resources (hardware and software), which may be require to complete a task. The commonly required resources are input/output devices, memory, file storage space, CPU etc. The operating system acts as a manager of the above resources and allocates them to specific programs and users as necessary for their task. Therefore operating system is the resource manager i.e. it can manage the resource of a computer system internally. The resources are processor, memory, files, and I/O devices.
+        "/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/osintro1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF00"
+            android:text="\nTwo Views of Operating System
+\n
+\nUser's View
+\nSystem View
+\n
+\nUser View :
+\nThe user view of the computer refers to the interface being used. Such systems are designed for one user to monopolize its resources, to maximize the work that the user is performing. In these cases, the operating system is designed mostly for ease of use, with some attention paid to performance, and none paid to resource utilization.
+\n
+\n
+\nSystem View :
+\nOperating system can be viewed as a resource allocator also. A computer system consists of many resources like - hardware and software - that must be managed efficiently. The operating system acts as the manager of the resources, decides between conflicting requests, controls execution of programs etc.
+\n
+\nOperating System Management Tasks
+\n
+\nProcessor management which involves putting the tasks into order and pairing them into manageable size before they go to the CPU.
+\nMemory management which coordinates data to and from RAM (random-access memory) and determines the necessity for virtual memory.
+\nDevice management which provides interface between connected devices.
+\nStorage management which directs permanent data storage.
+\nApplication which allows standard communication between software and your computer.
+\nUser interface which allows you to communicate with your computer.
+\nFunctions of Operating System
+\n
+\nIt boots the computer
+\nIt performs basic computer tasks e.g. managing the various peripheral devices e.g. mouse, keyboard
+\nIt provides a user interface, e.g. command line, graphical user interface (GUI)
+\nIt handles system resources such as computer's memory and sharing of the central processing unit(CPU) time by various applications or peripheral devices.
+\nIt provides file management which refers to the way that the operating system manipulates, stores, retrieves and saves data.
+\nError Handling is done by the operating system. It takes preventive measures whenever required to avoid errors.
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Types of Operating Systems"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF00"
+            android:text="\nFollowing are some of the most widely used types of Operating system.
+\n
+\n1. Simple Batch System
+\n2. Multiprogramming Batch System
+\n3. Multiprocessor System
+\n4. Distributed Operating System
+\n5. Realtime Operating System
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="SIMPLE BATCH SYSTEMS"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF00"
+            android:text="\nIn this type of system, there is no direct interaction between user and the computer.
+\n1. The user has to submit a job (written on cards or tape) to a computer operator.
+\n2. Then computer operator places a batch of several jobs on an input device.
+\n3. Jobs are batched together by type of languages and requirement.
+\n4. Then a special program, the monitor, manages the execution of each program in the batch.
+\n5. The monitor is always in the main memory and available for execution.
+\n\nFollowing are some disadvantages of this type of system :
+\n
+\n1. Zero interaction between user and computer.
+\n2. No mechanism to prioritize processes.
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="MULTIPROGRAMMING BATCH SYSTEMS"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF00"
+            android:text="\n1. In this the operating system, picks and begins to execute one job from memory.
+\n2. Once this job needs an I/O operation operating system switches to another job (CPU and OS always busy).
+\n3. Jobs in the memory are always less than the number of jobs on disk(Job Pool).
+\n4. If several jobs are ready to run at the same time, then system chooses which one to run (CPU Scheduling).
+\n5. In Non-multiprogrammed system, there are moments when CPU sits idle and does not do any work.
+\n6. In Multiprogramming system, CPU will never be idle and keeps on processing.
+\n\nTime-Sharing Systems are very similar to Multiprogramming batch systems. In fact time sharing systems are an extension of multiprogramming systems.
+\n
+\nIn time sharing systems the prime focus is on minimizing the response time, while in multiprogramming the prime focus is to maximize the CPU usage.
+\n
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="MULTIPROCESSOR SYSTEMS"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF00"
+            android:text="\nA multiprocessor system consists of several processors that share a common physical memory. Multiprocessor system provides higher computing power and speed. In multiprocessor system all processors operate under single operating system. Multiplicity of the processors and how they do act together are transparent to the others.
+\n
+\nFollowing are some advantages of this type of system.
+\n
+\n1. Enhanced performance
+\n2. Execution of several tasks by different processors concurrently, increases the system's throughput without speeding up the execution of a single task.
+\n3. If possible, system divides task into many subtasks and then these subtasks can be executed in parallel in different processors. Thereby speeding up the execution of single tasks.
+\n
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="DISTRIBUTED OPERATING SYSTEMS"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF00"
+            android:text="\nThe motivation behind developing distributed operating systems is the availability of powerful and inexpensive microprocessors and advances in communication technology.
+\n
+\nThese advancements in technology have made it possible to design and develop distributed systems comprising of many computers that are inter connected by communication networks. The main benefit of distributed systems is its low price/performance ratio.
+\n
+\nFollowing are some advantages of this type of system.
+\n
+\n1. As there are multiple systems involved, user at one site can utilize the resources of systems at other sites for resource-intensive tasks.
+\n2. Fast processing.
+\n3. Less load on the Host Machine.
+\n
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="REAL-TIME OPERATING SYSTEM"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF00"
+            android:text="\nIt is defined as an operating system known to give maximum time for each of the critical operations that it performs, like OS calls and interrupt handling.
+\n
+\nThe Real-Time Operating system which guarantees the maximum time for critical operations and complete them on time are referred to as Hard Real-Time Operating Systems.
+\n
+\nWhile the real-time operating systems that can only guarantee a maximum of the time, i.e. the critical task will get priority over other tasks, but no assurity of completeing it in a defined time. These systems are referred to as Soft Real-Time Operating Systems.
+\n
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#78909C"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="EVOLUTION OF OPERATING SYSTEM"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF00"
+            android:text="\nThe evolution of operating systems is directly dependent to the development of computer systems and how users use them. Here is a quick tour of computing systems through the past fifty years in the timeline.
+\n
+\nEarly Evolution
+\n
+\n1945: ENIAC, Moore School of Engineering, University of Pennsylvania.
+\n1949: EDSAC and EDVAC
+\n1949 BINAC - a successor to the ENIAC
+\n1951: UNIVAC by Remington
+\n1952: IBM 701
+\n1956: The interrupt
+\n1954-1957: FORTRAN was developed
+\nOperating Systems by the late 1950s
+\n
+\nBy the late 1950s Operating systems were well improved and started supporting following usages :
+\n
+\nIt was able to Single stream batch processing
+\nIt could use Common, standardized, input/output routines for device access
+\nProgram transition capabilities to reduce the overhead of starting a new job was added
+\nError recovery to clean up after a job terminated abnormally was added.
+\nJob control languages that allowed users to specify the job definition and resource requirements were made possible.
+\n\nOperating Systems In 1960s
+\n
+\n1961: The dawn of minicomputers
+\n1962 Compatible Time-Sharing System (CTSS) from MIT
+\n1963 Burroughs Master Control Program (MCP) for the B5000 system
+\n1964: IBM System/360
+\n1960s: Disks become mainstream
+\n1966: Minicomputers get cheaper, more powerful, and really useful
+\n1967-1968: The mouse
+\n1964 and onward: Multics
+\n1969: The UNIX Time-Sharing System from Bell Telephone Laboratories
+\n\nSupported OS Features by 1970s
+\n
+\nMulti User and Multi tasking was introduced.
+\nDynamic address translation hardware and Virtual machines came into picture.
+\nModular architectures came into existence.
+\nPersonal, interactive systems came into existence.
+\n\nAccomplishments after 1970
+\n
+\n1971: Intel announces the microprocessor
+\n1972: IBM comes out with VM: the Virtual Machine Operating System
+\n1973: UNIX 4th Edition is published
+\n1973: Ethernet
+\n1974 The Personal Computer Age begins
+\n1974: Gates and Allen wrote BASIC for the Altair
+\n1976: Apple II
+\nAugust 12, 1981: IBM\ introduces the IBM PC
+\n1983 Microsoft begins work on MS-Windows
+\n1984 Apple Macintosh comes out
+\n1990 Microsoft Windows 3.0 comes out
+\n1991 GNU/Linux
+\n1992 The first Windows virus comes out
+\n1993 Windows NT
+\n2007: iOS
+\n2008: Android OS
+\n
+\nAnd the research and development work still goes on, with new operating systems being developed and existing ones being improved to enhance the overall user experience while making operating systems fast and efficient like they have never been before.
+"/>
+
+
+    </LinearLayout>
+</ScrollView>

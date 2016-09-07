@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/c"
+        tools:context="com.example.hp.above.FillInBlankActivity">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFF00"
+            android:text="\n\nPick out the most effective word(s) from the given words to fill in the blank to make the sentence meaningfully complete."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 1:
+\nFate smiles ...... those who untiringly grapple with stark realities of life.
+\n\nA. with
+\n\nB. over
+\n\nC. on
+\n\nD. round"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 2:
+\nThe miser gazed ...... at the pile of gold coins in front of him.
+\n\nA. Avidly
+\n\nB. admiringly
+\n\nC. thoughtfully
+\n\nD. earnestly"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 3:
+\nCatching the earlier train will give us the ...... to do some shopping.
+\n\nA. chance
+\n\nB. Luck
+\n\nC. possibility
+\n\nD. occasion"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 4:
+\nI saw a ...... of cows in the field.
+\n\nA. Group
+\n\nB. Herd
+\n\nC. Swarm
+\n\nD. Flock
+"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 5:
+\nThe grapes are now ...... enough to be picked.
+\n\nA. Ready
+\n\nB. Mature
+\n\nC. Ripe
+\n\nD. Advanced
+"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="\nQuestion 6:
+\nSuccess in this examination depends ...... hard work alone.
+\n\nA. At
+\n\nB. Over
+\n\nC. For
+\n\nD. On"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+
+            android:text="\nQuestion 7:
+\nMy uncle decided to take ...... and my sister to the market.
+\n\nA. I
+\n\nB. mine
+\n\nC. me
+\n\nD. myself"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+
+            android:text="\nQuestion 8:
+\nIf you smuggle goods into the country, they may be ...... by the customs authority.
+\n\nA. Possessed
+\n\nB. Punished
+\n\nC. Confiscated
+\n\nD. Fined"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+
+            android:text="\nQuestion 9:
+\nMan does not live by ...... alone.
+\n\nA. Food
+\n\nB. Bread
+\n\nC. Meals
+\n\nD. Diet"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+
+            android:text="\nQuestion 10:
+\nPiyush behaves strangely at times and, therefore, nobody gets ...... with him.
+\n\nA. About
+\n\nB. Through
+\n\nC. Along
+\n\nD. Up"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF" />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="Answers"
+            android:padding="16dp"
+            android:layout_gravity="center"
+            android:onClick="answers_fill" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_margin="48dp"
+            android:textColor="#FFFF00"
+            android:id="@+id/fill_button"/>
+    </LinearLayout>
+</ScrollView>

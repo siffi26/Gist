@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="#303F9F"
+        tools:context="com.example.hp.above.DatasufficiencyActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#333366"
+            android:textColor="#ffffff"
+            android:text="DATA SUFFICIENCY"
+            android:textSize="20sp"
+            android:layout_margin="8dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffff00"
+            android:text="\nDirection: Each of the following problems consist of a question followed by two statements, I and II. You must determine whether the information given by the statements is sufficient to answer the question asked. In addition to the information provided in the statements, you should rely on your knowledge of mathematics and ordinary facts (such as the number of seconds in a minute).
+\n(a)  if the question can be answered by using only statement I
+\n(b)  if the question can be answered by using only statement II.
+\n(c)  if the question can be answered by using both statements together, but cannot be answered using either statement alone.
+\n(d)  if the question cannot be answered even by using both statements together.
+\n(e)  if the question can be answered either statements alone.
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:text="\n1)  Is Raja older than Ramu?
+\n\nI. Sita is 4 years younger than Raja and 2 years younger than Ramu.
+\n\nII. The average age Raja and Ramu is 21 years.
+
+"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+            android:background="#ffffff" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:text="2)  What is the value of x?
+\n\nI. x2 = 16
+\n\nII. x > 0
+
+"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+            android:background="#ffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:text=" 3)  Is Babu older than Raghu?
+\n\nI. The ratio of Raghu’s age to Babu’s age is 7 : 4.
+\n\nII. In 6 years Raghu will be half as old as he is now.
+"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+            android:background="#ffffff" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:text="4)  What is probability of drawing a red ball, if a bag contains red, blue and green balls.
+\n\nI. Total balls in the bag are 30
+\n\nII. The balls are in the ratio 1:2:3
+
+"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+            android:background="#ffffff" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:text="5)  What is the volume of a right circular cylinder?
+\n\nI. The area of the base of the figure is 196.
+\n\nII. The height of the figure is 16.
+
+"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+            android:background="#ffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:text="6)How old is Subhash?
+\n\nI. In 16 more years Subhash will be twice as old as he is today.
+\n\nII. Four years ago Subhash was 3/4 times of his present age.
+
+
+"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+            android:background="#ffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:text="7)If x, y and z are consecutive integers, is y even?
+        \n\nI. x is less than y and y is less than z.
+        \n\nII. xz is odd integer."/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+            android:background="#ffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:text="8)  Is r even?
+\n\nI. r + s is odd.
+\n\nII. s is even."/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+            android:background="#ffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:text="9)  How many students are enrolled in Sastri's Quant class?
+\n\nI. If 3 more students sign up for the class and no one drops out, more than 35 students will have enrolled in the class.
+\n\nII. If 4 students drop out of the class and no more sign-up, fewer than 30 students will have enrolled in the class.
+
+"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+            android:background="#ffffff" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:text=" 10) Is K a prime number?
+\n\nI. K > 10
+\n\nII. K divided by 2 has a remainder 0.
+
+"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+            android:background="#ffffff" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="Answers"
+            android:background="#999999"
+            android:padding="16dp"
+            android:layout_gravity="center"
+            android:onClick="answers_data" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="#ffff00"
+            android:layout_margin="48dp"
+            android:id="@+id/data_button"/>
+
+    </LinearLayout>
+</ScrollView>

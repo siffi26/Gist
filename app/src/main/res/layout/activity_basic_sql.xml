@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/dbms"
+        tools:context="com.example.hp.above.BasicSQLActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:gravity="center_horizontal"
+            android:textColor="#fafafa"
+            android:text="Introduction"
+            android:id="@+id/sql_introduction"
+            android:onClick="opensql_introduction"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:gravity="center_horizontal"
+            android:textColor="#fafafa"
+            android:text="DDL Commands"
+            android:id="@+id/sql_ddlcommands"
+            android:onClick="opensql_ddl"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:gravity="center_horizontal"
+            android:textColor="#fafafa"
+            android:text="DML Commands"
+            android:id="@+id/sql_dmlcommands"
+            android:onClick="opensql_dml"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:gravity="center_horizontal"
+            android:textColor="#fafafa"
+            android:text="TCL Commands "
+            android:id="@+id/sql_tclcommands"
+            android:onClick="opensql_tcl"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:gravity="center_horizontal"
+            android:textColor="#fafafa"
+            android:text="DCL Commands "
+            android:id="@+id/sql_dclcommands"
+            android:onClick="opensql_dcl"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:gravity="center_horizontal"
+            android:textColor="#fafafa"
+            android:text="Clauses "
+            android:id="@+id/sql_clauses"
+            android:onClick="opensql_clauses"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>

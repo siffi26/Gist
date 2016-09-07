@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#00796b"
+    tools:context="com.example.hp.above.AsymptoticActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Analysis of Algorithms"
+        android:background="#009688"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nWhy performance analysis?
+\n\nThere are many important things that should be taken care of, like user friendliness, modularity, security, maintainability, etc. Why to worry about performance?
+\nThe answer to this is simple, we can have all the above things only if we have performance. So performance is like currency through which we can buy all the above things. Another reason for studying performance is – speed is fun!
+\n\nGiven two algorithms for a task, how do we find out which one is better?
+\n\nOne naive way of doing this is – implement both the algorithms and run the two programs on your computer for different inputs and see which one takes less time. There are many problems with this approach for analysis of algorithms.
+\n\n1) It might be possible that for some inputs, first algorithm performs better than the second. And for some inputs second performs better.
+\n\n2) It might also be possible that for some inputs, first algorithm perform better on one machine and the second works better on other machine for some other inputs.
+\n\n In Asymptotic Analysis, we calculate, how does the time (or space) taken by an algorithm increases with the input size.
+\n\nEXAMPLES:
+\n\n\nFor example, let us consider the search problem (searching a given item) in a sorted array. One way to search is Linear Search (order of growth is linear) and other way is Binary Search (order of growth is logarithmic). To understand how Asymptotic Analysis solves the above mentioned problems in analyzing algorithms, let us say we run the Linear Search on a fast computer and Binary Search on a slow computer.
+\n\nWe can have three cases to analyze an algorithm:
+\n\n1) Worst Case
+\n\n2) Average Case
+\n\n3) Best Case\n
+"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="Read More.."
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="asymptotic"
+        android:id="@+id/asymptotic"/>
+
+</LinearLayout>
+</ScrollView>

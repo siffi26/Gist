@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#00796b"
+    tools:context="com.example.hp.above.EightPuzzleBranchActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Branch and Bound | 8 puzzle Problem"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="#009688"
+        android:textColor="#ffffff"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nIn this puzzle solution of 8 puzzle problem is discussed.
+\n\nGiven a 3×3 board with 8 tiles (every tile has one number from 1 to 8) and one empty space. The objective is to place the numbers on tiles to match final configuration using the empty space. We can slide four adjacent (left, right, above and below) tiles into the empty space.
+\n
+\nFor example: \n\n"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/eightpuzzle1"
+        android:scaleType="fitCenter"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\n1. DFS (Brute-Force)
+\n\nWe can perform depth-first search on state space (Set of all configurations of a given problem i.e. all states that can be reached from initial state) tree.
+\n\n"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/eightpuzzle2"
+        android:contextClickable="true"
+        android:scaleType="fitCenter"
+        android:contentDescription="State Space Tree for 8 Puzzle"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nIn this solution, successive moves can take us away from the goal rather than bringing closer. The search of state space tree follows leftmost path from the root regardless of initial state. An answer node may never be found in this approach.
+\n
+\n2. BFS (Brute-Force)
+\nWe can perform a Breadth-first search on state space tree. This always finds a goal state nearest to the root. But no matter what the initial state is, the algorithm attempts the same sequence of moves like DFS.
+\n
+\n3. Branch and Bound
+\nThe search for an answer node can often be speeded by using an “intelligent” ranking function, also called an approximate cost function to avoid searching in sub-trees that do not contain an answer node. It is similar to backtracking technique but uses BFS-like search.
+\n
+\nThere are basically three types of nodes involved in Branch and Bound
+\n1. Live node is a node that has been generated but whose children have not yet been generated.
+\n2. E-node is a live node whose children are currently being explored. In other words, an E-node is a node currently being expanded.
+\n3. Dead node is a generated node that is not to be expanded or explored any further. All children of a dead node have already been expanded.
+\n
+\nCost function:
+\nEach node X in the search tree is associated with a cost. The cost function is useful for determining the next E-node. The next E-node is the one with least cost. The cost function is defined as,
+\n
+\n   C(X) = g(X) + h(X) where
+\n   g(X) = cost of reaching the current node
+\n          from the root
+\n   h(X) = cost of reaching an answer node from X.
+\nIdeal Cost function for 8-puzzle Algorithm :
+\nWe assume that moving one tile in any direction will have 1 unit cost. Keeping that in mind, we define cost function for 8-puzzle algorithm as below :
+\n
+\n   c(x) = f(x) + h(x) where
+\n   f(x) is the length of the path from root to x
+\n        (the number of moves so far) and
+\n   h(x) is the number of non-blank tiles not in
+\n        their goal position (the number of mis-
+\n        -placed tiles). There are at least h(x)
+\n        moves to transform state x to a goal state
+\nAn algorithm is available for getting an approximation of h(x) which is a unknown value.
+\n
+\nComplete Algorithm:\n\n"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nRead More..\n\n"
+        android:onClick="eight_code"
+        android:id="@+id/eight_code"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eight_image"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:id="@+id/extra_text"/>
+
+</LinearLayout>
+</ScrollView>

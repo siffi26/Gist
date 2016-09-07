@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#00796b"
+    tools:context="com.example.hp.above.StrassensMatrixActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Divide and Conquer | Strassen’s Matrix Multiplication"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:background="#009688"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nGiven two square matrices A and B of size n x n each, find their multiplication matrix.
+\n
+\nNaive Method
+\nFollowing is a simple way to multiply two matrices.
+\n
+\nTime Complexity of above method is O(N3).\n\n"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/strassens1"
+        android:scaleType="fitCenter"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nDivide and Conquer
+\n\nFollowing is simple Divide and Conquer method to multiply two square matrices.
+\n1) Divide matrices A and B in 4 sub-matrices of size N/2 x N/2 as shown in the below diagram.
+\n2) Calculate following values recursively. ae + bg, af + bh, ce + dg and cf + dh."/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/strassens2"
+        android:scaleType="fitCenter"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\nIn the above method, we do 8 multiplications for matrices of size N/2 x N/2 and 4 additions. Addition of two matrices takes O(N2) time. So the time complexity can be written as
+\n
+\nT(N) = 8T(N/2) + O(N2)
+\n
+\nFrom Master's Theorem, time complexity of above method is O(N3)
+\nwhich is unfortunately same as the above naive method.
+\nSimple Divide and Conquer also leads to O(N3), can there be a better way?
+\nIn the above divide and conquer method, the main component for high time complexity is 8 recursive calls. The idea of Strassen’s method is to reduce the number of recursive calls to 7. Strassen’s method is similar to above simple divide and conquer method in the sense that this method also divide matrices to sub-matrices of size N/2 x N/2 as shown in the above diagram, but in Strassen’s method, the four sub-matrices of result are calculated using following formulae.
+"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/strassens3"
+        android:scaleType="fitCenter"
+        android:layout_margin="8dp"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="\n\nTime Complexity of Strassen’s Method
+\nAddition and Subtraction of two matrices takes O(N2) time. So time complexity can be written as
+\n
+\nT(N) = 7T(N/2) +  O(N2)
+\n
+\nFrom Master's Theorem, time complexity of above method is
+\nO(NLog7) which is approximately O(N2.8074)
+\nGenerally Strassen’s Method is not preferred for practical applications for following reasons.
+\n1) The constants used in Strassen’s method are high and for a typical application Naive method works better.
+\n2) For Sparse matrices, there are better methods especially designed for them.
+\n3) The submatrices in recursion take extra space.
+\n4) Because of the limited precision of computer arithmetic on noninteger values, larger errors accumulate in Strassen’s algorithm than in Naive Method (Source: CLRS Book)
+\n\n"  />
+
+</LinearLayout>
+</ScrollView>
